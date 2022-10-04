@@ -22,3 +22,62 @@ export const useScrollHandler = () => {
 
   return scroll;
 };
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+export function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
+export const getWidthContent = (width: number): number => {
+  switch (true) {
+    case width > 1439:
+      return 1200;
+
+    case 1262 < width && width < 1440:
+      return 1030;
+
+    case 1135 < width && width < 1263:
+      return 940;
+
+    case 1023 < width && width < 1136:
+      return 994;
+
+    case 959 < width && width < 1024:
+      return 930;
+
+    case 767 < width && width < 960:
+      return 738;
+
+    case 639 < width && width < 768:
+      return 630;
+
+    case 479 < width && width < 640:
+      return 470;
+
+    case 320 < width && width < 480:
+      return 320;
+
+    default:
+      return width;
+  }
+};

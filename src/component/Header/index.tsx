@@ -1,24 +1,47 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import logo from "../../static/image/png/retina-logo-1.png";
 import { useScrollHandler } from "../../customHook";
 
 export interface IHeader {
   children: React.ReactNode;
+  pathname: string;
 }
 
-const Index = (props: IHeader) => {
-  const { children } = props;
-  const [isShowCart, setIsShowCart] = useState<boolean>(false);
-  const [isHover, setIsHover] = useState("false");
-  const scrool = useScrollHandler();
+let isHovering = false;
 
-  const topFunction = () => {
+const Index = (props: IHeader) => {
+  const { children, pathname } = props;
+  const [isShowCart, setIsShowCart] = useState<boolean>(false);
+  const [hover, setHover] = useState("leave");
+  const scroll = useScrollHandler();
+
+  const handleMouseEnter = () => {
+    isHovering = true;
+  };
+
+  const handleMouseLeave = () => {
+    isHovering = false;
+  };
+
+  const handleHoverEnter = (str: string) => {
+    isHovering = true;
+    setHover(str);
+  };
+
+  const handleHoverLeave = () => {
+    isHovering = false;
+    setTimeout(() => {
+      if (!isHovering) setHover("leave");
+    }, 1500);
+  };
+
+  const topFunction = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }, []);
 
   return (
     <>
@@ -89,7 +112,7 @@ const Index = (props: IHeader) => {
                 </div>
                 <div className="sc_layouts_item">
                   <a
-                    href="/#"
+                    href="/"
                     id="sc_layouts_logo_483486611"
                     className="sc_layouts_logo sc_layouts_logo_default"
                   >
@@ -181,7 +204,7 @@ const Index = (props: IHeader) => {
         </div>
         <div
           className={`vc_row wpb_row vc_row-fluid sc_layouts_row sc_layouts_row_type_normal sc_layouts_row_delimiter sc_layouts_row_fixed ${
-            scrool ? "sc_layouts_row_fixed_on" : ""
+            scroll ? "sc_layouts_row_fixed_on" : ""
           }`}
         >
           <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
@@ -209,20 +232,47 @@ const Index = (props: IHeader) => {
                                 >
                                   <li
                                     id="menu-item-35"
-                                    className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-35"
+                                    className={`menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-35
+                                    ${
+                                      pathname === "/"
+                                        ? "current-menu-parent"
+                                        : ""
+                                    }
+                                    ${hover === "home" ? "sfHover" : ""}`}
+                                    onMouseEnter={() =>
+                                      handleHoverEnter("home")
+                                    }
+                                    onMouseLeave={() => {
+                                      handleHoverLeave();
+                                    }}
                                   >
                                     <a href="/#" className="sf-with-ul">
                                       <span>Home</span>
                                     </a>
                                     <ul
-                                      className="sub-menu fadeOutDownSmall animated fast"
-                                      style={{ display: "none" }}
+                                      className={`sub-menu animated fast ${
+                                        hover === "home"
+                                          ? "fadeInUpSmall"
+                                          : "fadeOutDownSmall"
+                                      }`}
+                                      style={{
+                                        display:
+                                          hover === "home" ? "block" : "none",
+                                      }}
+                                      onMouseEnter={handleMouseEnter}
+                                      onMouseLeave={handleMouseLeave}
                                     >
                                       <li
                                         id="menu-item-38"
-                                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-27 current_page_item menu-item-38"
+                                        className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-hom page_item page-item-27 current_page_item menu-item-38
+                                        ${
+                                          pathname === "/"
+                                            ? "current-menu-item"
+                                            : ""
+                                        }
+                                        `}
                                       >
-                                        <a href="/#" aria-current="page">
+                                        <a href="/" aria-current="page">
                                           <span>Homepage Fullwidth</span>
                                         </a>
                                       </li>
@@ -246,14 +296,35 @@ const Index = (props: IHeader) => {
                                   </li>
                                   <li
                                     id="menu-item-41"
-                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41"
+                                    className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41 ${
+                                      pathname.includes("feature")
+                                        ? "current-menu-parent current-menu-ancestor"
+                                        : ""
+                                    } ${hover === "feature" ? "sfHover" : ""}`}
+                                    onMouseEnter={() =>
+                                      handleHoverEnter("feature")
+                                    }
+                                    onMouseLeave={() => {
+                                      handleHoverLeave();
+                                    }}
                                   >
                                     <a href="/#" className="sf-with-ul">
                                       <span>Features</span>
                                     </a>
                                     <ul
-                                      className="sub-menu animated fast fadeOutDownSmall"
-                                      style={{ display: "none" }}
+                                      className={`sub-menu animated fast ${
+                                        hover === "feature"
+                                          ? "fadeInUpSmall"
+                                          : "fadeOutDownSmall"
+                                      }`}
+                                      style={{
+                                        display:
+                                          hover === "feature"
+                                            ? "block"
+                                            : "none",
+                                      }}
+                                      onMouseEnter={handleMouseEnter}
+                                      onMouseLeave={handleMouseLeave}
                                     >
                                       <li
                                         id="menu-item-180"
@@ -386,14 +457,33 @@ const Index = (props: IHeader) => {
                                   </li>
                                   <li
                                     id="menu-item-43"
-                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43"
+                                    className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43 ${
+                                      pathname.includes("about")
+                                        ? "current-menu-parent current-menu-ancestor"
+                                        : ""
+                                    } ${hover === "about" ? "sfHover" : ""}`}
+                                    onMouseEnter={() =>
+                                      handleHoverEnter("about")
+                                    }
+                                    onMouseLeave={() => {
+                                      handleHoverLeave();
+                                    }}
                                   >
                                     <a href="/#" className="sf-with-ul">
                                       <span>About</span>
                                     </a>
                                     <ul
-                                      className="sub-menu fadeOutDownSmall animated fast"
-                                      style={{ display: "none" }}
+                                      className={`sub-menu animated fast ${
+                                        hover === "about"
+                                          ? "fadeInUpSmall"
+                                          : "fadeOutDownSmall"
+                                      }`}
+                                      style={{
+                                        display:
+                                          hover === "about" ? "block" : "none",
+                                      }}
+                                      onMouseEnter={handleMouseEnter}
+                                      onMouseLeave={handleMouseLeave}
                                     >
                                       <li
                                         id="menu-item-36"
@@ -415,7 +505,17 @@ const Index = (props: IHeader) => {
                                   </li>
                                   <li
                                     id="menu-item-39"
-                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"
+                                    className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39 ${
+                                      pathname.includes("suits")
+                                        ? "current-menu-parent current-menu-ancestor"
+                                        : ""
+                                    } ${hover === "suits" ? "sfHover" : ""}`}
+                                    onMouseEnter={() =>
+                                      handleHoverEnter("suits")
+                                    }
+                                    onMouseLeave={() => {
+                                      handleHoverLeave();
+                                    }}
                                   >
                                     <a href="/shop/">
                                       <span>Suits</span>
@@ -423,14 +523,33 @@ const Index = (props: IHeader) => {
                                   </li>
                                   <li
                                     id="menu-item-44"
-                                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"
+                                    className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44 ${
+                                      pathname.includes("news")
+                                        ? "current-menu-parent current-menu-ancestor"
+                                        : ""
+                                    } ${hover === "news" ? "sfHover" : ""}`}
+                                    onMouseEnter={() =>
+                                      handleHoverEnter("news")
+                                    }
+                                    onMouseLeave={() => {
+                                      handleHoverLeave();
+                                    }}
                                   >
                                     <a href="/#" className="sf-with-ul">
                                       <span>News</span>
                                     </a>
                                     <ul
-                                      className="sub-menu fadeOutDownSmall animated fast"
-                                      style={{ display: "none" }}
+                                      className={`sub-menu animated fast ${
+                                        hover === "news"
+                                          ? "fadeInUpSmall"
+                                          : "fadeOutDownSmall"
+                                      }`}
+                                      style={{
+                                        display:
+                                          hover === "news" ? "block" : "none",
+                                      }}
+                                      onMouseEnter={handleMouseEnter}
+                                      onMouseLeave={handleMouseLeave}
                                     >
                                       <li
                                         id="menu-item-128"
@@ -609,9 +728,412 @@ const Index = (props: IHeader) => {
         {children}
         {/* /.header_widgets_wrap */}
       </header>
+      {/* mobile */}
+      <div className="menu_mobile_overlay" style={{ display: "none" }} />
+      <div className="menu_mobile menu_mobile_fullscreen scheme_dark">
+        <div className="menu_mobile_inner">
+          {/* <a className="menu_mobile_close icon-cancel" href="/" > */}
+          {/* <nav className="menu_mobile_nav_area">
+            <ul id="menu_mobile-main-menu">
+              <li
+                className={`
+                    menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35
+                    ${pathname === "/" ? "current-menu-parent current-menu-ancestor" : ""}
+                    ${hover === "home" ? "sfHover" : ""}`}
+                // onMouseEnter={() => handleHoverEnter("home")}
+                // onMouseLeave={handleHoverLeave}
+              >
+                <a href="/#">
+                  <span>Home</span>
+                  <span className="open_child_menu" />
+                </a>
+                <ul
+                  className={`
+                    sub-menu animated fast ${
+                      hover === "home" ? "fadeInUpSmall" : "fadeOutDownSmall"
+                    }`}
+                  style={{
+                    display: hover === "home" ? "block" : "none",
+                  }}
+                >
+                  <li
+                    id="menu_mobile-item-38"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-27 current_page_item menu-item-38"
+                  >
+                    <a href="/" aria-current="page">
+                      <span>Homepage Fullwidth</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu_mobile-item-278"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"
+                  >
+                    <a href="/shop-homepage/">
+                      <span>Homepage Shop</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu_mobile-item-819"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"
+                  >
+                    <a href="/shop-boxed/">
+                      <span>Homepage Boxed</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu_mobile-item-41"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41"
+              >
+                <a href="/">
+                  <span>Features</span>
+                  <span className="open_child_menu" />
+                </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu_mobile-item-180"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"
+                  >
+                    <a href="/">
+                      <span>Pages</span>
+                      <span className="open_child_menu" />
+                    </a>
+                    <ul className="sub-menu">
+                      <li
+                        id="menu_mobile-item-181"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"
+                      >
+                        <a href="/">
+                          <span>Gallery</span>
+                          <span className="open_child_menu" />
+                        </a>
+                        <ul className="sub-menu">
+                          <li
+                            id="menu_mobile-item-184"
+                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"
+                          >
+                            <a href="/grid/">
+                              <span>Grid</span>
+                            </a>
+                          </li>
+                          <li
+                            id="menu_mobile-item-183"
+                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-183"
+                          >
+                            <a href="/masonry/">
+                              <span>Masonry</span>
+                            </a>
+                          </li>
+                          <li
+                            id="menu_mobile-item-182"
+                            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"
+                          >
+                            <a href="/cobbles/">
+                              <span>Cobbles</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        id="menu_mobile-item-271"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"
+                      >
+                        <a href="/our-tailors/">
+                          <span>Our Tailors</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-305"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"
+                      >
+                        <a href="/services-page/">
+                          <span>Services</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-1159"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
+                      >
+                        <a href="/privacy-policy/">
+                          <span>Privacy Policy</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu_mobile-item-42"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-42"
+                  >
+                    <a href="/">
+                      <span>Tools</span>
+                      <span className="open_child_menu" />
+                    </a>
+                    <ul className="sub-menu">
+                      <li
+                        id="menu_mobile-item-350"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"
+                      >
+                        <a href="/typography/">
+                          <span>Typography</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-40"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"
+                      >
+                        <a href="/shortcodes/">
+                          <span>Shortcodes</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-1119"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1119"
+                      >
+                        <a href="/service-plus/">
+                          <span>Service Plus</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-1166"
+                        className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
+                      >
+                        <a href="/privacy-policy/">
+                          <span>Privacy Policy</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu_mobile-item-848"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"
+                  >
+                    <a href="/appointment/">
+                      <span>Appointment</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu_mobile-item-43"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43"
+              >
+                <a href="/">
+                  <span>About</span>
+                  <span className="open_child_menu" />
+                </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu_mobile-item-36"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"
+                  >
+                    <a href="/about/">
+                      <span>Style 1</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu_mobile-item-291"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"
+                  >
+                    <a href="/about-us/">
+                      <span>Style 2</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu_mobile-item-39"
+                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"
+              >
+                <a href="/shop/">
+                  <span>Suits</span>
+                </a>
+              </li>
+              <li
+                id="menu_mobile-item-44"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"
+              >
+                <a href="/">
+                  <span>News</span>
+                  <span className="open_child_menu" />
+                </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu_mobile-item-128"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
+                  >
+                    <a href="/">
+                      <span>Classic</span>
+                      <span className="open_child_menu" />
+                    </a>
+                    <ul className="sub-menu">
+                      <li
+                        id="menu_mobile-item-828"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-828"
+                      >
+                        <a href="/classic-1-column/">
+                          <span>1 column</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-829"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-829"
+                      >
+                        <a href="/classic-2-columns/">
+                          <span>2 columns</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-830"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-830"
+                      >
+                        <a href="/classic-3-columns/">
+                          <span>3 columns</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu_mobile-item-129"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-129"
+                  >
+                    <a href="/">
+                      <span>Chess</span>
+                      <span className="open_child_menu" />
+                    </a>
+                    <ul className="sub-menu">
+                      <li
+                        id="menu_mobile-item-831"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-831"
+                      >
+                        <a href="/chess-2-columns/">
+                          <span>2 columns</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-832"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-832"
+                      >
+                        <a href="/chess-4-columns/">
+                          <span>4 columns</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-833"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-833"
+                      >
+                        <a href="/chess-6-columns/">
+                          <span>6 columns</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    id="menu_mobile-item-130"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-130"
+                  >
+                    <a href="/">
+                      <span>Portfolio</span>
+                      <span className="open_child_menu" />
+                    </a>
+                    <ul className="sub-menu">
+                      <li
+                        id="menu_mobile-item-834"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-834"
+                      >
+                        <a href="/portfolio-2-columns/">
+                          <span>2 columns</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-835"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-835"
+                      >
+                        <a href="/portfolio-3-columns/">
+                          <span>3 columns</span>
+                        </a>
+                      </li>
+                      <li
+                        id="menu_mobile-item-836"
+                        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-836"
+                      >
+                        <a href="/portfolio-4-columns/">
+                          <span>4 columns</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu_mobile-item-37"
+                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"
+              >
+                <a href="/contacts/">
+                  <span>Contacts</span>
+                </a>
+              </li>
+            </ul>
+          </nav> */}
+          <div className="search_wrap search_style_normal search_mobile inited">
+            <div className="search_form_wrap">
+              <form
+                role="search"
+                method="get"
+                className="search_form"
+                action="/"
+              >
+                <input
+                  type="text"
+                  className="search_field"
+                  placeholder="Search"
+                  name="s"
+                />
+                <button
+                  type="submit"
+                  className="search_submit trx_addons_icon-search"
+                />
+              </form>
+            </div>
+          </div>
+          <div className="socials_mobile">
+            <span className="social_item">
+              <a
+                href="https://twitter.com/ThemerexThemes"
+                target="_blank"
+                rel="noreferrer"
+                className="social_icons social_twitter"
+              >
+                <span className="trx_addons_icon-twitter" />
+              </a>
+            </span>
+            <span className="social_item">
+              <a
+                href="https://business.facebook.com/ThemeRexStudio/"
+                target="_blank"
+                rel="noreferrer"
+                className="social_icons social_facebook"
+              >
+                <span className="trx_addons_icon-facebook" />
+              </a>
+            </span>
+            <span className="social_item">
+              <a
+                href="https://www.instagram.com/themerex_net/"
+                target="_blank"
+                rel="noreferrer"
+                className="social_icons social_instagram"
+              >
+                <span className="trx_addons_icon-instagram" />
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
       <a
         className={`trx_addons_scroll_to_top trx_addons_icon-up inited sc_button_hover_slide_bottom ${
-          scrool ? "show" : ""
+          scroll ? "show" : ""
         }`}
         onClick={topFunction}
         title="Scroll to top"
