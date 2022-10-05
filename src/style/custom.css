@@ -1,0 +1,50 @@
+.carousel-control-prev-icon {
+  position: absolute;
+  width: 40px !important;
+  height: 40px !important ;
+  top: 50%;
+  left: 0px;
+  transform: translate(20px, -25px);
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  width: 40px !important;
+  height: 40px !important ;
+  top: 50%;
+  left: 100%;
+  transform: translate(-70px, -25px);
+}
+.parallax-wrap {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+  left: 77px;
+  top: 102px;
+  z-index: 5;
+  visibility: visible;
+}
+
+.title-carousel {
+  z-index: 5;
+  font-family: "Butler", "serif";
+  text-transform: uppercase;
+  height: auto;
+  width: auto;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  white-space: nowrap;
+  min-height: 0px;
+  min-width: 0px;
+  max-height: none;
+  max-width: none;
+  text-align: inherit;
+  line-height: 83px;
+  letter-spacing: 12px;
+  font-weight: 300;
+  font-size: 83px;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
+  transform: translate(0px);
+  visibility: visible;
+}
