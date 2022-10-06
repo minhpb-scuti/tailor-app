@@ -2,6 +2,7 @@ import CarouselSlide from "./Carousel";
 
 export interface ISlider {
   height: number;
+  width: number;
 }
 
 const Index = (props: ISlider) => {
@@ -11,7 +12,7 @@ const Index = (props: ISlider) => {
         <aside id="trx_addons_widget_slider-2" className="widget widget_slider">
           <div className="slider_wrap slider_engine_revo slider_alias_slider_1">
             <div className="wp-block-themepunch-revslider 0">
-              <CarouselSlide height={props.height} />
+              <CarouselSlide height={props.height} width={props.width} />
             </div>
           </div>
         </aside>

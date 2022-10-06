@@ -89,3 +89,10 @@ export const getHeightCarousel = (width: number): number => {
   }
   return 721 - Math.round((1241 - width) / 2);
 };
+
+export const getLeftCarousel = (width: number): number => {
+  if (width > 372) {
+    return (width - 372) / 2;
+  }
+  return 0;
+};

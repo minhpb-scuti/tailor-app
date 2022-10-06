@@ -17,11 +17,15 @@ import Product4 from "../../static/image/product-4.webp";
 import Header from "../Header";
 import Slider from "../Slider";
 import Footer from "../Footer";
-import { getWidthContent, useWindowDimensions, getHeightCarousel } from "../../customHook/index";
+import {
+  getWidthContent,
+  useWindowDimensions,
+  getHeightCarousel,
+} from "../../customHook/index";
 import { useLocation } from "react-router-dom";
 const Home = () => {
   const location = useLocation();
-  
+
   const [isPlayVideo, setIsPlayVideo] = useState<boolean>(false);
   const [activeQuote, setActiveQuote] = useState<number>(1);
   const handleClickVideo = () => {
@@ -41,7 +45,15 @@ const Home = () => {
     <body className="home page-template-default page page-id-27 custom-background theme-petermason frontpage woocommerce-js body_tag scheme_default blog_mode_home body_style_wide is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-396 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
       <div className="body_wrap">
         <div className="page_wrap">
-          <Header children={<Slider height={getHeightCarousel(width)} />} pathname={location.pathname} />
+          <Header
+            children={
+              <Slider
+                height={getHeightCarousel(width)}
+                width={width}
+              />
+            }
+            pathname={location.pathname}
+          />
           <div className="page_content_wrap scheme_default">
             <div className="content_wrap">
               <div className="content">
