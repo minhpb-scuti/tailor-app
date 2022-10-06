@@ -35,11 +35,10 @@ const CarouselSlide = (props: ICarouselSlide) => {
           </div>
           <div
             style={{
-              position: "absolute",
-              display: "block",
-              left: "830px",
-              top: "331px",
-              zIndex: 6,
+              paddingTop: '311px',
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
             }}
           >
             <div className="button_slide">
@@ -74,11 +73,10 @@ const CarouselSlide = (props: ICarouselSlide) => {
           </div>
           <div
             style={{
-              position: "absolute",
-              display: "block",
-              left: "830px",
-              top: "331px",
-              zIndex: 6,
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: '311px',
             }}
           >
             <div className="button_slide">
@@ -113,11 +111,10 @@ const CarouselSlide = (props: ICarouselSlide) => {
           </div>
           <div
             style={{
-              position: "absolute",
-              display: "block",
-              left: "830px",
-              top: "331px",
-              zIndex: 6,
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: '311px',
             }}
           >
             <div className="button_slide">
