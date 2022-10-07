@@ -1,7 +1,7 @@
 .carousel-control-prev-icon {
   position: absolute;
   width: 40px !important;
-  height: 40px !important ;
+  height: 40px !important;
   top: 50%;
   left: 0px;
   transform: translate(20px, -25px);
@@ -10,7 +10,7 @@
 .carousel-control-next-icon {
   position: absolute;
   width: 40px !important;
-  height: 40px !important ;
+  height: 40px !important;
   top: 50%;
   left: 100%;
   transform: translate(-70px, -25px);
@@ -118,7 +118,7 @@
   margin: 0 !important;
 }
 
-.carousel-indicators > button {
+.carousel-indicators>button {
   background-color: rgba(190, 150, 103, 0.5) !important;
   width: 97px !important;
   height: 1px !important;
@@ -132,4 +132,13 @@
 
 a {
   text-decoration: none !important;
+}
+
+.carousel-review .carousel-indicators {
+  top: 22rem !important;
+  width: 240px;
+}
+
+.carousel-review .carousel-indicators>button {
+  width: 80px !important;
 }

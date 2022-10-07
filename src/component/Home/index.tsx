@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import Layer2 from "../../static/image/2-layers.webp";
 import Service1 from "../../static/image/service-1.jpg";
 import Service2 from "../../static/image/service-2.jpg";
@@ -47,10 +48,7 @@ const Home = () => {
         <div className="page_wrap">
           <Header
             children={
-              <Slider
-                height={getHeightCarousel(width)}
-                width={width}
-              />
+              <Slider height={getHeightCarousel(width)} width={width} />
             }
             pathname={location.pathname}
           />
@@ -1227,98 +1225,16 @@ const Home = () => {
                               <h2 className="sc_item_title sc_testimonials_title sc_align_center sc_item_title_style_default">
                                 Testimonials
                               </h2>
-                              <div
+                              {/* <div
                                 className="sc_testimonials_slider sc_item_slider slides swiper-wrapper"
                                 style={{
                                   transform: "translate3d(-4230px, 0px, 0px)",
                                   transitionDuration: "0ms",
                                 }}
                               >
-                                <div
-                                  className="swiper-slide swiper-slide-duplicate"
-                                  data-slide-number={2}
-                                  data-swiper-slide-index={2}
-                                  style={{ width: "1410px" }}
-                                >
-                                  <div className="sc_testimonials_item">
-                                    <div className="sc_testimonials_item_content">
-                                      <p>
-                                        This is by far the best suit I ’ve
-                                        owned, and I’ve owned custom made suits
-                                        before. The suit from Peter Mason fit
-                                        like a glove. So did the shirt I
-                                        ordered. I recommend booking an
-                                        appointment to get measured properly and
-                                        to choose your own fabric. You are the
-                                        best!
-                                      </p>
-                                    </div>
-                                    <div className="sc_testimonials_item_author">
-                                      <div className="sc_testimonials_item_author_data">
-                                        <h4 className="sc_testimonials_item_author_title">
-                                          Frankie Morales
-                                        </h4>
-                                        <div className="sc_testimonials_item_author_subtitle" />
-                                      </div>
-                                    </div>
-                                  </div>
+                       
                                 </div>
-                                <div
-                                  className="swiper-slide"
-                                  data-slide-number={0}
-                                  data-swiper-slide-index={0}
-                                  style={{ width: "1410px" }}
-                                >
-                                  <div className="sc_testimonials_item">
-                                    <div className="sc_testimonials_item_content">
-                                      <p>
-                                        Trying my suit on for the first time was
-                                        a really special moment. How it felt to
-                                        wear and how it made me feel was
-                                        amazing. Thank you so much for my
-                                        wedding suit. Very enjoyable experience.
-                                        On the big day the suits looked great
-                                        and we had many positive comments.
-                                      </p>
-                                    </div>
-                                    <div className="sc_testimonials_item_author">
-                                      <div className="sc_testimonials_item_author_data">
-                                        <h4 className="sc_testimonials_item_author_title">
-                                          Peter Hobden
-                                        </h4>
-                                        <div className="sc_testimonials_item_author_subtitle" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  className="swiper-slide swiper-slide-prev"
-                                  data-slide-number={1}
-                                  data-swiper-slide-index={1}
-                                  style={{ width: "1410px" }}
-                                >
-                                  <div className="sc_testimonials_item">
-                                    <div className="sc_testimonials_item_content">
-                                      <p>
-                                        Hi, I just wanted to let you know that I
-                                        received the suit this week and I love
-                                        it. It’s been beautifully made and every
-                                        detail is perfect. Please pass on my
-                                        appreciation to the tailor and the team
-                                        that made it. Thank you guys, you are
-                                        the best. I will recommend you.
-                                      </p>
-                                    </div>
-                                    <div className="sc_testimonials_item_author">
-                                      <div className="sc_testimonials_item_author_data">
-                                        <h4 className="sc_testimonials_item_author_title">
-                                          Richard Romero
-                                        </h4>
-                                        <div className="sc_testimonials_item_author_subtitle" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                          
                                 <div
                                   className="swiper-slide swiper-slide-active"
                                   data-slide-number={2}
@@ -1382,7 +1298,87 @@ const Home = () => {
                                 <span className="swiper-pagination-bullet" />
                                 <span className="swiper-pagination-bullet" />
                                 <span className="swiper-pagination-bullet swiper-pagination-bullet-active" />
-                              </div>
+                              </div> */}
+                              <Carousel className="carousel-review">
+                                <Carousel.Item>
+                                  <div className="swiper-slide swiper-slide-duplicate">
+                                    <div className="sc_testimonials_item">
+                                      <div className="sc_testimonials_item_content">
+                                        <p>
+                                          Trying my suit on for the first time
+                                          was a really special moment. How it
+                                          felt to wear and how it made me feel
+                                          was amazing. Thank you so much for my
+                                          wedding suit. Very enjoyable
+                                          experience. On the big day the suits
+                                          looked great and we had many positive
+                                          comments.
+                                        </p>
+                                      </div>
+                                      <div className="sc_testimonials_item_author">
+                                        <div className="sc_testimonials_item_author_data">
+                                          <h4 className="sc_testimonials_item_author_title">
+                                            Peter Hobden
+                                          </h4>
+                                          <div className="sc_testimonials_item_author_subtitle" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                  <div className="swiper-slide swiper-slide-duplicate">
+                                    <div className="sc_testimonials_item">
+                                      <div className="sc_testimonials_item_content">
+                                        <p>
+                                          Hi, I just wanted to let you know that
+                                          I received the suit this week and I
+                                          love it. It’s been beautifully made
+                                          and every detail is perfect. Please
+                                          pass on my appreciation to the tailor
+                                          and the team that made it. Thank you
+                                          guys, you are the best. I will
+                                          recommend you.
+                                        </p>
+                                      </div>
+                                      <div className="sc_testimonials_item_author">
+                                        <div className="sc_testimonials_item_author_data">
+                                          <h4 className="sc_testimonials_item_author_title">
+                                            Richard Romero
+                                          </h4>
+                                          <div className="sc_testimonials_item_author_subtitle" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                  <div className="swiper-slide swiper-slide-duplicate">
+                                    <div className="sc_testimonials_item">
+                                      <div className="sc_testimonials_item_content">
+                                        <p>
+                                          This is by far the best suit I ’ve
+                                          owned, and I’ve owned custom made
+                                          suits before. The suit from Peter
+                                          Mason fit like a glove. So did the
+                                          shirt I ordered. I recommend booking
+                                          an appointment to get measured
+                                          properly and to choose your own
+                                          fabric. You are the best!
+                                        </p>
+                                      </div>
+                                      <div className="sc_testimonials_item_author">
+                                        <div className="sc_testimonials_item_author_data">
+                                          <h4 className="sc_testimonials_item_author_title">
+                                            Frankie Morales
+                                          </h4>
+                                          <div className="sc_testimonials_item_author_subtitle" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </Carousel.Item>
+                              </Carousel>
                             </div>
                             {/* /.sc_testimonials */}
                             <div
