@@ -49,7 +49,7 @@ const Home = () => {
         <div className="page_wrap">
           <Header
             children={
-              <Slider height={getHeightCarousel(width)} width={width} />
+              <Slider height={getHeightCarousel(width)} />
             }
             pathname={location.pathname}
           />
