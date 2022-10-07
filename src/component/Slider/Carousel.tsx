@@ -4,11 +4,10 @@ import Carousel from "react-bootstrap/Carousel";
 
 export interface ICarouselSlide {
   height: number;
-  width: number;
 }
 
 const CarouselSlide = (props: ICarouselSlide) => {
-  const { height, width } = props;
+  const { height } = props;
   return (
     <Carousel>
       <Carousel.Item>
@@ -35,7 +34,7 @@ const CarouselSlide = (props: ICarouselSlide) => {
           </div>
           <div
             style={{
-              paddingTop: '311px',
+              paddingTop: "311px",
               width: "100%",
               display: "flex",
               justifyContent: "center",
@@ -76,7 +75,7 @@ const CarouselSlide = (props: ICarouselSlide) => {
               width: "100%",
               display: "flex",
               justifyContent: "center",
-              paddingTop: '311px',
+              paddingTop: "311px",
             }}
           >
             <div className="button_slide">
@@ -114,7 +113,7 @@ const CarouselSlide = (props: ICarouselSlide) => {
               width: "100%",
               display: "flex",
               justifyContent: "center",
-              paddingTop: '311px',
+              paddingTop: "311px",
             }}
           >
             <div className="button_slide">
