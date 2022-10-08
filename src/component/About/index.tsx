@@ -9,44 +9,7 @@ import Image17 from "../../static/image/image-17.webp";
 import Image5 from "../../static/image/image-5.webp";
 import { getWidthContent, useWindowDimensions } from "../../customHook";
 import Review from "../Review";
-
-export const Index = () => (
-  <div className="vc_row wpb_row vc_row-fluid sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage">
-    <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
-      <div className="vc_column-inner">
-        <div className="wpb_wrapper">
-          <div className="vc_empty_space" style={{ height: "4.9rem" }}>
-            <span className="vc_empty_space_inner" />
-          </div>
-          <div className="sc_layouts_item">
-            <div id="sc_layouts_title_1418826751" className="sc_layouts_title">
-              <div className="sc_layouts_title_title">
-                <h1 className="sc_layouts_title_caption">About</h1>
-              </div>
-              <div className="sc_layouts_title_breadcrumbs">
-                <div className="breadcrumbs">
-                  <a className="breadcrumbs_item home" href="/">
-                    Home
-                  </a>
-                  <span className="breadcrumbs_delimiter"></span>
-                  <span className="breadcrumbs_item current">About</span>
-                </div>
-              </div>
-              <div className="sc_layouts_title_breadcrumbs" />
-            </div>
-            {/* /.sc_layouts_title */}
-          </div>
-          <div className="vc_empty_space">
-            <span className="vc_empty_space_inner"></span>
-          </div>
-          <div className="vc_empty_space" style={{ height: "3.25rem" }}>
-            <span className="vc_empty_space_inner" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+import BreadCrumb from "../BreadCrumb";
 
 const About = () => {
   const location = useLocation();
@@ -57,7 +20,10 @@ const About = () => {
 
   return (
     <div>
-      <Header children={<Index />} pathname={location.pathname} />
+      <Header
+        children={<BreadCrumb text="About" />}
+        pathname={location.pathname}
+      />
       <div className="page_content_wrap scheme_default">
         <div className="content_wrap">
           <div className="content">
@@ -1088,9 +1054,12 @@ const About = () => {
                 </div>
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1 vc_col-xs-12 sc_layouts_column_icons_position_left">
-                    <div className="vc_column-inner" style={{
-                      padding: '0'
-                    }}>
+                    <div
+                      className="vc_column-inner"
+                      style={{
+                        padding: "0",
+                      }}
+                    >
                       <div className="wpb_wrapper">
                         <div className="vc_row wpb_row vc_inner vc_row-fluid">
                           <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 sc_layouts_column_icons_position_left">
@@ -1121,7 +1090,8 @@ const About = () => {
                                     <a
                                       href="https://business.facebook.com/ThemeRexStudio/"
                                       className="sc_icons_link"
-                                      target="_blank" rel="noreferrer"
+                                      target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -1163,7 +1133,8 @@ const About = () => {
                                     <a
                                       href="https://twitter.com/ThemerexThemes"
                                       className="sc_icons_link"
-                                      target="_blank" rel="noreferrer"
+                                      target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -1205,7 +1176,8 @@ const About = () => {
                                     <a
                                       href="https://www.instagram.com/themerex_net/"
                                       className="sc_icons_link"
-                                      target="_blank" rel="noreferrer"
+                                      target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>

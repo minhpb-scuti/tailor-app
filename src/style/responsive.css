@@ -199,7 +199,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 650px;
     }
 
@@ -587,7 +587,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 610px;
     }
 
@@ -683,7 +683,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 664px;
     }
 
@@ -816,7 +816,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 600px;
     }
 
@@ -1671,7 +1671,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 100%;
         float: none;
     }
@@ -3077,7 +3077,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 100%;
         float: none;
         margin-bottom: 0;
@@ -4887,7 +4887,7 @@
 
     /* Content and Sidebar */
 
-    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+    body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
         width: 100%;
         float: none;
     }

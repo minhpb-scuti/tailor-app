@@ -6,6 +6,7 @@ import ShopHomePage from "./component/ShopHomePage";
 import Appointment from "./component/Appointment";
 import About from "./component/About";
 import AboutUs from "./component/AboutUs";
+import Blog from "./component/Blog";
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/shop-homepage" element={<ShopHomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

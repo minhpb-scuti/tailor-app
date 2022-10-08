@@ -118,7 +118,7 @@
   margin: 0 !important;
 }
 
-.carousel-indicators>button {
+.carousel-indicators > button {
   background-color: rgba(190, 150, 103, 0.5) !important;
   width: 97px !important;
   height: 1px !important;
@@ -139,11 +139,76 @@ a {
   width: 240px;
 }
 
-.carousel-review .carousel-indicators>button {
+.carousel-review .carousel-indicators > button {
   width: 80px !important;
 }
 
-
-.vc_custom_1556716015243  {
+.vc_custom_1556716015243 {
   margin-bottom: 3.5em !important;
 }
+
+.carousel_custom .carousel-indicators {
+  display: none !important;
+}
+
+.carousel_custom .swiper-slide {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1440px) {
+  .carousel_custom .swiper-slide {
+    height: 410px;
+  }
+}
+
+@media only screen and (min-width: 1262px) and (max-width: 1440px) {
+  .carousel_custom .swiper-slide {
+    height: 365px;
+  }
+}
+
+@media only screen and (min-width: 1135px) and (max-width: 1262px) {
+  .carousel_custom .swiper-slide {
+    height: 343px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1135px) {
+  .carousel_custom .swiper-slide {
+    height: 373px;
+  }
+}
+
+@media only screen and (min-width: 959px) and (max-width: 1024px) {
+  .carousel_custom .swiper-slide {
+    height: 337px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  .carousel_custom .swiper-slide {
+    height: 398px;
+  }
+}
+
+@media only screen and (min-width: 639px) and (max-width: 767px) {
+  .carousel_custom .swiper-slide {
+    height: 337px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .carousel_custom .swiper-slide {
+    height: 247px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .carousel_custom .swiper-slide {
+    height: 168px;
+  }
+}
+

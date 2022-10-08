@@ -65008,7 +65008,7 @@ body.post-type-post .editor-block-list__layout .wp-block-media-text {
 }
 
 .petermason_loading {
-  /* background-image: url(//petermason.themerex.net/wp-content/themes/petermason/images/preloader.gif); */
+  background-image: url('../static/image/preloader.gif');
   background-position: center;
   background-repeat: no-repeat
 }
@@ -65078,9 +65078,9 @@ body.post-type-post .editor-block-list__layout .wp-block-media-text {
   position: relative
 }
 
-/* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
   width: 730px
-} */
+}
 
 .sidebar {
   width: 370px
@@ -67696,7 +67696,7 @@ body[class*=blog_style_classic] .nav-links-old {
   top: 9px;
   height: 9px;
   width: 138px;
-  /* background-image: url(/wp-content/uploads/2016/12/layer-785.png); */
+  background-image: url('../static/image/layer-785.webp');
   background-repeat: no-repeat
 }
 
@@ -82207,7 +82207,7 @@ body.trx_addons_cv {
 [class*=sc_item_title_style_].sc_align_default>.sc_item_subtitle:after,
 [class*=sc_item_title_style_].sc_align_left>.sc_item_subtitle:after,
 [class*=sc_item_title_style_].sc_align_center>.sc_item_subtitle:after {
-  /* background-image: url(/wp-content/uploads/2016/12/layer-785.png); */
+  background-image: url('../static/image/layer-785.webp');
   right: 0
 }
 
@@ -88759,9 +88759,9 @@ video.wp-video-shortcode {
     width: 750px
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 650px
-  } */
+  }
 
   .sidebar {
     width: 320px
@@ -89125,9 +89125,9 @@ video.wp-video-shortcode {
     width: 637.5px
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 610px
-  } */
+  }
 
   body.menu_style_side:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
     width: 550px
@@ -89215,9 +89215,9 @@ video.wp-video-shortcode {
     width: 678px
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 664px
-  } */
+  }
 
   body.menu_style_side:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
     width: 604px
@@ -89342,9 +89342,9 @@ video.wp-video-shortcode {
     width: 630px
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 600px
-  } */
+  }
 
   body.menu_style_side:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
     width: 540px
@@ -90156,10 +90156,10 @@ video.wp-video-shortcode {
     padding: .89em .5em .5em
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 100%;
     float: none
-  } */
+  }
 
   .sidebar {
     width: 100%;
@@ -91551,11 +91551,11 @@ video.wp-video-shortcode {
     width: 100%
   }
 
-  /* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 100%;
     float: none;
     margin-bottom: 0
-  } */
+  }
 
   .sidebar {
     width: 100%;
@@ -93309,11 +93309,11 @@ video.wp-video-shortcode {
     width: 225px
   }
 
-  /* 
-  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content {
+  
+  body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) .content_blog {
     width: 100%;
     float: none
-  } */
+  }
 
   .sidebar {
     width: 100%;
