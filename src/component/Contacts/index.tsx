@@ -177,7 +177,12 @@ const Contract = () => {
                 </div>
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1 vc_col-xs-12 sc_layouts_column_icons_position_left">
-                    <div className="vc_column-inner">
+                    <div
+                      className="vc_column-inner"
+                      style={{
+                        padding: "0",
+                      }}
+                    >
                       <div className="wpb_wrapper">
                         <div className="vc_row wpb_row vc_inner vc_row-fluid">
                           <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 sc_layouts_column_icons_position_left">

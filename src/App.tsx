@@ -5,6 +5,7 @@ import News from "./component/News";
 import ShopHomePage from "./component/ShopHomePage";
 import Appointment from "./component/Appointment";
 import About from "./component/About";
+import AboutUs from "./component/AboutUs";
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/shop-homepage" element={<ShopHomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );

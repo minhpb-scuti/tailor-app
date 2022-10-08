@@ -1,15 +1,11 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Layer2 from "../../static/image/2-layers.webp";
 import Service1 from "../../static/image/service-1.jpg";
 import Service2 from "../../static/image/service-2.jpg";
 import Service3 from "../../static/image/service-3.jpg";
 import Service4 from "../../static/image/service-4.jpg";
 import Bg15 from "../../static/image/background-15.webp";
-import Bg10 from "../../static/image/background-10.webp";
 import Bg17 from "../../static/image/background-17.webp";
-import Team1 from "../../static/image/team-1.webp";
-import Team2 from "../../static/image/team-2.webp";
-import Team3 from "../../static/image/team-3.webp";
 import Product1 from "../../static/image/product-1.webp";
 import Product2 from "../../static/image/product-2.webp";
 import Product3 from "../../static/image/product-3.webp";
@@ -25,18 +21,15 @@ import {
 import { useLocation } from "react-router-dom";
 import Social from "../Social";
 import Review from "../Review";
+import Story from "../Story";
+import Tailor from "../Tailor";
 const Home = () => {
   const location = useLocation();
 
   const [isPlayVideo, setIsPlayVideo] = useState<boolean>(false);
-  const [activeQuote, setActiveQuote] = useState<number>(1);
   const handleClickVideo = () => {
     setIsPlayVideo(true);
   };
-
-  const handleActiveQuote = useCallback((num: number) => {
-    setActiveQuote(num);
-  }, []);
 
   const { width } = useWindowDimensions();
   const contentWidth = getWidthContent(width);
@@ -48,9 +41,7 @@ const Home = () => {
       <div className="body_wrap">
         <div className="page_wrap">
           <Header
-            children={
-              <Slider height={getHeightCarousel(width)} />
-            }
+            children={<Slider height={getHeightCarousel(width)} />}
             pathname={location.pathname}
           />
           <div className="page_content_wrap scheme_default">
@@ -211,8 +202,6 @@ const Home = () => {
                       </div>
                     </div>
                     <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid"
                       style={{
                         position: "relative",
@@ -257,8 +246,6 @@ const Home = () => {
                     </div>
                     <div className="vc_row-full-width vc_clearfix" />
                     <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482405014156 vc_row-has-fill"
                       style={{
                         position: "relative",
@@ -518,8 +505,6 @@ const Home = () => {
                     </div>
                     <div className="vc_row-full-width vc_clearfix" />
                     <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482412998471 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex scheme_dark"
                       style={{
                         position: "relative",
@@ -625,8 +610,6 @@ const Home = () => {
                     </div>
                     <div className="vc_row-full-width vc_clearfix" />
                     <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid"
                       style={{
                         position: "relative",
@@ -792,8 +775,6 @@ const Home = () => {
                       </div>
                     </div>
                     <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid"
                       style={{
                         position: "relative",
@@ -837,344 +818,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className="vc_row-full-width vc_clearfix" />
-                    <div
-                      data-vc-full-width="true"
-                      data-vc-full-width-init="true"
-                      className="vc_row wpb_row vc_row-fluid vc_custom_1480509951164 vc_row-has-fill"
-                      style={{
-                        position: "relative",
-                        left: -(width - contentWidth) / 2,
-                        boxSizing: "border-box",
-                        width: width,
-                        maxWidth: width,
-                        paddingLeft: (width - contentWidth) / 2,
-                        paddingRight: (width - contentWidth) / 2,
-                      }}
-                    >
-                      <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div
-                              className="vc_empty_space height_small"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="vc_empty_space height_large"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="sc_team sc_team_default"
-                              data-slides-per-view={3}
-                              data-slides-min-width={150}
-                            >
-                              <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_2">
-                                <h6 className="sc_item_subtitle sc_team_subtitle sc_item_title_style_style_2">
-                                  Our tailors
-                                </h6>
-                              </div>
-                              <div className="sc_team_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
-                                <div className="trx_addons_column-1_3">
-                                  <div className="sc_team_item">
-                                    <div className="post_featured with_thumb hover_icon sc_team_item_thumb">
-                                      <img
-                                        src={Team1}
-                                        className="attachment-petermason-thumb-square size-petermason-thumb-square wp-post-image"
-                                        alt="Peter Mason"
-                                        loading="lazy"
-                                        width={400}
-                                        height={400}
-                                      />
-                                      <div className="mask" />
-                                      <div className="icons">
-                                        <a
-                                          href="/team/peter-mason/"
-                                          aria-hidden="true"
-                                          className="icon_plus"
-                                        >
-                                          +
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div className="sc_team_item_info">
-                                      <div className="sc_team_item_header">
-                                        <div className="sc_team_item_subtitle">
-                                          Master Tailor
-                                        </div>
-                                        <h4 className="sc_team_item_title">
-                                          <a href="/team/peter-mason/">
-                                            Peter Mason
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="sc_team_item_content">
-                                        <p>
-                                          Duis quis augue diam. Suspendisse in
-                                          vulputate ante. Aenean vulputate eros
-                                          nisl, in fringilla massa pretium a.
-                                          Nulla auctor urna sit amet tortor
-                                          vestibulum fringilla. Sed posuere
-                                          lorem id lacus facilisis, sed mattis
-                                          dolor dignissim. Cras nec tempus
-                                          lacus, vitae finibus tortor. Quisque
-                                          rhoncus dui nec metus tempus commodo.
-                                          Praesent id pulvinar mi, ac dictum
-                                          ipsum. Fusce sem felis, vehicula…
-                                        </p>
-                                      </div>
-                                      <div className="sc_team_item_socials">
-                                        <span className="social_item">
-                                          <a
-                                            href="https://business.facebook.com/ThemeRexStudio/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="social_icons social_facebook"
-                                          >
-                                            <span className="trx_addons_icon-facebook" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://twitter.com/ThemerexThemes"
-                                            target="_blank"
-                                            className="social_icons social_twitter"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-twitter" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://www.instagram.com/themerex_net/"
-                                            target="_blank"
-                                            className="social_icons social_instagram"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-instagram" />
-                                          </a>
-                                        </span>
-                                      </div>
-                                      <div className="sc_team_item_button">
-                                        <a
-                                          href="/team/peter-mason/"
-                                          className="sc_button sc_button_simple"
-                                        >
-                                          Learn more
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="trx_addons_column-1_3">
-                                  <div className="sc_team_item">
-                                    <div className="post_featured with_thumb hover_icon sc_team_item_thumb">
-                                      <img
-                                        src={Team2}
-                                        className="attachment-petermason-thumb-square size-petermason-thumb-square wp-post-image"
-                                        alt="Polly Wire"
-                                        loading="lazy"
-                                        width={400}
-                                        height={400}
-                                      />
-                                      <div className="mask" />
-                                      <div className="icons">
-                                        <a
-                                          href="/team/polly-wire/"
-                                          aria-hidden="true"
-                                          className="icon_plus"
-                                        >
-                                          +
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div className="sc_team_item_info">
-                                      <div className="sc_team_item_header">
-                                        <div className="sc_team_item_subtitle">
-                                          Tailor
-                                        </div>
-                                        <h4 className="sc_team_item_title">
-                                          <a href="/team/polly-wire/">
-                                            Polly Wire
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="sc_team_item_content">
-                                        <p>
-                                          Duis quis augue diam. Suspendisse in
-                                          vulputate ante. Aenean vulputate eros
-                                          nisl, in fringilla massa pretium a.
-                                          Nulla auctor urna sit amet tortor
-                                          vestibulum fringilla. Sed posuere
-                                          lorem id lacus facilisis, sed mattis
-                                          dolor dignissim. Cras nec tempus
-                                          lacus, vitae finibus tortor. Quisque
-                                          rhoncus dui nec metus tempus commodo.
-                                          Praesent id pulvinar mi, ac dictum
-                                          ipsum. Fusce sem felis, vehicula…
-                                        </p>
-                                      </div>
-                                      <div className="sc_team_item_socials">
-                                        <span className="social_item">
-                                          <a
-                                            href="https://business.facebook.com/ThemeRexStudio/"
-                                            target="_blank"
-                                            className="social_icons social_facebook"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-facebook" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://twitter.com/ThemerexThemes"
-                                            target="_blank"
-                                            className="social_icons social_twitter"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-twitter" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://www.instagram.com/themerex_net/"
-                                            target="_blank"
-                                            className="social_icons social_instagram"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-instagram" />
-                                          </a>
-                                        </span>
-                                      </div>
-                                      <div className="sc_team_item_button">
-                                        <a
-                                          href="/team/polly-wire/"
-                                          className="sc_button sc_button_simple"
-                                        >
-                                          Learn more
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="trx_addons_column-1_3">
-                                  <div className="sc_team_item">
-                                    <div className="post_featured with_thumb hover_icon sc_team_item_thumb">
-                                      <img
-                                        src={Team3}
-                                        className="attachment-petermason-thumb-square size-petermason-thumb-square wp-post-image"
-                                        alt="Rebecca Ogle"
-                                        loading="lazy"
-                                        width={400}
-                                        height={400}
-                                      />
-                                      <div className="mask" />
-                                      <div className="icons">
-                                        <a
-                                          href="/team/rebecca-ogle/"
-                                          aria-hidden="true"
-                                          className="icon_plus"
-                                        >
-                                          +
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div className="sc_team_item_info">
-                                      <div className="sc_team_item_header">
-                                        <div className="sc_team_item_subtitle">
-                                          Tailor
-                                        </div>
-                                        <h4 className="sc_team_item_title">
-                                          <a href="/team/rebecca-ogle/">
-                                            Rebecca Ogle
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="sc_team_item_content">
-                                        <p>
-                                          Duis quis augue diam. Suspendisse in
-                                          vulputate ante. Aenean vulputate eros
-                                          nisl, in fringilla massa pretium a.
-                                          Nulla auctor urna sit amet tortor
-                                          vestibulum fringilla. Sed posuere
-                                          lorem id lacus facilisis, sed mattis
-                                          dolor dignissim. Cras nec tempus
-                                          lacus, vitae finibus tortor. Quisque
-                                          rhoncus dui nec metus tempus commodo.
-                                          Praesent id pulvinar mi, ac dictum
-                                          ipsum. Fusce sem felis, vehicula…
-                                        </p>
-                                      </div>
-                                      <div className="sc_team_item_socials">
-                                        <span className="social_item">
-                                          <a
-                                            href="https://business.facebook.com/ThemeRexStudio/"
-                                            target="_blank"
-                                            className="social_icons social_facebook"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-facebook" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://twitter.com/ThemerexThemes"
-                                            target="_blank"
-                                            className="social_icons social_twitter"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-twitter" />
-                                          </a>
-                                        </span>
-                                        <span className="social_item">
-                                          <a
-                                            href="https://www.instagram.com/themerex_net/"
-                                            target="_blank"
-                                            className="social_icons social_instagram"
-                                            rel="noreferrer"
-                                          >
-                                            <span className="trx_addons_icon-instagram" />
-                                          </a>
-                                        </span>
-                                      </div>
-                                      <div className="sc_team_item_button">
-                                        <a
-                                          href="/team/rebecca-ogle/"
-                                          className="sc_button sc_button_simple"
-                                        >
-                                          Learn more
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            {/* /.sc_team */}
-                            <div
-                              className="vc_empty_space height_tiny"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="vc_empty_space height_small"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="vc_empty_space height_small"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <Tailor width={width} contentWidth={contentWidth} />
                     <div className="vc_row-full-width vc_clearfix" />
                     <Review width={width} contentWidth={contentWidth} />
                     <div className="vc_row-full-width vc_clearfix" />
@@ -1198,367 +842,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="vc_row wpb_row vc_row-fluid">
-                      <div className="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column_icons_position_left">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div
-                              className="vc_empty_space"
-                              style={{ height: "0.5rem" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              id="sc_title_678103227"
-                              className="sc_title sc_title_default"
-                            >
-                              <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_default">
-                                our story
-                              </h2>
-                            </div>
-                            {/* /.sc_title */}
-                            <div
-                              className="vc_empty_space"
-                              style={{ height: "1.1rem" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="vc_empty_space height_small"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div
-                              className="vc_tta-container"
-                              data-vc-action="collapse"
-                            >
-                              <div className="vc_general vc_tta vc_tta-tabs vc_tta-color-grey vc_tta-style-modern vc_tta-shape-square vc_tta-o-shape-group vc_tta-tabs-position-bottom vc_tta-controls-align-center">
-                                <div className="vc_tta-panels-container">
-                                  <div className="vc_tta-panels">
-                                    <div
-                                      className={`vc_tta-panel ${
-                                        activeQuote === 1 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <div className="vc_tta-panel-heading">
-                                        <h4 className="vc_tta-panel-title">
-                                          <a
-                                            href="#1482331744414-7dfde362-88a0"
-                                            data-vc-accordion
-                                            data-vc-container=".vc_tta-container"
-                                          >
-                                            <i className="vc_tta-icon fas fa-adjust" />
-                                            <span className="vc_tta-title-text">
-                                              1986
-                                            </span>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="vc_tta-panel-body">
-                                        <div className="wpb_text_column wpb_content_element">
-                                          <div className="wpb_wrapper">
-                                            <p style={{ textAlign: "center" }}>
-                                              Since our beginning in 1900 our
-                                              goal has always been to create
-                                              men’s clothing that looks great,
-                                              fits perfectly, made from the
-                                              world’s best fabric mills and is
-                                              good value for money. Peter
-                                              Mason’s success is built on
-                                              understanding the principles of
-                                              classic tailoring, combining them
-                                              with modern designs and
-                                              technology.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className={`vc_tta-panel ${
-                                        activeQuote === 2 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <div className="vc_tta-panel-heading">
-                                        <h4 className="vc_tta-panel-title">
-                                          <a
-                                            href="#1482331744462-3b6a67fa-a4d2"
-                                            data-vc-accordion
-                                            data-vc-container=".vc_tta-container"
-                                          >
-                                            <i className="vc_tta-icon fas fa-adjust" />
-                                            <span className="vc_tta-title-text">
-                                              1987
-                                            </span>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="vc_tta-panel-body">
-                                        <div className="wpb_text_column wpb_content_element">
-                                          <div className="wpb_wrapper">
-                                            <p style={{ textAlign: "center" }}>
-                                              Since our beginning in 1900 our
-                                              goal has always been to create
-                                              men’s clothing that looks great,
-                                              fits perfectly, made from the
-                                              world’s best fabric mills and is
-                                              good value for money. Peter
-                                              Mason’s success is built on
-                                              understanding the principles of
-                                              classic tailoring, combining them
-                                              with modern designs and
-                                              technology.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className={`vc_tta-panel ${
-                                        activeQuote === 3 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <div className="vc_tta-panel-heading">
-                                        <h4 className="vc_tta-panel-title">
-                                          <a
-                                            href="#1482332530928-22fdcd7e-6b15"
-                                            data-vc-accordion
-                                            data-vc-container=".vc_tta-container"
-                                          >
-                                            <i className="vc_tta-icon fas fa-adjust" />
-                                            <span className="vc_tta-title-text">
-                                              1988
-                                            </span>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="vc_tta-panel-body">
-                                        <div className="wpb_text_column wpb_content_element">
-                                          <div className="wpb_wrapper">
-                                            <p style={{ textAlign: "center" }}>
-                                              Since our beginning in 1900 our
-                                              goal has always been to create
-                                              men’s clothing that looks great,
-                                              fits perfectly, made from the
-                                              world’s best fabric mills and is
-                                              good value for money. Peter
-                                              Mason’s success is built on
-                                              understanding the principles of
-                                              classic tailoring, combining them
-                                              with modern designs and
-                                              technology.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className={`vc_tta-panel ${
-                                        activeQuote === 4 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <div className="vc_tta-panel-heading">
-                                        <h4 className="vc_tta-panel-title">
-                                          <a
-                                            href="#1482332875645-02b0ab42-3a6e"
-                                            data-vc-accordion
-                                            data-vc-container=".vc_tta-container"
-                                          >
-                                            <i className="vc_tta-icon fas fa-adjust" />
-                                            <span className="vc_tta-title-text">
-                                              1989
-                                            </span>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="vc_tta-panel-body">
-                                        <div className="wpb_text_column wpb_content_element">
-                                          <div className="wpb_wrapper">
-                                            <p style={{ textAlign: "center" }}>
-                                              Since our beginning in 1900 our
-                                              goal has always been to create
-                                              men’s clothing that looks great,
-                                              fits perfectly, made from the
-                                              world’s best fabric mills and is
-                                              good value for money. Peter
-                                              Mason’s success is built on
-                                              understanding the principles of
-                                              classic tailoring, combining them
-                                              with modern designs and
-                                              technology.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      className={`vc_tta-panel ${
-                                        activeQuote === 5 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <div className="vc_tta-panel-heading">
-                                        <h4 className="vc_tta-panel-title">
-                                          <a
-                                            href="#1482332874984-5ce70ca8-d16f"
-                                            data-vc-accordion
-                                            data-vc-container=".vc_tta-container"
-                                          >
-                                            <i className="vc_tta-icon fas fa-adjust" />
-                                            <span className="vc_tta-title-text">
-                                              1990
-                                            </span>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div className="vc_tta-panel-body">
-                                        <div className="wpb_text_column wpb_content_element">
-                                          <div className="wpb_wrapper">
-                                            <p style={{ textAlign: "center" }}>
-                                              Since our beginning in 1900 our
-                                              goal has always been to create
-                                              men’s clothing that looks great,
-                                              fits perfectly, made from the
-                                              world’s best fabric mills and is
-                                              good value for money. Peter
-                                              Mason’s success is built on
-                                              understanding the principles of
-                                              classic tailoring, combining them
-                                              with modern designs and
-                                              technology.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="vc_tta-tabs-container">
-                                  <ul className="vc_tta-tabs-list">
-                                    <li
-                                      className={`vc_tta-tab ${
-                                        activeQuote === 1 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <a
-                                        href="#1482331744414-7dfde362-88a0"
-                                        onClick={() => handleActiveQuote(1)}
-                                      >
-                                        <i className="vc_tta-icon fas fa-adjust" />
-                                        <span className="vc_tta-title-text">
-                                          1986
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      className={`vc_tta-tab ${
-                                        activeQuote === 2 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <a
-                                        href="#1482331744414-7dfde362-88a0"
-                                        onClick={() => handleActiveQuote(2)}
-                                      >
-                                        <i className="vc_tta-icon fas fa-adjust" />
-                                        <span className="vc_tta-title-text">
-                                          1987
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      className={`vc_tta-tab ${
-                                        activeQuote === 3 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <a
-                                        href="#1482331744414-7dfde362-88a0"
-                                        onClick={() => handleActiveQuote(3)}
-                                      >
-                                        <i className="vc_tta-icon fas fa-adjust" />
-                                        <span className="vc_tta-title-text">
-                                          1988
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      className={`vc_tta-tab ${
-                                        activeQuote === 4 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <a
-                                        href="#1482331744414-7dfde362-88a0"
-                                        onClick={() => handleActiveQuote(4)}
-                                      >
-                                        <i className="vc_tta-icon fas fa-adjust" />
-                                        <span className="vc_tta-title-text">
-                                          1989
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      className={`vc_tta-tab ${
-                                        activeQuote === 5 ? "vc_active" : ""
-                                      }`}
-                                    >
-                                      <a
-                                        href="#1482331744414-7dfde362-88a0"
-                                        onClick={() => handleActiveQuote(5)}
-                                      >
-                                        <i className="vc_tta-icon fas fa-adjust" />
-                                        <span className="vc_tta-title-text">
-                                          1990
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="vc_empty_space height_small"
-                              style={{ height: "0px" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column_icons_position_left">
-                        <div className="vc_column-inner">
-                          <div className="wpb_wrapper">
-                            <div
-                              className="vc_empty_space"
-                              style={{ height: "0.6rem" }}
-                            >
-                              <span className="vc_empty_space_inner" />
-                            </div>
-                            <div className="vc_row wpb_row vc_inner vc_row-fluid">
-                              <div className="wpb_column vc_column_container vc_col-sm-12 vc_col-md-offset-1 vc_col-md-11 sc_layouts_column_icons_position_left">
-                                <div className="vc_column-inner">
-                                  <div className="wpb_wrapper">
-                                    <div className="wpb_single_image wpb_content_element vc_align_center">
-                                      <figure className="wpb_wrapper vc_figure">
-                                        <div className="vc_single_image-wrapper vc_box_border_grey">
-                                          <img
-                                            src={Bg10}
-                                            className="vc_single_image-img attachment-full"
-                                            alt=""
-                                            loading="lazy"
-                                            title="background-10"
-                                            width={505}
-                                            height={396}
-                                          />
-                                        </div>
-                                      </figure>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <Story />
                     <div className="vc_row wpb_row vc_row-fluid">
                       <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
                         <div className="vc_column-inner">

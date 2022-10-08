@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import AboutUs from "../../static/image/black-white-5.webp";
+import Image18 from "../../static/image/image-18.jpg";
+import Image21 from "../../static/image/image-21.jpg";
+import Image17 from "../../static/image/image-17.webp";
+import Image5 from "../../static/image/image-5.webp";
+import { getWidthContent, useWindowDimensions } from "../../customHook";
+import Review from "../Review";
 
 export const Index = () => (
   <div className="vc_row wpb_row vc_row-fluid sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage">
@@ -43,6 +50,11 @@ export const Index = () => (
 
 const About = () => {
   const location = useLocation();
+  const { width } = useWindowDimensions();
+  const contentWidth = getWidthContent(width);
+
+  useEffect(() => {}, [width]);
+
   return (
     <div>
       <Header children={<Index />} pathname={location.pathname} />
@@ -100,17 +112,11 @@ const About = () => {
                           <figure className="wpb_wrapper vc_figure">
                             <div className="vc_single_image-wrapper vc_box_border_grey">
                               <img
-                                src="a_data_002/black-white-5.webp"
+                                src={AboutUs}
                                 className="vc_single_image-img attachment-full"
                                 alt=""
                                 loading="lazy"
                                 title="black-white-5"
-                                srcSet="
-                                    a_data_002/black-white-5.webp        470w,
-                                    a_data_002/black-white-5-300x282.jpg 300w,
-                                    a_data_002/black-white-5-370x348.jpg 370w
-                                  "
-                                sizes="(max-width: 470px) 100vw, 470px"
                                 width={470}
                                 height={442}
                               />
@@ -178,7 +184,7 @@ const About = () => {
                                 </div>
                                 <div className="sc_item_button sc_button_wrap">
                                   <a
-                                    href="https://petermason.themerex.net/about-us/"
+                                    href="about-us/"
                                     id="sc_button_470468405"
                                     className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                                   >
@@ -238,235 +244,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div
-                  data-vc-full-width="true"
-                  data-vc-full-width-init="true"
-                  data-vc-stretch-content="true"
-                  className="vc_row wpb_row vc_row-fluid vc_custom_1482321169790 vc_row-has-fill scheme_dark"
-                  style={{
-                    position: "relative",
-                    left: "-120px",
-                    boxSizing: "border-box",
-                    width: "1440px",
-                    maxWidth: "1440px",
-                  }}
-                >
-                  <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-                    <div className="vc_column-inner">
-                      <div className="wpb_wrapper">
-                        <div
-                          className="vc_empty_space height_small"
-                          style={{ height: "0px" }}
-                        >
-                          <span className="vc_empty_space_inner" />
-                        </div>
-                        <div
-                          className="vc_empty_space height_large"
-                          style={{ height: "0px" }}
-                        >
-                          <span className="vc_empty_space_inner" />
-                        </div>
-                        <div
-                          className="sc_testimonials sc_testimonials_default swiper-slider-container slider_swiper slider_noresize slider_controls slider_pagination swiper_006549855732963128 inited swiper-container-horizontal"
-                          data-slides-min-width={150}
-                          id="swiper_006549855732963128"
-                          style={{
-                            display: "block",
-                            opacity: 1,
-                            cursor: "grab",
-                          }}
-                          data-slides-per-view={1}
-                          data-busy={0}
-                          data-ratio="1170:215.367"
-                        >
-                          <h2 className="sc_item_title sc_testimonials_title sc_align_center sc_item_title_style_default">
-                            Testimonials
-                          </h2>
-                          <div
-                            className="sc_testimonials_slider sc_item_slider slides swiper-wrapper"
-                            style={{
-                              transform: "translate3d(-2820px, 0px, 0px)",
-                              transitionDuration: "0ms",
-                            }}
-                          >
-                            <div
-                              className="swiper-slide swiper-slide-duplicate"
-                              data-slide-number={2}
-                              data-swiper-slide-index={2}
-                              style={{ width: "1410px" }}
-                            >
-                              <div className="sc_testimonials_item">
-                                <div className="sc_testimonials_item_content">
-                                  <p>
-                                    This is by far the best suit I ’ve owned,
-                                    and I’ve owned custom made suits before. The
-                                    suit from Peter Mason fit like a glove. So
-                                    did the shirt I ordered. I recommend booking
-                                    an appointment to get measured properly and
-                                    to choose your own fabric. You are the best!
-                                  </p>
-                                </div>
-                                <div className="sc_testimonials_item_author">
-                                  <div className="sc_testimonials_item_author_data">
-                                    <h4 className="sc_testimonials_item_author_title">
-                                      Frankie Morales
-                                    </h4>
-                                    <div className="sc_testimonials_item_author_subtitle" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="swiper-slide swiper-slide-prev"
-                              data-slide-number={0}
-                              data-swiper-slide-index={0}
-                              style={{ width: "1410px" }}
-                            >
-                              <div className="sc_testimonials_item">
-                                <div className="sc_testimonials_item_content">
-                                  <p>
-                                    Trying my suit on for the first time was a
-                                    really special moment. How it felt to wear
-                                    and how it made me feel was amazing. Thank
-                                    you so much for my wedding suit. Very
-                                    enjoyable experience. On the big day the
-                                    suits looked great and we had many positive
-                                    comments.
-                                  </p>
-                                </div>
-                                <div className="sc_testimonials_item_author">
-                                  <div className="sc_testimonials_item_author_data">
-                                    <h4 className="sc_testimonials_item_author_title">
-                                      Peter Hobden
-                                    </h4>
-                                    <div className="sc_testimonials_item_author_subtitle" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="swiper-slide swiper-slide-active"
-                              data-slide-number={1}
-                              data-swiper-slide-index={1}
-                              style={{ width: "1410px" }}
-                            >
-                              <div className="sc_testimonials_item">
-                                <div className="sc_testimonials_item_content">
-                                  <p>
-                                    Hi, I just wanted to let you know that I
-                                    received the suit this week and I love it.
-                                    It’s been beautifully made and every detail
-                                    is perfect. Please pass on my appreciation
-                                    to the tailor and the team that made it.
-                                    Thank you guys, you are the best. I will
-                                    recommend you.
-                                  </p>
-                                </div>
-                                <div className="sc_testimonials_item_author">
-                                  <div className="sc_testimonials_item_author_data">
-                                    <h4 className="sc_testimonials_item_author_title">
-                                      Richard Romero
-                                    </h4>
-                                    <div className="sc_testimonials_item_author_subtitle" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="swiper-slide swiper-slide-next"
-                              data-slide-number={2}
-                              data-swiper-slide-index={2}
-                              style={{ width: "1410px" }}
-                            >
-                              <div className="sc_testimonials_item">
-                                <div className="sc_testimonials_item_content">
-                                  <p>
-                                    This is by far the best suit I ’ve owned,
-                                    and I’ve owned custom made suits before. The
-                                    suit from Peter Mason fit like a glove. So
-                                    did the shirt I ordered. I recommend booking
-                                    an appointment to get measured properly and
-                                    to choose your own fabric. You are the best!
-                                  </p>
-                                </div>
-                                <div className="sc_testimonials_item_author">
-                                  <div className="sc_testimonials_item_author_data">
-                                    <h4 className="sc_testimonials_item_author_title">
-                                      Frankie Morales
-                                    </h4>
-                                    <div className="sc_testimonials_item_author_subtitle" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className="swiper-slide swiper-slide-duplicate"
-                              data-slide-number={0}
-                              data-swiper-slide-index={0}
-                              style={{ width: "1410px" }}
-                            >
-                              <div className="sc_testimonials_item">
-                                <div className="sc_testimonials_item_content">
-                                  <p>
-                                    Trying my suit on for the first time was a
-                                    really special moment. How it felt to wear
-                                    and how it made me feel was amazing. Thank
-                                    you so much for my wedding suit. Very
-                                    enjoyable experience. On the big day the
-                                    suits looked great and we had many positive
-                                    comments.
-                                  </p>
-                                </div>
-                                <div className="sc_testimonials_item_author">
-                                  <div className="sc_testimonials_item_author_data">
-                                    <h4 className="sc_testimonials_item_author_title">
-                                      Peter Hobden
-                                    </h4>
-                                    <div className="sc_testimonials_item_author_subtitle" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="slider_controls_wrap">
-                            <a
-                              className="slider_prev swiper-button-prev"
-                              href="#"
-                            />
-                            <a
-                              className="slider_next swiper-button-next"
-                              href="#"
-                            />
-                          </div>
-                          <div className="slider_pagination_wrap swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                            <span className="swiper-pagination-bullet" />
-                            <span className="swiper-pagination-bullet swiper-pagination-bullet-active" />
-                            <span className="swiper-pagination-bullet" />
-                          </div>
-                        </div>
-                        {/* /.sc_testimonials */}
-                        <div
-                          className="vc_empty_space height_tiny"
-                          style={{ height: "0px" }}
-                        >
-                          <span className="vc_empty_space_inner" />
-                        </div>
-                        <div
-                          className="vc_empty_space height_small"
-                          style={{ height: "0px" }}
-                        >
-                          <span className="vc_empty_space_inner" />
-                        </div>
-                        <div
-                          className="vc_empty_space height_medium"
-                          style={{ height: "0px" }}
-                        >
-                          <span className="vc_empty_space_inner" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Review width={width} contentWidth={contentWidth} />
                 <div className="vc_row-full-width vc_clearfix" />
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -641,11 +419,16 @@ const About = () => {
                                             width={740}
                                             height={1024}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-21-740x1024.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-21-740x1024.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url("https://petermason.themerex.net/wp-content/uploads/2016/09/image-21-740x1024.jpg")', opacity: 1, visibility: 'inherit', transform: 'translate3d(
-                                                  0px,
-                                                  0px,
-                                                  0px
-                                                )'}} /> */}
+                                          <div
+                                            className="esg-media-poster"
+                                            style={{
+                                              opacity: 1,
+                                              visibility: "inherit",
+                                              backgroundImage: `url(${Image21})`,
+                                              transform:
+                                                "translate3d(0px, 0px, 0px)",
+                                            }}
+                                          />
                                         </div>
                                       </div>
                                       <div
@@ -689,7 +472,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-142"
-                                              href="https://petermason.themerex.net/3-winning-suit-styles-for-fall-2016/"
+                                              href="3-winning-suit-styles-for-fall-2016/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -704,10 +487,6 @@ const About = () => {
                                     id="eg-3-post-id-145_6603"
                                     data-skin="custom_skin_1"
                                     className="filterall filter-life-style eg-custom_skin_1-wrapper eg-post-id-145 tp-esg-item itemtoshow isvisiblenow eg-item-in-focus"
-                                    data-date={1475141317}
-                                    data-cobblesw={2}
-                                    data-cobblesh={2}
-                                    data-piig="true"
                                     style={{
                                       opacity: 1,
                                       visibility: "inherit",
@@ -734,11 +513,16 @@ const About = () => {
                                             width={1024}
                                             height={612}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-5-1024x612.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-5-1024x612.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url("https://petermason.themerex.net/wp-content/uploads/2016/11/image-5-1024x612.jpg")', opacity: 1, visibility: 'inherit', transform: 'translate3d(
-                                                  0px,
-                                                  0px,
-                                                  0px
-                                                )'}} /> */}
+                                          <div
+                                            className="esg-media-poster"
+                                            style={{
+                                              opacity: 1,
+                                              visibility: "inherit",
+                                              backgroundImage: `url(${Image5})`,
+                                              transform:
+                                                "translate3d(0px, 0px, 0px)",
+                                            }}
+                                          />
                                         </div>
                                       </div>
                                       <div
@@ -785,7 +569,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-145"
-                                              href="https://petermason.themerex.net/three-piece-suits-top-3-advantages/"
+                                              href="three-piece-suits-top-3-advantages/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -800,10 +584,6 @@ const About = () => {
                                     id="eg-3-post-id-148_599"
                                     data-skin="custom_skin_1"
                                     className="filterall filter-life-style eg-custom_skin_1-wrapper eg-post-id-148 tp-esg-item itemtoshow isvisiblenow"
-                                    data-date={1475141392}
-                                    data-cobblesw={1}
-                                    data-cobblesh={1}
-                                    data-piig="true"
                                     style={{
                                       opacity: 1,
                                       visibility: "inherit",
@@ -830,11 +610,16 @@ const About = () => {
                                             width={1024}
                                             height={540}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-17-1024x540.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-17-1024x540.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url("https://petermason.themerex.net/wp-content/uploads/2016/09/image-17-1024x540.jpg")', opacity: 1, visibility: 'inherit', transform: 'translate3d(
-                                                  0px,
-                                                  0px,
-                                                  0px
-                                                )'}} /> */}
+                                          <div
+                                            className="esg-media-poster"
+                                            style={{
+                                              opacity: 1,
+                                              visibility: "inherit",
+                                              backgroundImage: `url(${Image17})`,
+                                              transform:
+                                                "translate3d(0px, 0px, 0px)",
+                                            }}
+                                          />
                                         </div>
                                       </div>
                                       <div
@@ -878,7 +663,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-148"
-                                              href="https://petermason.themerex.net/do-you-really-need-a-tailor-made-suit/"
+                                              href="do-you-really-need-a-tailor-made-suit/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -893,10 +678,6 @@ const About = () => {
                                     id="eg-3-post-id-151_9869"
                                     data-skin="custom_skin_1"
                                     className="filterall filter-life-style eg-custom_skin_1-wrapper eg-post-id-151 tp-esg-item itemtoshow isvisiblenow"
-                                    data-date={1475141440}
-                                    data-cobblesw={1}
-                                    data-cobblesh={1}
-                                    data-piig="true"
                                     style={{
                                       opacity: 1,
                                       visibility: "inherit",
@@ -915,12 +696,16 @@ const About = () => {
                                           className="esg-entry-media"
                                           style={{ paddingBottom: "50%" }}
                                         >
-                                          {/* <img src="a_data_002/image-18-1024x590.jpg" data-no-lazy={1} alt="" style={{display: 'none'}} width={1024} height={590} />
-                                          <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-18-1024x590.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/09/image-18-1024x590.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url("https://petermason.themerex.net/wp-content/uploads/2016/09/image-18-1024x590.jpg")', opacity: 1, visibility: 'inherit', transform: 'translate3d(
-                                                  0px,
-                                                  0px,
-                                                  0px
-                                                )'}} /> */}
+                                          <div
+                                            className="esg-media-poster"
+                                            style={{
+                                              opacity: 1,
+                                              visibility: "inherit",
+                                              backgroundImage: `url(${Image18})`,
+                                              transform:
+                                                "translate3d(0px, 0px, 0px)",
+                                            }}
+                                          />
                                         </div>
                                       </div>
                                       <div
@@ -964,7 +749,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-151"
-                                              href="https://petermason.themerex.net/5-benefits-of-buying-custom-made-suits/"
+                                              href="5-benefits-of-buying-custom-made-suits/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -1003,7 +788,7 @@ const About = () => {
                                             width={1024}
                                             height={683}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-14-1024x683.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-14-1024x683.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(https://petermason.themerex.net/wp-content/uploads/2016/11/image-14-1024x683.jpg)'}} /> */}
+                                          {/* <div className="esg-media-poster" src="wp-content/uploads/2016/11/image-14-1024x683.jpg" data-src="wp-content/uploads/2016/11/image-14-1024x683.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(wp-content/uploads/2016/11/image-14-1024x683.jpg)'}} /> */}
                                         </div>
                                       </div>
                                       <div
@@ -1043,7 +828,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-156"
-                                              href="https://petermason.themerex.net/modern-groomsmen-attire-ideas-for-2016/"
+                                              href="modern-groomsmen-attire-ideas-for-2016/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -1082,7 +867,7 @@ const About = () => {
                                             width={1024}
                                             height={576}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-11-1024x576.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-11-1024x576.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(https://petermason.themerex.net/wp-content/uploads/2016/11/image-11-1024x576.jpg)'}} /> */}
+                                          {/* <div className="esg-media-poster" src="wp-content/uploads/2016/11/image-11-1024x576.jpg" data-src="wp-content/uploads/2016/11/image-11-1024x576.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(wp-content/uploads/2016/11/image-11-1024x576.jpg)'}} /> */}
                                         </div>
                                       </div>
                                       <div
@@ -1122,7 +907,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-158"
-                                              href="https://petermason.themerex.net/custom-fitted-shirts-are-made-to-fit-only-you/"
+                                              href="custom-fitted-shirts-are-made-to-fit-only-you/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -1161,7 +946,7 @@ const About = () => {
                                             width={1024}
                                             height={581}
                                           />
-                                          {/* <div className="esg-media-poster" src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-1-1024x581.jpg" data-src="https://petermason.themerex.net/wp-content/uploads/2016/11/image-1-1024x581.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(https://petermason.themerex.net/wp-content/uploads/2016/11/image-1-1024x581.jpg)'}} /> */}
+                                          {/* <div className="esg-media-poster" src="wp-content/uploads/2016/11/image-1-1024x581.jpg" data-src="wp-content/uploads/2016/11/image-1-1024x581.jpg" data-lazythumb="undefined" style={{backgroundImage: 'url(wp-content/uploads/2016/11/image-1-1024x581.jpg)'}} /> */}
                                         </div>
                                       </div>
                                       <div
@@ -1303,7 +1088,9 @@ const About = () => {
                 </div>
                 <div className="vc_row wpb_row vc_row-fluid">
                   <div className="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1 vc_col-xs-12 sc_layouts_column_icons_position_left">
-                    <div className="vc_column-inner">
+                    <div className="vc_column-inner" style={{
+                      padding: '0'
+                    }}>
                       <div className="wpb_wrapper">
                         <div className="vc_row wpb_row vc_inner vc_row-fluid">
                           <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 sc_layouts_column_icons_position_left">
@@ -1334,7 +1121,7 @@ const About = () => {
                                     <a
                                       href="https://business.facebook.com/ThemeRexStudio/"
                                       className="sc_icons_link"
-                                      target="_blank"
+                                      target="_blank" rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -1376,7 +1163,7 @@ const About = () => {
                                     <a
                                       href="https://twitter.com/ThemerexThemes"
                                       className="sc_icons_link"
-                                      target="_blank"
+                                      target="_blank" rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -1418,7 +1205,7 @@ const About = () => {
                                     <a
                                       href="https://www.instagram.com/themerex_net/"
                                       className="sc_icons_link"
-                                      target="_blank"
+                                      target="_blank" rel="noreferrer"
                                     />
                                   </div>
                                 </div>

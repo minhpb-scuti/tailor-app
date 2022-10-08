@@ -30273,7 +30273,7 @@ body.error404 .sc_layouts_hide_on_frontpage {
 
 .sc_icons .sc_icons_title span,
 .sc_icons .sc_icons_description span {
-  display: block
+  display: block;
 }
 
 .sc_icons .sc_icons_link {
@@ -78823,7 +78823,7 @@ html:not(.js_active) .post_featured.hover_icons {
 
 .post_featured.hover_icon .icons a,
 .post_featured.hover_icons .icons a {
-  position: absolute;
+  position: absolute !important;
   z-index: 10;
   left: 50%;
   top: 50%;
@@ -78862,7 +78862,7 @@ html:not(.js_active) .post_featured.hover_icons {
 }
 
 .post_featured.hover_icon .icons a {
-  font-size: 4em;
+  font-size: 3em;
   margin-left: 0
 }
 
@@ -78911,7 +78911,7 @@ html:not(.js_active) .post_featured.hover_icons {
   height: 40px;
   border: 1px solid #ddd;
   position: absolute;
-  top: 50%;
+  top: 56%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -116093,9 +116093,9 @@ rs-loader.spinner15 .rs-spinner-inner:last-child {
   background-repeat: no-repeat;
   background-attachment: fixed;
 } */
-html {
+/* html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #545454;
-}
+} */

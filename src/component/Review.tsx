@@ -137,12 +137,12 @@ const Review = (props: IReview) => {
             >
               <span className="vc_empty_space_inner" />
             </div>
-            <div
+            {/* <div
               className="vc_empty_space height_medium"
               style={{ height: "0px" }}
             >
               <span className="vc_empty_space_inner" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
