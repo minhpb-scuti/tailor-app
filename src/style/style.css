@@ -1927,10 +1927,10 @@ figure.wp-block-gallery {
 }
 
 /* Content and Sidebar */
-body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen)
+/* body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen)
   .content {
   width: 730px;
-}
+} */
 .sidebar {
   width: 370px;
 }
