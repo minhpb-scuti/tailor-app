@@ -13,8 +13,18 @@ let isHovering = false;
 const Index = (props: IHeader) => {
   const { children, pathname } = props;
   const [isShowCart, setIsShowCart] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
+  const [selectOpen, setSelectOpen] = useState<string>("");
   const [hover, setHover] = useState("leave");
   const scroll = useScrollHandler();
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
+  const handleSelectOpen = (select: string) => {
+    setSelectOpen(select);
+  };
 
   const handleMouseEnter = () => {
     isHovering = true;
@@ -246,7 +256,7 @@ const Index = (props: IHeader) => {
                                       handleHoverLeave();
                                     }}
                                   >
-                                    <a href="/#" className="sf-with-ul">
+                                    <a href="#" className="sf-with-ul">
                                       <span>Home</span>
                                     </a>
                                     <ul
@@ -308,7 +318,7 @@ const Index = (props: IHeader) => {
                                       handleHoverLeave();
                                     }}
                                   >
-                                    <a href="/#" className="sf-with-ul">
+                                    <a href="#" className="sf-with-ul">
                                       <span>Features</span>
                                     </a>
                                     <ul
@@ -330,7 +340,7 @@ const Index = (props: IHeader) => {
                                         id="menu-item-180"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"
                                       >
-                                        <a href="/#" className="sf-with-ul">
+                                        <a href="#" className="sf-with-ul">
                                           <span>Pages</span>
                                         </a>
                                         <ul
@@ -341,7 +351,7 @@ const Index = (props: IHeader) => {
                                             id="menu-item-181"
                                             className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"
                                           >
-                                            <a href="/#" className="sf-with-ul">
+                                            <a href="#" className="sf-with-ul">
                                               <span>Gallery</span>
                                             </a>
                                             <ul
@@ -404,7 +414,7 @@ const Index = (props: IHeader) => {
                                         id="menu-item-42"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-42"
                                       >
-                                        <a href="/#" className="sf-with-ul">
+                                        <a href="#" className="sf-with-ul">
                                           <span>Tools</span>
                                         </a>
                                         <ul
@@ -469,7 +479,7 @@ const Index = (props: IHeader) => {
                                       handleHoverLeave();
                                     }}
                                   >
-                                    <a href="/#" className="sf-with-ul">
+                                    <a href="#" className="sf-with-ul">
                                       <span>About</span>
                                     </a>
                                     <ul
@@ -535,7 +545,7 @@ const Index = (props: IHeader) => {
                                       handleHoverLeave();
                                     }}
                                   >
-                                    <a href="/#" className="sf-with-ul">
+                                    <a href="#" className="sf-with-ul">
                                       <span>News</span>
                                     </a>
                                     <ul
@@ -555,7 +565,7 @@ const Index = (props: IHeader) => {
                                         id="menu-item-128"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
                                       >
-                                        <a href="/#" className="sf-with-ul">
+                                        <a href="#" className="sf-with-ul">
                                           <span>Classic</span>
                                         </a>
                                         <ul
@@ -592,7 +602,7 @@ const Index = (props: IHeader) => {
                                         id="menu-item-129"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-129"
                                       >
-                                        <a href="/#" className="sf-with-ul">
+                                        <a href="#" className="sf-with-ul">
                                           <span>Chess</span>
                                         </a>
                                         <ul
@@ -629,7 +639,7 @@ const Index = (props: IHeader) => {
                                         id="menu-item-130"
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-130"
                                       >
-                                        <a href="/#" className="sf-with-ul">
+                                        <a href="#" className="sf-with-ul">
                                           <span>Portfolio</span>
                                         </a>
                                         <ul
@@ -675,10 +685,13 @@ const Index = (props: IHeader) => {
                                 </ul>
                               </nav>
                               {/* /.sc_layouts_menu */}
-                              <div className="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                              <div
+                                className="sc_layouts_iconed_text sc_layouts_menu_mobile_button"
+                                onClick={handleOpen}
+                              >
                                 <a
                                   className="sc_layouts_item_link sc_layouts_iconed_text_link"
-                                  href="/#"
+                                  href="#"
                                 >
                                   <span className="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu" />
                                 </a>
@@ -704,30 +717,36 @@ const Index = (props: IHeader) => {
       </header>
       {/* mobile */}
       <div className="menu_mobile_overlay" style={{ display: "none" }} />
-      <div className="menu_mobile menu_mobile_fullscreen scheme_dark">
+      <div
+        className={`menu_mobile menu_mobile_fullscreen scheme_dark ${
+          open ? "opened" : ""
+        }`}
+      >
         <div className="menu_mobile_inner">
-          {/* <a className="menu_mobile_close icon-cancel" href="/" > */}
-          {/* <nav className="menu_mobile_nav_area">
+          <a
+            className="menu_mobile_close icon-cancel"
+            onClick={handleOpen}
+            href="#"
+          >
+            <></>
+          </a>
+          <nav className="menu_mobile_nav_area">
             <ul id="menu_mobile-main-menu">
               <li
-                className={`
-                    menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35
-                    ${pathname === "/" ? "current-menu-parent current-menu-ancestor" : ""}
-                    ${hover === "home" ? "sfHover" : ""}`}
-                // onMouseEnter={() => handleHoverEnter("home")}
-                // onMouseLeave={handleHoverLeave}
+                className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35
+                    ${selectOpen === "home" ? "opened" : ""}`}
+                onClick={() =>
+                  handleSelectOpen(selectOpen !== "home" ? "home" : "")
+                }
               >
-                <a href="/#">
+                <a href="#">
                   <span>Home</span>
                   <span className="open_child_menu" />
                 </a>
                 <ul
-                  className={`
-                    sub-menu animated fast ${
-                      hover === "home" ? "fadeInUpSmall" : "fadeOutDownSmall"
-                    }`}
+                  className="sub-menu"
                   style={{
-                    display: hover === "home" ? "block" : "none",
+                    display: selectOpen === "home" ? "block" : "none",
                   }}
                 >
                   <li
@@ -758,13 +777,22 @@ const Index = (props: IHeader) => {
               </li>
               <li
                 id="menu_mobile-item-41"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41"
+                className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41
+                ${selectOpen === "feature" ? "opened" : ""}`}
+                onClick={() =>
+                  handleSelectOpen(selectOpen !== "feature" ? "feature" : "")
+                }
               >
-                <a href="/">
+                <a href="#">
                   <span>Features</span>
                   <span className="open_child_menu" />
                 </a>
-                <ul className="sub-menu">
+                <ul
+                  className="sub-menu"
+                  style={{
+                    display: selectOpen === "feature" ? "block" : "none",
+                  }}
+                >
                   <li
                     id="menu_mobile-item-180"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"
@@ -890,13 +918,22 @@ const Index = (props: IHeader) => {
               </li>
               <li
                 id="menu_mobile-item-43"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43"
+                className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43
+                ${selectOpen === "about" ? "opened" : ""}`}
+                onClick={() =>
+                  handleSelectOpen(selectOpen !== "about" ? "about" : "")
+                }
               >
-                <a href="/">
+                <a href="#">
                   <span>About</span>
                   <span className="open_child_menu" />
                 </a>
-                <ul className="sub-menu">
+                <ul
+                  className="sub-menu"
+                  style={{
+                    display: selectOpen === "about" ? "block" : "none",
+                  }}
+                >
                   <li
                     id="menu_mobile-item-36"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"
@@ -925,13 +962,22 @@ const Index = (props: IHeader) => {
               </li>
               <li
                 id="menu_mobile-item-44"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44"
+                className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44
+                ${selectOpen === "news" ? "opened" : ""}`}
+                onClick={() =>
+                  handleSelectOpen(selectOpen !== "news" ? "news" : "")
+                }
               >
-                <a href="/">
+                <a href="#">
                   <span>News</span>
                   <span className="open_child_menu" />
                 </a>
-                <ul className="sub-menu">
+                <ul
+                  className="sub-menu"
+                  style={{
+                    display: selectOpen === "news" ? "block" : "none",
+                  }}
+                >
                   <li
                     id="menu_mobile-item-128"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
@@ -1048,15 +1094,10 @@ const Index = (props: IHeader) => {
                 </a>
               </li>
             </ul>
-          </nav> */}
+          </nav>
           <div className="search_wrap search_style_normal search_mobile inited">
             <div className="search_form_wrap">
-              <form
-                role="search"
-                method="get"
-                className="search_form"
-                action="/"
-              >
+              <form className="search_form">
                 <input
                   type="text"
                   className="search_field"

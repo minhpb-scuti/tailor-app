@@ -2658,8 +2658,8 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
   right: 0;
   top: 4px;
   display: block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;;
   line-height: 1em;
   padding: 0.25em;
   text-align: center;
@@ -2693,11 +2693,11 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
 }
 
 .menu_mobile .search_mobile {
-  position: absolute;
-  left: 50%;
-  bottom: 8rem;
-  width: 28rem;
-  margin-left: -14rem;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 8rem !important;
+  width: 28rem !important;
+  margin-left: -14rem !important;
 }
 .mobile_device .menu_mobile .search_mobile,
 .mobile_layout .menu_mobile .search_mobile {
@@ -2740,9 +2740,9 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
 }
 
 .menu_mobile .socials_mobile {
-  position: absolute;
+  position: absolute !important;
   left: 0;
-  bottom: 4rem;
+  bottom: 4rem !important;
   text-align: center;
   display: block;
   width: 100%;

@@ -65795,15 +65795,14 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
   transform: translateY(-50%)
 }
 
-.mobile_device .menu_mobile .menu_mobile_nav_area,
-.mobile_layout .menu_mobile .menu_mobile_nav_area {
+ .menu_mobile .menu_mobile_nav_area, .menu_mobile .menu_mobile_nav_area {
   position: relative;
-  top: auto;
-  max-height: none;
+  top: auto !important;
+  max-height: non !important;
   margin: 4em 0 0;
   -webkit-transform: none "";
   -ms-transform: none "";
-  transform: none
+  transform: none !important;
 }
 
 .menu_mobile .menu_mobile_nav_area ul {
@@ -65862,8 +65861,8 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
   right: 0;
   top: 4px;
   display: block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;;
   line-height: 1em;
   padding: .25em;
   text-align: center;
