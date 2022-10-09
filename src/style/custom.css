@@ -24,6 +24,7 @@
   top: 102px;
   z-index: 5;
   visibility: visible;
+  top: 200px;
 }
 
 .slider_1_big_text {
@@ -158,6 +159,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.btn_slide {
+  padding-top: 311px;
+}
+
 @media only screen and (min-width: 1440px) {
   .carousel_custom .swiper-slide {
     height: 410px;
@@ -174,11 +179,21 @@ a {
   .carousel_custom .swiper-slide {
     height: 343px;
   }
+
+  .slider_1_big_text {
+    font-size: 76px;
+    line-height: 76px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1135px) {
   .carousel_custom .swiper-slide {
     height: 373px;
+  }
+
+  .slider_1_big_text {
+    font-size: 68px;
+    line-height: 68px;
   }
 }
 
@@ -186,11 +201,25 @@ a {
   .carousel_custom .swiper-slide {
     height: 337px;
   }
+
+  .slider_1_big_text {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 959px) {
   .carousel_custom .swiper-slide {
     height: 398px;
+  }
+
+  .slider_1_big_text {
+    font-size: 47px;
+    line-height: 47px;
+  }
+
+  .sc_button_default {
+    padding: 1.3em 2em !important;
   }
 }
 
@@ -198,11 +227,47 @@ a {
   .carousel_custom .swiper-slide {
     height: 337px;
   }
+
+  .slider_1_big_text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .sc_button_default {
+    padding: 1em 2em !important;
+    font-size: 10px;
+  }
+
+  .btn_slide {
+    padding-top: 220px;
+  }
+
+  .parallax-wrap {
+    top: 100px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 639px) {
   .carousel_custom .swiper-slide {
     height: 247px;
+  }
+
+  .slider_1_big_text {
+    font-size: 31px;
+    line-height: 31px;
+  }
+
+  .sc_button_default {
+    padding: 1em 2em !important;
+    font-size: 10px;
+  }
+
+  .btn_slide {
+    padding-top: 180px;
+  }
+
+  .parallax-wrap {
+    top: 100px;
   }
 }
 
@@ -210,5 +275,53 @@ a {
   .carousel_custom .swiper-slide {
     height: 168px;
   }
+  .slider_1_big_text {
+    font-size: 23px;
+    line-height: 23px;
+  }
+
+  .sc_button_default {
+    padding: 0.5em 1em !important;
+    font-size: 10px;
+  }
+
+  .btn_slide {
+    padding-top: 150px;
+  }
+
+  .parallax-wrap {
+    top: 80px;
+  }
+
+  .carousel-indicators > button {
+    width: 50px !important;
+    position: absolute;
+  }
+
+  .carousel-indicators > button:nth-child(1) {
+    left: 0;
+    top: 0;
+  }
+
+  .carousel-indicators > button:nth-child(2) {
+    top: 0;
+    left: 97px;
+  }
+
+  .carousel-indicators > button:nth-child(3) {
+    left: 194px;
+    top: 0;
+  }
 }
 
+@media (max-width: 767px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+
+  .carousel_custom .carousel-control-prev,
+  .carousel_custom .carousel-control-next {
+    display: block !important;
+  }
+}

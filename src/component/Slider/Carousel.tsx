@@ -23,7 +23,6 @@ const CarouselSlide = (props: ICarouselSlide) => {
               left: "0",
               display: "flex",
               justifyContent: "center",
-              top: "200px",
             }}
           >
             <div className="slider_1_big_text">
@@ -34,11 +33,11 @@ const CarouselSlide = (props: ICarouselSlide) => {
           </div>
           <div
             style={{
-              paddingTop: "311px",
               width: "100%",
               display: "flex",
               justifyContent: "center",
             }}
+            className="btn_slide"
           >
             <div className="button_slide">
               <a className="sc_item_btn sc_button_default" href="/appointment/">
@@ -61,7 +60,6 @@ const CarouselSlide = (props: ICarouselSlide) => {
               left: "0",
               display: "flex",
               justifyContent: "center",
-              top: "200px",
             }}
           >
             <div className="slider_1_big_text">
@@ -75,8 +73,8 @@ const CarouselSlide = (props: ICarouselSlide) => {
               width: "100%",
               display: "flex",
               justifyContent: "center",
-              paddingTop: "311px",
             }}
+            className="btn_slide"
           >
             <div className="button_slide">
               <a className="sc_item_btn sc_button_default" href="/about/">
@@ -99,7 +97,6 @@ const CarouselSlide = (props: ICarouselSlide) => {
               left: "0",
               display: "flex",
               justifyContent: "center",
-              top: "200px",
             }}
           >
             <div className="slider_1_big_text">
@@ -113,8 +110,8 @@ const CarouselSlide = (props: ICarouselSlide) => {
               width: "100%",
               display: "flex",
               justifyContent: "center",
-              paddingTop: "311px",
             }}
+            className="btn_slide"
           >
             <div className="button_slide">
               <a className="sc_item_btn sc_button_default" href="/blog">
