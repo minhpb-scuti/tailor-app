@@ -2307,9 +2307,9 @@ figure.wp-block-gallery {
 }
 
 .sc_layouts_title_caption {
-  font-size: 3.214rem;
-  font-weight: 400;
-  letter-spacing: 0.038em;
+  font-size: 3.214rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.038em !important;
 }
 
 .sc_layouts_title_caption b,

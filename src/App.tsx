@@ -14,6 +14,10 @@ import CustomTailor from "./component/Services/CustomTailor";
 import SuitResizing from "./component/Services/SuitResizing";
 import WeddingServices from "./component/Services/WeddingServices";
 import Services from "./component/Services";
+import Team from "./component/Team";
+import PerterMason from "./component/Team/PerterMason";
+import PollyWire from "./component/Team/PollyWire";
+import RebeccaOgle from "./component/Team/RebeccaOgle";
 
 const App = () => {
   return (
@@ -37,10 +41,13 @@ const App = () => {
         />
         <Route path="/services/accessories" element={<Accessories />} />
         <Route path="/services/custom-tailoring" element={<CustomTailor />} />
-        <Route path="/services/suit-resizing/" element={<SuitResizing />} />
-        <Route path="/services/weddings/" element={<WeddingServices />} />
-        <Route path="/services/" element={<Services />} />
-        
+        <Route path="/services/suit-resizing" element={<SuitResizing />} />
+        <Route path="/services/wedding" element={<WeddingServices />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/team/peter-mason" element={<PerterMason />} />
+        <Route path="/team/polly-wire" element={<PollyWire />} />
+        <Route path="/team/rebecca-ogle" element={<RebeccaOgle />} />
       </Routes>
     </BrowserRouter>
   );
