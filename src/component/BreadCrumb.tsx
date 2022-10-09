@@ -2,6 +2,10 @@ import React from "react";
 
 export interface IBreadCrumb {
   text: string;
+  href1?: string;
+  href2?: string;
+  text1?: string;
+  text2?: string;
 }
 
 const BreadCrumb = (props: IBreadCrumb) => (
@@ -23,6 +27,19 @@ const BreadCrumb = (props: IBreadCrumb) => (
                     Home
                   </a>
                   <span className="breadcrumbs_delimiter"></span>
+                  {props.text1 && (
+                    <>
+                      <a href={props.href1}>{props.text1}</a>
+                      <span className="breadcrumbs_delimiter"></span>
+                    </>
+                  )}
+                  {props.text2 && (
+                    <>
+                      <a href={props.href2}>{props.text2}</a>
+                      <span className="breadcrumbs_delimiter"></span>
+                    </>
+                  )}
+
                   <span className="breadcrumbs_item current">{props.text}</span>
                 </div>
               </div>

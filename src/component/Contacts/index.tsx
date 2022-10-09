@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../Header";
@@ -180,6 +181,7 @@ const Contract = () => {
                                       href="https://business.facebook.com/ThemeRexStudio/"
                                       className="sc_icons_link"
                                       target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -222,6 +224,7 @@ const Contract = () => {
                                       href="https://twitter.com/ThemerexThemes"
                                       className="sc_icons_link"
                                       target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>
@@ -264,6 +267,7 @@ const Contract = () => {
                                       href="https://www.instagram.com/themerex_net/"
                                       className="sc_icons_link"
                                       target="_blank"
+                                      rel="noreferrer"
                                     />
                                   </div>
                                 </div>
