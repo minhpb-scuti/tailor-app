@@ -746,7 +746,7 @@
 
   .sc_testimonials_simple .sc_testimonials_item_author_subtitle,
   .sc_testimonials_item_author_title {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   .sc_promo_modern .sc_item_button .sc_button_simple {
@@ -927,29 +927,29 @@
     line-height: 28px !important;
     margin-top: 40px !important;
     margin-bottom: 22px !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0px;
   }
 
   h4 {
     font-size: 20px !important;
     line-height: 24px !important;
-    margin-top: 32px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h5 {
     font-size: 16px !important;
     line-height: 20px !important;
-    margin-top: 30px !important;
-    margin-bottom: 16px !important;
+    margin-top: 30px;
+    margin-bottom: 16px;
     letter-spacing: 1px !important;
   }
 
   h6 {
     font-size: 14px !important;
     line-height: 18px !important;
-    margin-top: 28px !important;
+    margin-top: 28px;
     margin-bottom: 12px !important;
     letter-spacing: 1px !important;
   }
@@ -1587,8 +1587,8 @@
   h1 {
     font-size: 32px !important;
     line-height: 36px !important;
-    margin-top: 30px !important;
-    margin-bottom: 16px !important;
+    margin-top: 30px;
+    margin-bottom: 16px;
     letter-spacing: 1px !important;
   }
 
@@ -1596,7 +1596,7 @@
     font-size: 28px !important;
     line-height: 36px !important;
     margin-top: 38px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
     letter-spacing: 0.5px !important;
   }
 
@@ -1604,24 +1604,24 @@
     font-size: 22px !important;
     line-height: 26px !important;
     margin-top: 36px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h4 {
     font-size: 18px !important;
     line-height: 22px !important;
-    margin-top: 30px !important;
-    margin-bottom: 16px !important;
-    letter-spacing: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    letter-spacing: 0px;
   }
 
   h5 {
     font-size: 16px !important;
     line-height: 20px !important;
-    margin-top: 28px !important;
+    margin-top: 28px;
     margin-bottom: 14px !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0px;
   }
 
   h6 {
@@ -1629,7 +1629,7 @@
     line-height: 18px !important;
     margin-top: 24px !important;
     margin-bottom: 10px !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0px;
   }
 
   p,
@@ -1939,7 +1939,7 @@
   .footer_wrap .widget + .widget + .widget + .widget,
   .sidebar .widget + .widget + .widget + .widget,
   .sidebar[class*="scheme_"] .widget + .widget + .widget + .widget {
-    margin-top: 30px !important;
+    margin-top: 30px;
     padding-top: 30px !important;
     border-top-width: 1px;
   }
@@ -1964,7 +1964,7 @@
   }
 
   .footer_wrap .sc_content .wpb_column + .wpb_column + .wpb_column {
-    margin-top: 30px !important;
+    margin-top: 30px;
     padding-top: 30px !important;
     border-top-width: 1px;
     border-top-style: solid;
@@ -3064,34 +3064,34 @@
 
   h1 {
     font-size: 28px !important;
-    line-height: 32px !important;
-    margin-top: 32px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h2 {
     font-size: 26px !important;
     line-height: 30px !important;
-    margin-top: 30px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h3 {
     font-size: 22px !important;
     line-height: 26px !important;
-    margin-top: 28px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h4 {
     font-size: 18px !important;
     line-height: 22px !important;
     margin-top: 26px !important;
-    margin-bottom: 16px !important;
-    letter-spacing: 0px !important;
+    margin-bottom: 16px;
+    letter-spacing: 0px;
   }
 
   h5 {
@@ -3099,7 +3099,7 @@
     line-height: 20px !important;
     margin-top: 24px !important;
     margin-bottom: 14px !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0px;
   }
 
   h6 {
@@ -3107,7 +3107,7 @@
     line-height: 18px !important;
     margin-top: 22px !important;
     margin-bottom: 10px !important;
-    letter-spacing: 0px !important;
+    letter-spacing: 0px;
   }
 
   p,
@@ -4911,50 +4911,50 @@
 
   h1 {
     font-size: 28px !important;
-    line-height: 34px !important;
-    margin-top: 32px !important;
-    margin-bottom: 20px !important;
-    letter-spacing: 0px !important;
+    line-height: 34px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
   }
 
   h2 {
     font-size: 24px !important;
-    line-height: 32px !important;
-    margin-top: 30px !important;
-    margin-bottom: 18px !important;
-    letter-spacing: 0px !important;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    letter-spacing: 0px;
   }
 
   h3 {
     font-size: 20px !important;
-    line-height: 26px !important;
-    margin-top: 28px !important;
-    margin-bottom: 16px !important;
-    letter-spacing: 0.5px !important;
+    line-height: 26px;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
   }
 
   h4 {
     font-size: 17px !important;
-    line-height: 21px !important;
-    margin-top: 24px !important;
-    margin-bottom: 14px !important;
-    letter-spacing: 0.4px !important;
+    line-height: 21px;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    letter-spacing: 0.4px;
   }
 
   h5 {
     font-size: 15px !important;
-    line-height: 18px !important;
-    margin-top: 22px !important;
-    margin-bottom: 10px !important;
-    letter-spacing: 0.3px !important;
+    line-height: 18px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
   }
 
   h6 {
     font-size: 13px !important;
-    line-height: 16px !important;
-    margin-top: 20px !important;
-    margin-bottom: 8px !important;
-    letter-spacing: 0.3px !important;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
   }
 
   p,
@@ -6882,7 +6882,7 @@
 
   .sc_testimonials_simple .sc_testimonials_item_author_subtitle,
   .sc_testimonials_item_author_title {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   .sc_testimonials.slider_pagination {

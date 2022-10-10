@@ -3468,6 +3468,10 @@ body.error404 .sc_layouts_hide_on_frontpage {
   display: block;
 }
 
+.sc_layouts_row_type_compact {
+  padding:1.8em 0;
+ }
+
 /* Widget:Cart */
 .sc_layouts_cart_widget {
   display: none;

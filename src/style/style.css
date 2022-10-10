@@ -1951,6 +1951,14 @@ figure.wp-block-gallery {
   float: left;
 }
 
+.sidebar__left {
+  float: left;
+} 
+
+.content_blog {
+  float: right;
+}
+
 /* Fullwide or Fullscreen with sidebar */
 .body_style_fullwide .content,
 .body_style_fullscreen .content {

@@ -65862,7 +65862,7 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
   top: 4px;
   display: block;
   width: 1.5em;
-  height: 1.5em;;
+  height: 1.5em;
   line-height: 1em;
   padding: .25em;
   text-align: center;
@@ -81226,7 +81226,7 @@ ul[class*=trx_addons_list_arrow]>li:before {
 
 .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
 .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-  padding: .4em 3.5em
+  padding: .4em 3.5em !important;
 }
 
 .swiper-container-horizontal>.swiper-pagination,
@@ -85236,7 +85236,7 @@ body.woocommerce .related.products ul.products,
   letter-spacing: .02em  !important;
   margin-top: 0  !important;
   margin-bottom: 0  !important;
-  padding:  !important;
+  /* padding:  !important; */
   text-transform: capitalize  !important;
 }
 
@@ -89028,7 +89028,7 @@ video.wp-video-shortcode {
 
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-    padding: .4em 2.5em
+  padding: .4em 2.5em !important;
   }
 
   .sc_promo_modern .sc_item_button .sc_button_simple {
@@ -89151,7 +89151,7 @@ video.wp-video-shortcode {
 
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-    padding: .4em 2.3em
+    padding: .4em 2.3em !important;
   }
 }
 
@@ -89247,7 +89247,7 @@ video.wp-video-shortcode {
 
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-    padding: .4em 2.5em
+    padding: .4em 2.5em !important;
   }
 
   .sc_layouts_item .sc_layouts_item_details [class*=sc_layouts_item_details_line] {
@@ -89393,7 +89393,7 @@ video.wp-video-shortcode {
 
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-    padding: .4em 2.3em
+    padding: .4em 2.3em !important;
   }
 
   .sc_item_subtitle {
@@ -95414,6 +95414,15 @@ video.wp-video-shortcode {
 .vc_custom_1482933108081 {
   padding-right: 2em !important;
   padding-left: 2em !important
+}
+
+.vc_custom_1482933118679 {
+  padding-right: 2% !important;
+  padding-left: 2% !important;
+  background-color: #160c06 !important;
+}
+.vc_custom_1482224342343 {
+  background-color: #ffffff !important;
 }
 
 /*!

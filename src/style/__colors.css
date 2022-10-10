@@ -22,81 +22,81 @@ address {
 }
 
 h1 {
-  font-family: "Butler", serif !important;
+  font-family: "Butler", serif;
   font-size: 4.286rem !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  line-height: 1.2em !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.14em !important;
-  margin-top: 0.9583em !important;
-  margin-bottom: 0.95em !important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-top: 0.9583em;
+  margin-bottom: 0.95em;
 }
 
 h2 {
-  font-family: "Butler", serif !important;
+  font-family: "Butler", serif;
   font-size: 3.929rem !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  line-height: 1.2em !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.04em !important;
-  margin-top: 1.45em !important;
-  margin-bottom: 0.72em !important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 1.45em;
+  margin-bottom: 0.72em;
 }
 
 h3 {
-  font-family: "Butler", serif !important;
+  font-family: "Butler", serif;
   font-size: 3.214rem !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  line-height: 1.222em !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.04em !important;
-  margin-top: 1.85em !important;
-  margin-bottom: 0.94em !important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.222em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 1.85em;
+  margin-bottom: 0.94em;
 }
 
 h4 {
-  font-family: "Butler", serif !important;
+  font-family: "Butler", serif;
   font-size: 2.143rem !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  line-height: 1.2em !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.1em !important;
-  margin-top: 2.11em !important;
-  margin-bottom: 0.85em !important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 2.11em;
+  margin-bottom: 0.85em;
 }
 
 h5 {
   font-family: "Raleway", sans-seri !important;
-  font-size: 1.143rem !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  line-height: 1.35em !important;
-  text-decoration: none !important;
-  text-transform: none !important;
-  letter-spacing: 0.02em !important;
-  margin-top: 3.1em !important;
-  margin-bottom: 1.8em !important;
+  font-size: 1.143rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35em;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin-top: 3.1em;
+  margin-bottom: 1.8em;
 }
 
 h6 {
   font-family: "Raleway", sans-serif !important;
-  font-size: 0.929rem !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
-  line-height: 1.45em !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.54em !important;
-  margin-top: 3.7em !important;
-  margin-bottom: 2.25em  !important;
+  font-size: 0.929rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.45em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.54em;
+  margin-top: 3.7em;
+  margin-bottom: 2.25em ;
 }
 
 input[type="text"],

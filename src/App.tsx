@@ -18,6 +18,7 @@ import Team from "./component/Team";
 import PerterMason from "./component/Team/PerterMason";
 import PollyWire from "./component/Team/PollyWire";
 import RebeccaOgle from "./component/Team/RebeccaOgle";
+import Shop from "./component/shop";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/shop" element={<Shop />} />
         <Route
           path="/top-10-must-tries-on-the-new-ultimate-3d"
           element={<NewUltimate3D />}
@@ -42,7 +44,7 @@ const App = () => {
         <Route path="/services/accessories" element={<Accessories />} />
         <Route path="/services/custom-tailoring" element={<CustomTailor />} />
         <Route path="/services/suit-resizing" element={<SuitResizing />} />
-        <Route path="/services/wedding" element={<WeddingServices />} />
+        <Route path="/services/weddings" element={<WeddingServices />} />
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/team/peter-mason" element={<PerterMason />} />
