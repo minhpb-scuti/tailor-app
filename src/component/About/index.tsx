@@ -952,7 +952,7 @@ const About = () => {
                                           >
                                             <a
                                               className="eg-custom_skin_1-element-1 eg-post-160"
-                                              href="https://petermason.themerex.net/save-shopping-time-with-custom-tailored-clothing/"
+                                              href="/save-shopping-time-with-custom-tailored-clothing/"
                                               target="_self"
                                             >
                                               <i className="eg-icon-plus" />
@@ -994,7 +994,7 @@ const About = () => {
                         </div>
                         <div className="sc_item_button sc_button_wrap sc_align_center">
                           <a
-                            href="https://petermason.themerex.net/grid/"
+                            href="/grid/"
                             id="sc_button_678914847"
                             className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                           >

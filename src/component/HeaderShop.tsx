@@ -154,7 +154,7 @@ const Index = (props: IHeaderShop) => {
                 <div className="sc_layouts_item">
                   <div className="sc_item_button sc_button_wrap">
                     <a
-                      href="https://petermason.themerex.net/appointment/"
+                      href="/appointment/"
                       id="sc_button_1296221438"
                       className="sc_button sc_button_style_2 sc_button_size_normal sc_button_icon_left sc_button_hover_slide_bottom"
                     >

@@ -67,7 +67,7 @@ const Shop = () => {
                       className="woocommerce-product-gallery__image"
                       style={{ position: "relative", overflow: "hidden" }}
                     >
-                      <a href="/wp-content/uploads/2016/11/product-1.jpg">
+                      <a href="#">
                         <img
                           src={Product1}
                           className="wp-post-image"
