@@ -19,6 +19,7 @@ import PerterMason from "./component/Team/PerterMason";
 import PollyWire from "./component/Team/PollyWire";
 import RebeccaOgle from "./component/Team/RebeccaOgle";
 import Shop from "./component/shop";
+import Product1 from "./component/shop/Product1";
 
 const App = () => {
   return (
@@ -33,6 +34,11 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/shop" element={<Shop />} />
+        <Route
+          path="/product/slim-fit-2pc-black-mini-checkered-suit/"
+          element={<Product1 />}
+        />
+
         <Route
           path="/top-10-must-tries-on-the-new-ultimate-3d"
           element={<NewUltimate3D />}
