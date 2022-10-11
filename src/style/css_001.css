@@ -25227,8 +25227,9 @@ ul.trx_addons_list_parameters>li+li {
 .sc_item_subtitle,
 .sc_item_descr,
 .sc_item_button {
-  margin: 0 
+  margin: 0
 }
+
 .sc_item_title,
 .sc_item_subtitle {
   margin: 0 !important;
@@ -65795,7 +65796,8 @@ body.mobile_layout.menu_style_right .menu_side_wrap .menu_side_button:hover {
   transform: translateY(-50%)
 }
 
- .menu_mobile .menu_mobile_nav_area, .menu_mobile .menu_mobile_nav_area {
+.menu_mobile .menu_mobile_nav_area,
+.menu_mobile .menu_mobile_nav_area {
   position: relative;
   top: auto !important;
   max-height: non !important;
@@ -73990,7 +73992,7 @@ blockquote:before,
   color: #160c06
 }
 
-.scheme_default .woocommerce ul.products li.product .post_header a:hover {
+.woocommerce ul.products li.product .post_header a:hover {
   color: #be9667
 }
 
@@ -74180,7 +74182,7 @@ blockquote:before,
 
 .scheme_default #btn-buy:hover,
 .scheme_default .woocommerce #respond input#submit:hover,
-.scheme_default .woocommerce .button:hover,
+.woocommerce .button:hover,
 .scheme_default .woocommerce-page .button:hover,
 .scheme_default .woocommerce a.button:hover,
 .scheme_default .woocommerce-page a.button:hover,
@@ -74434,7 +74436,7 @@ blockquote:before,
 .scheme_default .woocommerce ul.products li.product .button,
 .scheme_default .woocommerce-page ul.products li.product .button,
 .scheme_default .woocommerce ul.products li.product .post_data .add_to_cart_button,
-.scheme_default .woocommerce-page ul.products li.product .post_data .add_to_cart_button {
+.woocommerce-page ul.products li.product .post_data .add_to_cart_button {
   color: #be9667;
   border-color: rgba(190, 150, 103, .5)
 }
@@ -83310,9 +83312,9 @@ input[type=password] {
 .sc_icons.sc_icons_modern .sc_icons_title {
   font-size: 1.429rem !important;
   font-weight: 500 !important;
-  margin: 0  !important;
-  text-transform: none  !important;
-  letter-spacing: .02em  !important;
+  margin: 0 !important;
+  text-transform: none !important;
+  letter-spacing: .02em !important;
 }
 
 .sc_icons_modern .sc_icons_description {
@@ -85007,7 +85009,8 @@ body[class*=woocommerce-] table td {
 
 .woocommerce .woocommerce-result-count {
   margin: 1.2em .5em 1.2em 1.3em;
-  letter-spacing: .06em
+  letter-spacing: .06em;
+  color: #757575;
 }
 
 .petermason_shop_mode_buttons a {
@@ -85231,13 +85234,13 @@ body.woocommerce .related.products ul.products,
 .woocommerce ul.products li.product h3,
 .woocommerce-page ul.products li.product h3 {
   font-size: 1.143em !important;
-  font-weight: 400  !important;
-  line-height: 1.7em  !important;
-  letter-spacing: .02em  !important;
-  margin-top: 0  !important;
-  margin-bottom: 0  !important;
+  font-weight: 400 !important;
+  line-height: 1.7em !important;
+  letter-spacing: .02em !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   /* padding:  !important; */
-  text-transform: capitalize  !important;
+  text-transform: capitalize !important;
 }
 
 .woocommerce ul.products li.product .price,
@@ -89028,7 +89031,7 @@ video.wp-video-shortcode {
 
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li>a,
   .sc_layouts_row_type_compact .sc_layouts_menu_nav>li.menu-item-has-children>a {
-  padding: .4em 2.5em !important;
+    padding: .4em 2.5em !important;
   }
 
   .sc_promo_modern .sc_item_button .sc_button_simple {
@@ -95421,6 +95424,7 @@ video.wp-video-shortcode {
   padding-left: 2% !important;
   background-color: #160c06 !important;
 }
+
 .vc_custom_1482224342343 {
   background-color: #ffffff !important;
 }
