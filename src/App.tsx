@@ -20,6 +20,12 @@ import PollyWire from "./component/Team/PollyWire";
 import RebeccaOgle from "./component/Team/RebeccaOgle";
 import Shop from "./component/shop";
 import Product1 from "./component/shop/Product1";
+import Product5 from "./component/shop/Product5";
+import Product6 from "./component/shop/Product6";
+import Product4 from "./component/shop/Product4";
+import Product3 from "./component/shop/Product3";
+import Product2 from "./component/shop/Product2";
+import ShopBoxed from "./component/ShopBoxed";
 
 const App = () => {
   return (
@@ -34,11 +40,31 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/shop-boxed" element={<ShopBoxed />} />
         <Route
           path="/product/slim-fit-2pc-black-mini-checkered-suit/"
           element={<Product1 />}
         />
-
+        <Route
+          path="/product/modern-fit-2pc-ultra-black-suit/"
+          element={<Product2 />}
+        />
+        <Route
+          path="/product/slim-fit-3pc-solid-blue-suit/"
+          element={<Product3 />}
+        />
+        <Route
+          path="product/traditional-fit-2pc-brown-suit/"
+          element={<Product4 />}
+        />
+        <Route
+          path="/product/luxury-fit-3pc-black-solid-suit/"
+          element={<Product5 />}
+        />
+        <Route
+          path="/product/exclusive-fit-3pc-dark-blue-suit/"
+          element={<Product6 />}
+        />
         <Route
           path="/top-10-must-tries-on-the-new-ultimate-3d"
           element={<NewUltimate3D />}
@@ -47,6 +73,7 @@ const App = () => {
           path="/mens-suit-patterns-top-suit-patterns"
           element={<MenSuit />}
         />
+
         <Route path="/services/accessories" element={<Accessories />} />
         <Route path="/services/custom-tailoring" element={<CustomTailor />} />
         <Route path="/services/suit-resizing" element={<SuitResizing />} />

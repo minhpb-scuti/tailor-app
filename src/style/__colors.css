@@ -1,5 +1,7 @@
 /* ATTENTION! This file was generated automatically! Don&#039;t change it!!!
 ----------------------------------------------------------------------- */
+@import url(//db.onlinewebfonts.com/c/f07f89515051ba85ea415f1fd32a31f2?family=WooCommerce);
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -4411,8 +4413,7 @@ blockquote:before,
   color: #ffffff;
   background-color: #160c06;
 }
-
-.scheme_default .single-product div.product .trx-stretch-width .woocommerce-tabs .wc-tabs li.active a,
+.single-product div.product .trx-stretch-width .woocommerce-tabs .wc-tabs li.active a,
 .scheme_default .single-product div.product .trx-stretch-width .woocommerce-tabs .wc-tabs li a:hover {
   color: #ffffff !important;
   background-color: #160c06;
@@ -4426,7 +4427,7 @@ blockquote:before,
   background-color: rgba(249, 248, 248, 0.2);
 }
 
-.scheme_default .woocommerce table.shop_attributes th {
+.woocommerce table.shop_attributes th {
   color: #160c06;
 }
 

@@ -74094,8 +74094,7 @@ blockquote:before,
   color: #fff !important;
   background-color: #160c06
 }
-
-.scheme_default .woocommerce table.shop_attributes tr:nth-child(2n+1)>th {
+.woocommerce table.shop_attributes tr:nth-child(2n+1)>th {
   background-color: rgba(249, 248, 248, .4)
 }
 
@@ -85908,7 +85907,7 @@ div.pp_woocommerce .pp_arrow_previous {
 .woocommerce-page div.product .woocommerce-tabs h2,
 .woocommerce-page #content div.product .woocommerce-tabs h2 {
   margin: 0 0 1em;
-  font-size: 1.5385em;
+  font-size: 1.5385em !important;
   font-weight: 400;
   letter-spacing: 1px
 }
@@ -116102,16 +116101,52 @@ rs-loader.spinner15 .rs-spinner-inner:last-child {
   margin-bottom: 0px !important;
 }
 
-/* body {
+body.custom-backgrounds {
   background-image: url("../static/image/image-14.jpg");
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} */
+}
+
 /* html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #545454;
 } */
+
+     .vc_custom_1482492282213 {
+        background-color: #f9f8f8 !important;
+      }
+      .vc_custom_1482492282213 {
+        background-color: #f9f8f8 !important;
+      }
+      .vc_custom_1482492282213 {
+        background-color: #f9f8f8 !important;
+      }
+      .vc_custom_1482496094758 {
+        background-color: #f9f8f8 !important;
+      }
+      .vc_custom_1482931251491 {
+        background-image: url('../static/image/background-4.jpg') !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+      }
+      .vc_custom_1482931261420 {
+        background-image: url('../static/image/background-5.jpg') !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+      }
+      .vc_custom_1482931344251 {
+        background-image: url('../static/image/background-6.jpg') !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+      }
+      
+.tagged_as {
+  font-family: "Raleway", sans-serif !important;
+}

@@ -5,11 +5,11 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Footer from "../Footer";
 import HeaderShop from "../HeaderShop";
-import Product1 from "../../static/image/product-1.webp";
 import Product2 from "../../static/image/product-2.webp";
 import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
+import Product6 from "../../static/image/product-6.webp";
 
 const Shop = () => {
   const { pathname } = useLocation();
@@ -21,7 +21,7 @@ const Shop = () => {
         pathname={pathname}
         children={
           <BreadCrumb
-            text="Slim Fit 2pc Black Mini Checkered Suit"
+            text="Exclusive Fit 3pc Dark Blue Suit"
             text1="shop"
             href1="/shop"
             text2="Blazers"
@@ -35,7 +35,7 @@ const Shop = () => {
               <nav className="woocommerce-breadcrumb">
                 <a href="/">Home</a>&nbsp;/&nbsp;
                 <a href="/product-category/suits/">Suits</a>
-                &nbsp;/&nbsp;Slim Fit 2pc Black Mini Checkered Suit
+                &nbsp;/&nbsp;Exclusive Fit 3pc Dark Blue Suit
               </nav>
               <div className="woocommerce-notices-wrapper" />
               <div
@@ -69,7 +69,7 @@ const Shop = () => {
                     >
                       <a href="/wp-content/uploads/2016/11/product-1.jpg">
                         <img
-                          src={Product1}
+                          src={Product6}
                           className="wp-post-image"
                           alt=""
                           loading="lazy"
@@ -83,7 +83,7 @@ const Shop = () => {
                 </div>
                 <div className="summary entry-summary">
                   <h1 className="product_title entry-title">
-                    Slim Fit 2pc Black Mini Checkered Suit
+                    Exclusive Fit 3pc Dark Blue Suit
                   </h1>
                   <p className="price">
                     <span className="woocommerce-Price-amount amount">
@@ -91,7 +91,7 @@ const Shop = () => {
                         <span className="woocommerce-Price-currencySymbol">
                           $
                         </span>
-                        400.<span className="decimals">00</span>
+                        300.<span className="decimals">00</span>
                       </bdi>
                     </span>
                     –
@@ -100,7 +100,7 @@ const Shop = () => {
                         <span className="woocommerce-Price-currencySymbol">
                           $
                         </span>
-                        459.<span className="decimals">00</span>
+                        340.<span className="decimals">00</span>
                       </bdi>
                     </span>
                   </p>
@@ -167,7 +167,7 @@ const Shop = () => {
                             className="screen-reader-text"
                             htmlFor="quantity_6345848b9eab8"
                           >
-                            Slim Fit 2pc Black Mini Checkered Suit quantity
+                            Exclusive Fit 3pc Dark Blue Suit quantity
                           </label>
                           <input
                             type="number"
@@ -551,6 +551,65 @@ const Shop = () => {
                 <section className="related products">
                   <h2>Related products</h2>
                   <ul className="products columns-4">
+                    <li className="product type-product post-229 status-publish last instock product_cat-shirts product_cat-suits product_cat-trousers product_cat-waistcoats product_tag-classic product_tag-fit product_tag-scarves product_tag-skinny-fit has-post-thumbnail shipping-taxable purchasable product-type-variable">
+                      <div className="post_item post_layout_thumbs">
+                        <div className="post_featured hover_shop">
+                          <a href="/product/traditional-fit-2pc-brown-suit/">
+                            <img
+                              src={Product4}
+                              className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                              alt=""
+                              loading="lazy"
+                              width={351}
+                              height={351}
+                            />
+                          </a>
+                        </div>
+                        {/* /.post_featured */}
+                        <div className="post_data">
+                          <div className="post_header entry-header">
+                            <h2 className="woocommerce-loop-product__title">
+                              <a href="/product/traditional-fit-2pc-brown-suit/">
+                                Traditional Fit 2pc Brown Suit
+                              </a>
+                            </h2>
+                          </div>
+                          {/* /.post_header */}
+                          <span className="price">
+                            <span className="woocommerce-Price-amount amount">
+                              <bdi>
+                                <span className="woocommerce-Price-currencySymbol">
+                                  $
+                                </span>
+                                500.<span className="decimals">00</span>
+                              </bdi>
+                            </span>
+                            –
+                            <span className="woocommerce-Price-amount amount">
+                              <bdi>
+                                <span className="woocommerce-Price-currencySymbol">
+                                  $
+                                </span>
+                                530.<span className="decimals">00</span>
+                              </bdi>
+                            </span>
+                          </span>
+                          <a
+                            href="/product/traditional-fit-2pc-brown-suit/"
+                            data-quantity={1}
+                            className="button product_type_variable add_to_cart_button sc_button_hover_style_inverse sc_button_style_2 sc_button_hover_slide_bottom"
+                            data-product_id={229}
+                            data-product_sku
+                            aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
+                            rel="nofollow"
+                          >
+                            Buy now
+                          </a>
+                        </div>
+                        {/* /.post_data */}
+                      </div>
+                      {/* /.post_item */}
+                    </li>
                     <li className="product type-product post-225 status-publish first instock product_cat-blazers product_cat-ties product_cat-trousers product_cat-waistcoats product_tag-accessories product_tag-scarves product_tag-wedding has-post-thumbnail sale shipping-taxable purchasable product-type-variable">
                       <div className="post_item post_layout_thumbs">
                         <div className="post_featured hover_shop">
@@ -711,65 +770,6 @@ const Shop = () => {
                             data-product_id={233}
                             data-product_sku
                             aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
-                            rel="nofollow"
-                          >
-                            Buy now
-                          </a>
-                        </div>
-                        {/* /.post_data */}
-                      </div>
-                      {/* /.post_item */}
-                    </li>
-                    <li className="product type-product post-229 status-publish last instock product_cat-shirts product_cat-suits product_cat-trousers product_cat-waistcoats product_tag-classic product_tag-fit product_tag-scarves product_tag-skinny-fit has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                      <div className="post_item post_layout_thumbs">
-                        <div className="post_featured hover_shop">
-                          <a href="/product/traditional-fit-2pc-brown-suit/">
-                            <img
-                              src={Product4}
-                              className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                              alt=""
-                              loading="lazy"
-                              width={351}
-                              height={351}
-                            />
-                          </a>
-                        </div>
-                        {/* /.post_featured */}
-                        <div className="post_data">
-                          <div className="post_header entry-header">
-                            <h2 className="woocommerce-loop-product__title">
-                              <a href="/product/traditional-fit-2pc-brown-suit/">
-                                Traditional Fit 2pc Brown Suit
-                              </a>
-                            </h2>
-                          </div>
-                          {/* /.post_header */}
-                          <span className="price">
-                            <span className="woocommerce-Price-amount amount">
-                              <bdi>
-                                <span className="woocommerce-Price-currencySymbol">
-                                  $
-                                </span>
-                                500.<span className="decimals">00</span>
-                              </bdi>
-                            </span>
-                            –
-                            <span className="woocommerce-Price-amount amount">
-                              <bdi>
-                                <span className="woocommerce-Price-currencySymbol">
-                                  $
-                                </span>
-                                530.<span className="decimals">00</span>
-                              </bdi>
-                            </span>
-                          </span>
-                          <a
-                            href="/product/traditional-fit-2pc-brown-suit/"
-                            data-quantity={1}
-                            className="button product_type_variable add_to_cart_button sc_button_hover_style_inverse sc_button_style_2 sc_button_hover_slide_bottom"
-                            data-product_id={229}
-                            data-product_sku
-                            aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                             rel="nofollow"
                           >
                             Buy now
