@@ -404,7 +404,7 @@ const Index = (props: IHeader) => {
                                             id="menu-item-1159"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                                           >
-                                            <a href="/privacy-policy/">
+                                            <a href="/#">
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -449,7 +449,7 @@ const Index = (props: IHeader) => {
                                             id="menu-item-1166"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                                           >
-                                            <a href="/privacy-policy/">
+                                            <a href="/#">
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -857,7 +857,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1159"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                       >
-                        <a href="/privacy-policy/">
+                        <a href="/#">
                           <span>Privacy Policy</span>
                         </a>
                       </li>
@@ -900,7 +900,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1166"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                       >
-                        <a href="/privacy-policy/">
+                        <a href="/#">
                           <span>Privacy Policy</span>
                         </a>
                       </li>

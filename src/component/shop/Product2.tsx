@@ -34,7 +34,7 @@ const Shop = () => {
             <article className="post_item_single post_type_product">
               <nav className="woocommerce-breadcrumb">
                 <a href="/">Home</a>&nbsp;/&nbsp;
-                <a href="/product-category/suits/">Suits</a>
+                <a href="#/">Suits</a>
                 &nbsp;/&nbsp;Modern Fit 2pc Ultra Black Suit
               </nav>
               <div className="woocommerce-notices-wrapper" />
@@ -216,21 +216,21 @@ const Shop = () => {
                     </span>
                     <span className="posted_in">
                       Categories:
-                      <a href="/product-category/blazers/" rel="tag">
+                      <a href="#" rel="tag">
                         Blazers
                       </a>
                       ,
-                      <a href="/product-category/suits/" rel="tag">
+                      <a href="#/" rel="tag">
                         Suits
                       </a>
                     </span>
                     <span className="tagged_as">
                       Tags:
-                      <a href="/product-tag/accessories/" rel="tag">
+                      <a href="/#" rel="tag">
                         Accessories
                       </a>
                       ,
-                      <a href="/product-tag/wedding/" rel="tag">
+                      <a href="/#/" rel="tag">
                         Wedding
                       </a>
                     </span>

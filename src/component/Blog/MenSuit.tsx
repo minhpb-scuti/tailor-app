@@ -44,15 +44,15 @@ const MenSuit = () => {
             <div className="post_header entry-header">
               <div className="post_meta">
                 <span className="post_meta_item post_categories">
-                  <a href="/category/details/" rel="category tag">
+                  <a href="#" rel="category tag">
                     Details
                   </a>
                   ,
-                  <a href="/category/fresh-look/" rel="category tag">
+                  <a href="#/" rel="category tag">
                     Fresh Look
                   </a>
                   ,
-                  <a href="/category/gentleman/" rel="category tag">
+                  <a href="#" rel="category tag">
                     Gentleman
                   </a>
                 </span>
@@ -117,25 +117,25 @@ const MenSuit = () => {
                       Fresh Look
                     </a>
                     ,
-                    <a href="/gentleman/" rel="category tag">
+                    <a href="#/" rel="category tag">
                       Gentleman
                     </a>
                   </div>
                   <div className="post_meta_item_tags">
                     <span className="post_meta_label">Tags: </span>
-                    <a href="/tag/designer/" rel="tag">
+                    <a href="#" rel="tag">
                       designer
                     </a>
                     ,
-                    <a href="/tag/men/" rel="tag">
+                    <a href="#" rel="tag">
                       men
                     </a>
                     ,
-                    <a href="/tag/suit/" rel="tag">
+                    <a href="#" rel="tag">
                       suit
                     </a>
                     ,
-                    <a href="/tag/tailor/" rel="tag">
+                    <a href="#" rel="tag">
                       tailor
                     </a>
                   </div>

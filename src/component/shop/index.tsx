@@ -1027,22 +1027,22 @@ const Shop = () => {
                 <h5 className="widget_title">Categories</h5>
                 <ul className="product-categories">
                   <li className="cat-item cat-item-29">
-                    <a href="/product-category/blazers/">Blazers</a>
+                    <a href="#">Blazers</a>
                   </li>
                   <li className="cat-item cat-item-30">
-                    <a href="/product-category/shirts/">Shirts</a>
+                    <a href="#/">Shirts</a>
                   </li>
                   <li className="cat-item cat-item-28">
-                    <a href="/product-category/suits/">Suits</a>
+                    <a href="#/">Suits</a>
                   </li>
                   <li className="cat-item cat-item-33">
-                    <a href="/product-category/ties/">Ties</a>
+                    <a href="#/">Ties</a>
                   </li>
                   <li className="cat-item cat-item-32">
-                    <a href="/product-category/trousers/">Trousers</a>
+                    <a href="#/">Trousers</a>
                   </li>
                   <li className="cat-item cat-item-31">
-                    <a href="/product-category/waistcoats/">Waistcoats</a>
+                    <a href="#/">Waistcoats</a>
                   </li>
                 </ul>
               </aside>
@@ -1053,7 +1053,7 @@ const Shop = () => {
                 <h5 className="widget_title">Tags</h5>
                 <div className="tagcloud">
                   <a
-                    href="/product-tag/accessories/"
+                    href="/#"
                     className="tag-cloud-link tag-link-35 tag-link-position-1 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Accessories (3 products)"
@@ -1061,7 +1061,7 @@ const Shop = () => {
                     Accessories
                   </a>
                   <a
-                    href="/product-tag/classic/"
+                    href="/#/"
                     className="tag-cloud-link tag-link-37 tag-link-position-2 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="Classic (2 products)"
@@ -1069,7 +1069,7 @@ const Shop = () => {
                     Classic
                   </a>
                   <a
-                    href="/product-tag/fit/"
+                    href="/#/"
                     className="tag-cloud-link tag-link-38 tag-link-position-3 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Fit (3 products)"
@@ -1077,7 +1077,7 @@ const Shop = () => {
                     Fit
                   </a>
                   <a
-                    href="/product-tag/jackets/"
+                    href="#"
                     className="tag-cloud-link tag-link-36 tag-link-position-4 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Jackets (3 products)"
@@ -1085,7 +1085,7 @@ const Shop = () => {
                     Jackets
                   </a>
                   <a
-                    href="/product-tag/scarves/"
+                    href="#"
                     className="tag-cloud-link tag-link-40 tag-link-position-5 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="Scarves (2 products)"
@@ -1093,7 +1093,7 @@ const Shop = () => {
                     Scarves
                   </a>
                   <a
-                    href="/product-tag/skinny-fit/"
+                    href="#"
                     className="tag-cloud-link tag-link-39 tag-link-position-6 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Skinny fit (3 products)"
@@ -1101,7 +1101,7 @@ const Shop = () => {
                     Skinny fit
                   </a>
                   <a
-                    href="/product-tag/wedding/"
+                    href="/#/"
                     className="tag-cloud-link tag-link-34 tag-link-position-7 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "22pt" }}
                     aria-label="Wedding (4 products)"
