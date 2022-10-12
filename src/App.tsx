@@ -33,6 +33,10 @@ import CustomShirts from "./component/Blog/CustomShirts";
 import Quotes from "./component/Blog/Quotes";
 import PrinceOfWales from "./component/Blog/PrinceOfWale";
 import MadHatter from "./component/Blog/MadHatter";
+import ColorSuits from "./component/Blog/ColorSuits";
+import SummerTweed from "./component/Blog/SummerTweed";
+import JacketBlazers from "./component/Blog/JacketBlazers";
+import NorthwestSuit from "./component/Blog/NorthwestSuits";
 
 const App = () => {
   return (
@@ -98,6 +102,14 @@ const App = () => {
           element={<Quotes />}
         />
         <Route path="/the-white-mad-hatter/" element={<MadHatter />} />
+        <Route path="/summer-tweed/" element={<SummerTweed />} />
+        <Route path="/how-to-properly-button-suit-jackets-blazers/" element={<JacketBlazers />} />
+        <Route path="/recreating-cary-grants-north-by-northwest-suit/" element={<NorthwestSuit/>} />
+        
+        <Route
+          path="/what-colour-shoes-to-wear-with-your-suit/"
+          element={<ColorSuits />}
+        />
 
         <Route path="/prince-of-wales/" element={<PrinceOfWales />} />
         <Route path="/services/accessories" element={<Accessories />} />

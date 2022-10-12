@@ -959,7 +959,7 @@ const Blog = () => {
                 {/* .entry-content */}
               </article>
             </div>
-            <nav className="navigation pagination" aria-label="Posts">
+            {/* <nav className="navigation pagination" aria-label="Posts">
               <h2 className="screen-reader-text">Posts navigation</h2>
               <div className="nav-links">
                 <span aria-current="page" className="page-numbers current">
@@ -978,7 +978,7 @@ const Blog = () => {
                   &gt;
                 </a>
               </div>
-            </nav>
+            </nav> */}
           </div>
           {/* </.content> */}
           <div className="sidebar right widget_area" role="complementary">
