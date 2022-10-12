@@ -245,10 +245,8 @@ const Shop = () => {
                     style={{
                       position: "relative",
                       boxSizing: "border-box",
-                      left: "-686.5px",
-                      width: "2543px",
-                      paddingLeft: "686.5px",
-                      paddingRight: "686.5px",
+
+                      width: "100%",
                     }}
                   >
                     <div className="woocommerce-tabs wc-tabs-wrapper">
@@ -621,7 +619,7 @@ const Shop = () => {
                           <div className="post_header entry-header">
                             <h2 className="woocommerce-loop-product__title">
                               <a href="/product/exclusive-fit-3pc-dark-blue-suit/">
-                              Exclusive Fit 3pc Dark Blue Suit
+                                Exclusive Fit 3pc Dark Blue Suit
                               </a>
                             </h2>
                           </div>

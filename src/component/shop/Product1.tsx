@@ -245,10 +245,8 @@ const Shop = () => {
                     style={{
                       position: "relative",
                       boxSizing: "border-box",
-                      left: "-686.5px",
-                      width: "2543px",
-                      paddingLeft: "686.5px",
-                      paddingRight: "686.5px",
+
+                      width: "100%",
                     }}
                   >
                     <div className="woocommerce-tabs wc-tabs-wrapper">

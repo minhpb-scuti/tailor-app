@@ -245,10 +245,8 @@ const Shop = () => {
                     style={{
                       position: "relative",
                       boxSizing: "border-box",
-                      left: "-686.5px",
-                      width: "2543px",
-                      paddingLeft: "686.5px",
-                      paddingRight: "686.5px",
+
+                      width: "100%",
                     }}
                   >
                     <div className="woocommerce-tabs wc-tabs-wrapper">
@@ -551,7 +549,6 @@ const Shop = () => {
                 <section className="related products">
                   <h2>Related products</h2>
                   <ul className="products columns-4">
-            
                     <li className="product type-product post-225 status-publish first instock product_cat-blazers product_cat-ties product_cat-trousers product_cat-waistcoats product_tag-accessories product_tag-scarves product_tag-wedding has-post-thumbnail sale shipping-taxable purchasable product-type-variable">
                       <div className="post_item post_layout_thumbs">
                         <div className="post_featured hover_shop">
