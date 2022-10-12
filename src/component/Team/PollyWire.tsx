@@ -8,7 +8,7 @@ import Team2 from "../../static/image/team-2-custom.jpg";
 const PollyWire = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -141,7 +141,7 @@ const PollyWire = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

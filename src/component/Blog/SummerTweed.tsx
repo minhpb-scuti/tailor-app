@@ -12,7 +12,7 @@ const SummerTweed = () => {
   const contentWidth = getWidthContent(width);
 
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -359,7 +359,7 @@ const SummerTweed = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

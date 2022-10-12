@@ -11,7 +11,7 @@ import Service4 from "../../static/image/service-4.jpg";
 const Services = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={<BreadCrumb text="All Services" />}
         pathname={location.pathname}
@@ -219,7 +219,7 @@ const Services = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

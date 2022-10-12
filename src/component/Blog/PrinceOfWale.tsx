@@ -13,7 +13,7 @@ const PrinceOfWales = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -335,7 +335,7 @@ const PrinceOfWales = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

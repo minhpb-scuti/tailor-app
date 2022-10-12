@@ -9,7 +9,7 @@ import Avatar from "../../static/image/avatar.jpeg";
 const MadHatter = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -344,7 +344,7 @@ const MadHatter = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

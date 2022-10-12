@@ -10,7 +10,7 @@ const JacketBlazers = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -345,7 +345,7 @@ const JacketBlazers = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

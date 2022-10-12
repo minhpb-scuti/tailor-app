@@ -9,7 +9,7 @@ import Avatar from "../../static/image/avatar.jpeg";
 const NewUltimate3D = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -344,7 +344,7 @@ const NewUltimate3D = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

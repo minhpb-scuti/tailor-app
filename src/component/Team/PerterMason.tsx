@@ -8,7 +8,7 @@ import Team1 from "../../static/image/team-1-custom.jpg";
 const PerterMason = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -141,7 +141,7 @@ const PerterMason = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

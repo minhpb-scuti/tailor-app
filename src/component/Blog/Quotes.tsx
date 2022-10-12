@@ -10,7 +10,7 @@ const Quotes = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -284,7 +284,7 @@ const Quotes = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

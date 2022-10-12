@@ -20,7 +20,7 @@ const About = () => {
   useEffect(() => {}, [width]);
 
   return (
-    <div>
+    <div className="scheme_default">
       <Header
         children={<BreadCrumb text="About" />}
         pathname={location.pathname}

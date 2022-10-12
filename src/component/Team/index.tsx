@@ -10,7 +10,7 @@ import Team3 from "../../static/image/team-3.webp";
 const Team = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={<BreadCrumb text="All Team Members" />}
         pathname={location.pathname}
@@ -283,7 +283,7 @@ const Team = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="sidebar_right">
+    <div className="sidebar_right scheme_default ">
       <Header
         children={<BreadCrumb text="All Posts" />}
         pathname={location.pathname}

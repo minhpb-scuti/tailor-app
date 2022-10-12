@@ -8,7 +8,7 @@ import Team3 from "../../static/image/team-3-custom.jpg";
 const RebeccaOgle = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -141,7 +141,7 @@ const RebeccaOgle = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

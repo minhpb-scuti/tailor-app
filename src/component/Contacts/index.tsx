@@ -8,7 +8,7 @@ import BreadCrumb from "../BreadCrumb";
 const Contract = () => {
   const location = useLocation();
   return (
-    <div>
+    <div className="scheme_default"> 
       <Header
         children={<BreadCrumb text="Contacts" />}
         pathname={location.pathname}

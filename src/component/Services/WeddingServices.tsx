@@ -9,7 +9,7 @@ import Image4 from "../../static/image/image-4.jpg";
 const WeddingServices = () => {
   const location = useLocation();
   return (
-    <>
+    <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
@@ -213,7 +213,7 @@ const WeddingServices = () => {
         {/* </.content_wrap> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

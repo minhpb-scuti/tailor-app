@@ -10,7 +10,7 @@ const MenSuit = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="scheme_default">
     <Header
       children={
         <BreadCrumb
@@ -345,7 +345,7 @@ const MenSuit = () => {
       {/* </.content_wrap> */}
     </div>
     <Footer />
-  </>
+  </div>
   )
 }
 

@@ -9,7 +9,7 @@ const ChooseTie = () => {
   const location = useLocation();
 
   return (
-    <>
+    <div className="scheme_default">
     <Header
       children={
         <BreadCrumb
@@ -335,7 +335,7 @@ const ChooseTie = () => {
       {/* </.content_wrap> */}
     </div>
     <Footer />
-  </>
+  </div>
   )
 }
 
