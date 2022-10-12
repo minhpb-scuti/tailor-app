@@ -26,6 +26,12 @@ import Product4 from "./component/shop/Product4";
 import Product3 from "./component/shop/Product3";
 import Product2 from "./component/shop/Product2";
 import ShopBoxed from "./component/ShopBoxed";
+import SummerShirt from "./component/Blog/SummerShirt";
+import StyleTip from "./component/Blog/StyleTip";
+import ChooseTie from "./component/Blog/ChooseTie";
+import CustomShirts from "./component/Blog/CustomShirts";
+import Quotes from "./component/Blog/Quotes";
+import PrinceOfWales from "./component/Blog/PrinceOfWale";
 
 const App = () => {
   return (
@@ -73,6 +79,24 @@ const App = () => {
           path="/mens-suit-patterns-top-suit-patterns"
           element={<MenSuit />}
         />
+        <Route
+          path="/3-steps-to-creating-the-perfect-summer-shirt"
+          element={<SummerShirt />}
+        />
+        <Route
+          path="/15-suit-style-tips-every-man-must-know/"
+          element={<StyleTip />}
+        />
+        <Route path="/how-to-choose-a-tie-8-steps/" element={<ChooseTie />} />
+        <Route
+          path="/custom-shirts-summer-2016-must-haves/"
+          element={<CustomShirts />}
+        />
+        <Route
+          path="/10-essential-quotes-about-mens-style/"
+          element={<Quotes />}
+        />
+        <Route path="/prince-of-wales/" element={<PrinceOfWales />} />
 
         <Route path="/services/accessories" element={<Accessories />} />
         <Route path="/services/custom-tailoring" element={<CustomTailor />} />
