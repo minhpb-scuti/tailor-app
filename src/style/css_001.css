@@ -23228,8 +23228,13 @@ form .trx_addons_message_box {
   margin-top: .2em
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 html {
-  overflow-y: scroll !important
+  overflow-y: scroll !important;
+  
 }
 
 .mfp-bg {
