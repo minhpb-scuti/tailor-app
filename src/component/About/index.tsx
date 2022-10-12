@@ -150,7 +150,7 @@ const About = () => {
                                 </div>
                                 <div className="sc_item_button sc_button_wrap">
                                   <a
-                                    href="about-us/"
+                                    href="/about-us/"
                                     id="sc_button_470468405"
                                     className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                                   >
