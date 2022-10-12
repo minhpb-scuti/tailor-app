@@ -17,9 +17,12 @@ import Partner2 from "../../static/image/partners_2.png";
 import Partner3 from "../../static/image/partners_3.png";
 import Partner4 from "../../static/image/partners_4.png";
 import Partner5 from "../../static/image/partners_5.png";
+import { useWindowDimensions, getWidthContent } from "../../customHook";
 
 const ShopHomePage = () => {
   const { pathname } = useLocation();
+  const { width } = useWindowDimensions();
+  const contentWidth = getWidthContent(width);
   return (
     <body className="page-template-default page page-id-194 custom-background theme-petermason woocommerce-js body_tag scheme_default blog_mode_page body_style_wide is_single sidebar_hide expand_content remove_margins header_style_header-custom-621 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
       <div className="body_wrap">
@@ -38,14 +41,13 @@ const ShopHomePage = () => {
                       data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482492282213 vc_row-has-fill"
                       style={{
-                        width: "1290px",
-                        left: "-45px",
-                        right: "auto",
-                        paddingLeft: "45px",
-                        paddingRight: "45px",
                         position: "relative",
+                        left: -(width - contentWidth) / 2,
                         boxSizing: "border-box",
-                        maxWidth: "2543px",
+                        width: width,
+                        maxWidth: width,
+                        paddingLeft: (width - contentWidth) / 2,
+                        paddingRight: (width - contentWidth) / 2,
                       }}
                     >
                       <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -73,14 +75,13 @@ const ShopHomePage = () => {
                       data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482492282213 vc_row-has-fill"
                       style={{
-                        width: "1290px",
-                        left: "-45px",
-                        right: "auto",
-                        paddingLeft: "45px",
-                        paddingRight: "45px",
                         position: "relative",
+                        left: -(width - contentWidth) / 2,
                         boxSizing: "border-box",
-                        maxWidth: "2543px",
+                        width: width,
+                        maxWidth: width,
+                        paddingLeft: (width - contentWidth) / 2,
+                        paddingRight: (width - contentWidth) / 2,
                       }}
                     >
                       <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 sc_layouts_column_icons_position_left">
@@ -243,14 +244,13 @@ const ShopHomePage = () => {
                       data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482492282213 vc_row-has-fill"
                       style={{
-                        width: "1290px",
-                        left: "-45px",
-                        right: "auto",
-                        paddingLeft: "45px",
-                        paddingRight: "45px",
                         position: "relative",
+                        left: -(width - contentWidth) / 2,
                         boxSizing: "border-box",
-                        maxWidth: "2543px",
+                        width: width,
+                        maxWidth: width,
+                        paddingLeft: (width - contentWidth) / 2,
+                        paddingRight: (width - contentWidth) / 2,
                       }}
                     >
                       <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -972,14 +972,13 @@ const ShopHomePage = () => {
                       data-vc-full-width-init="true"
                       className="vc_row wpb_row vc_row-fluid vc_custom_1482496094758 vc_row-has-fill scheme_dark"
                       style={{
-                        width: "1290px",
-                        left: "-45px",
-                        right: "auto",
-                        paddingLeft: "45px",
-                        paddingRight: "45px",
                         position: "relative",
+                        left: -(width - contentWidth) / 2,
                         boxSizing: "border-box",
-                        maxWidth: "2543px",
+                        width: width,
+                        maxWidth: width,
+                        paddingLeft: (width - contentWidth) / 2,
+                        paddingRight: (width - contentWidth) / 2,
                       }}
                     >
                       <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
