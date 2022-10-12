@@ -545,7 +545,7 @@ const Index = (props: IHeader) => {
                                       handleHoverLeave();
                                     }}
                                   >
-                                    <a href="#" className="sf-with-ul">
+                                    <a href="/blog" className="sf-with-ul">
                                       <span>News</span>
                                     </a>
                                     <ul
@@ -968,7 +968,7 @@ const Index = (props: IHeader) => {
                   handleSelectOpen(selectOpen !== "news" ? "news" : "")
                 }
               >
-                <a href="#">
+                <a href="/blog">
                   <span>News</span>
                   <span className="open_child_menu" />
                 </a>

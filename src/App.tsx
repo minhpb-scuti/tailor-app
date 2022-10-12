@@ -32,6 +32,7 @@ import ChooseTie from "./component/Blog/ChooseTie";
 import CustomShirts from "./component/Blog/CustomShirts";
 import Quotes from "./component/Blog/Quotes";
 import PrinceOfWales from "./component/Blog/PrinceOfWale";
+import MadHatter from "./component/Blog/MadHatter";
 
 const App = () => {
   return (
@@ -96,8 +97,9 @@ const App = () => {
           path="/10-essential-quotes-about-mens-style/"
           element={<Quotes />}
         />
-        <Route path="/prince-of-wales/" element={<PrinceOfWales />} />
+        <Route path="/the-white-mad-hatter/" element={<MadHatter />} />
 
+        <Route path="/prince-of-wales/" element={<PrinceOfWales />} />
         <Route path="/services/accessories" element={<Accessories />} />
         <Route path="/services/custom-tailoring" element={<CustomTailor />} />
         <Route path="/services/suit-resizing" element={<SuitResizing />} />
