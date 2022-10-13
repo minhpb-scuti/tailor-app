@@ -40,7 +40,7 @@ const MadHatter = lazy(() => import("./component/Blog/MadHatter"));
 const SummerTweed = lazy(() => import("./component/Blog/SummerTweed"));
 const ColorSuits = lazy(() => import("./component/Blog/ColorSuits"));
 const JacketBlazers = lazy(() => import("./component/Blog/JacketBlazers"));
-const NorthwestSuit = lazy(() => import("./component/Blog/NorthwestSuit"));
+const NorthwestSuit = lazy(() => import("./component/Blog/NorthwestSuits"));
 
 const App = () => {
   return (
