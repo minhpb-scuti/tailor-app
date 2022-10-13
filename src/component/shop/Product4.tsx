@@ -9,7 +9,6 @@ import Product2 from "../../static/image/product-2.webp";
 import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
-import Product6 from "../../static/image/product-6.webp";
 
 const Shop = () => {
   const { pathname } = useLocation();

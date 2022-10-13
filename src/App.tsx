@@ -1,34 +1,5 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
-import MenSuit from "./component/Blog/MenSuit";
-import Accessories from "./component/Services/Accessories";
-import CustomTailor from "./component/Services/CustomTailor";
-import SuitResizing from "./component/Services/SuitResizing";
-import WeddingServices from "./component/Services/WeddingServices";
-import Services from "./component/Services";
-import Team from "./component/Team";
-import PerterMason from "./component/Team/PerterMason";
-import PollyWire from "./component/Team/PollyWire";
-import RebeccaOgle from "./component/Team/RebeccaOgle";
-import Shop from "./component/shop";
-import Product1 from "./component/shop/Product1";
-import Product5 from "./component/shop/Product5";
-import Product6 from "./component/shop/Product6";
-import Product4 from "./component/shop/Product4";
-import Product3 from "./component/shop/Product3";
-import Product2 from "./component/shop/Product2";
-import ShopBoxed from "./component/ShopBoxed";
-import SummerShirt from "./component/Blog/SummerShirt";
-import StyleTip from "./component/Blog/StyleTip";
-import ChooseTie from "./component/Blog/ChooseTie";
-import CustomShirts from "./component/Blog/CustomShirts";
-import Quotes from "./component/Blog/Quotes";
-import PrinceOfWales from "./component/Blog/PrinceOfWale";
-import MadHatter from "./component/Blog/MadHatter";
-import ColorSuits from "./component/Blog/ColorSuits";
-import SummerTweed from "./component/Blog/SummerTweed";
-import JacketBlazers from "./component/Blog/JacketBlazers";
-import NorthwestSuit from "./component/Blog/NorthwestSuits";
 
 const Contact = lazy(() => import("./component/Contacts"));
 const Home = lazy(() => import("./component/Home"));
@@ -39,6 +10,38 @@ const About = lazy(() => import("./component/About"));
 const AboutUs = lazy(() => import("./component/AboutUs"));
 const Blog = lazy(() => import("./component/Blog"));
 const NewUltimate3D = lazy(() => import("./component/Blog/NewUltimate3D"));
+const MenSuit = lazy(() => import("./component/Blog/MenSuit"));
+const Accessories = lazy(() => import("./component/Services/Accessories"));
+const CustomTailor = lazy(() => import("./component/Services/CustomTailor"));
+const SuitResizing = lazy(() => import("./component/Services/SuitResizing"));
+const WeddingServices = lazy(
+  () => import("./component/Services/WeddingServices")
+);
+const Services = lazy(() => import("./component/Services"));
+const Team = lazy(() => import("./component/Team"));
+const PerterMason = lazy(() => import("./component/Team/PerterMason"));
+const PollyWire = lazy(() => import("./component/Team/PollyWire"));
+const RebeccaOgle = lazy(() => import("./component/Team/RebeccaOgle"));
+const Shop = lazy(() => import("./component/shop"));
+const Product1 = lazy(() => import("./component/shop/Product1"));
+const Product5 = lazy(() => import("./component/shop/Product5"));
+const Product6 = lazy(() => import("./component/shop/Product6"));
+const Product4 = lazy(() => import("./component/shop/Product4"));
+const Product3 = lazy(() => import("./component/shop/Product3"));
+const Product2 = lazy(() => import("./component/shop/Product2"));
+const ShopBoxed = lazy(() => import("./component/ShopBoxed"));
+const SummerShirt = lazy(() => import("./component/Blog/SummerShirt"));
+const StyleTip = lazy(() => import("./component/Blog/StyleTip"));
+const ChooseTie = lazy(() => import("./component/Blog/ChooseTie"));
+const CustomShirts = lazy(() => import("./component/Blog/CustomShirts"));
+const Quotes = lazy(() => import("./component/Blog/Quotes"));
+const PrinceOfWales = lazy(() => import("./component/Blog/PrinceOfWale"));
+const MadHatter = lazy(() => import("./component/Blog/MadHatter"));
+const SummerTweed = lazy(() => import("./component/Blog/SummerTweed"));
+const ColorSuits = lazy(() => import("./component/Blog/ColorSuits"));
+const JacketBlazers = lazy(() => import("./component/Blog/JacketBlazers"));
+const NorthwestSuit = lazy(() => import("./component/Blog/NorthwestSuit"));
+
 const App = () => {
   return (
     <BrowserRouter>
