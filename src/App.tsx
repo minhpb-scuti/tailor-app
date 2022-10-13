@@ -1,13 +1,5 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Contact from "./component/Contacts";
-import Home from "./component/Home";
-import News from "./component/News";
-import ShopHomePage from "./component/ShopHomePage";
-import Appointment from "./component/Appointment";
-import About from "./component/About";
-import AboutUs from "./component/AboutUs";
-import Blog from "./component/Blog";
-import NewUltimate3D from "./component/Blog/NewUltimate3D";
+import { Route, BrowserRouter } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
 import MenSuit from "./component/Blog/MenSuit";
 import Accessories from "./component/Services/Accessories";
 import CustomTailor from "./component/Services/CustomTailor";
@@ -38,10 +30,19 @@ import SummerTweed from "./component/Blog/SummerTweed";
 import JacketBlazers from "./component/Blog/JacketBlazers";
 import NorthwestSuit from "./component/Blog/NorthwestSuits";
 
+const Contact = lazy(() => import("./component/Contacts"));
+const Home = lazy(() => import("./component/Home"));
+const News = lazy(() => import("./component/News"));
+const ShopHomePage = lazy(() => import("./component/ShopHomePage"));
+const Appointment = lazy(() => import("./component/Appointment"));
+const About = lazy(() => import("./component/About"));
+const AboutUs = lazy(() => import("./component/AboutUs"));
+const Blog = lazy(() => import("./component/Blog"));
+const NewUltimate3D = lazy(() => import("./component/Blog/NewUltimate3D"));
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      <Suspense fallback={<div>Loadding Page</div>}>
         <Route path="/" element={<Home />} />
         <Route path="/contacts" element={<Contact />} />
         <Route path="/news" element={<News />} />
@@ -103,9 +104,15 @@ const App = () => {
         />
         <Route path="/the-white-mad-hatter/" element={<MadHatter />} />
         <Route path="/summer-tweed/" element={<SummerTweed />} />
-        <Route path="/how-to-properly-button-suit-jackets-blazers/" element={<JacketBlazers />} />
-        <Route path="/recreating-cary-grants-north-by-northwest-suit/" element={<NorthwestSuit/>} />
-        
+        <Route
+          path="/how-to-properly-button-suit-jackets-blazers/"
+          element={<JacketBlazers />}
+        />
+        <Route
+          path="/recreating-cary-grants-north-by-northwest-suit/"
+          element={<NorthwestSuit />}
+        />
+
         <Route
           path="/what-colour-shoes-to-wear-with-your-suit/"
           element={<ColorSuits />}
@@ -121,7 +128,7 @@ const App = () => {
         <Route path="/team/peter-mason" element={<PerterMason />} />
         <Route path="/team/polly-wire" element={<PollyWire />} />
         <Route path="/team/rebecca-ogle" element={<RebeccaOgle />} />
-      </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };
