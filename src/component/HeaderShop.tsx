@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useState } from "react";
 import { useScrollHandler } from "../customHook";
-import logo1 from "../static/image/logo_header_1.png";
+import logo1 from "../static/image/logo001.png";
 
 export interface IHeaderShop {
   children: React.ReactNode;

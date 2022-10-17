@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useState } from "react";
-import logo from "../../static/image/png/retina-logo-1.png";
+import logo from "../../static/image/png/logo_01.png";
 import { useScrollHandler } from "../../customHook";
 
 export interface IHeader {
