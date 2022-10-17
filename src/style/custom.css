@@ -29,7 +29,7 @@
 
 .slider_1_big_text {
   z-index: 5;
-  font-family: "Butler", "serif";
+  font-family: "Rahere_Roman", "serif";
   text-transform: uppercase;
   height: auto;
   width: auto;
@@ -63,7 +63,7 @@
 
 .button_slide {
   z-index: 6;
-  font-family: "Raleway";
+  font-family: "Manrope";
   height: auto;
   width: auto;
   color: rgb(255, 255, 255);

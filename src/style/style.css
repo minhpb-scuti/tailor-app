@@ -112,7 +112,7 @@ address,
 section,
 video,
 audio {
-  font-family: inherit;
+  /* font-family: inherit; */
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;

@@ -61489,48 +61489,48 @@ abbr.wpgdprc-required+abbr.required {
   --wp-gdpr--button--background-color--darken: #000;
   --wp-gdpr--button--color: #fff
 }
-
+/* 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_Ultra_Light.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_Ultra_Light.otf');
   font-weight: 100;
   font-style: normal
 }
 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_Light.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_Light.otf');
   font-weight: 300;
   font-style: normal
 }
 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_Regular.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_Regular.otf');
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_Medium.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_Medium.otf');
   font-weight: 500;
   font-style: normal
 }
 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_Bold.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_Bold.otf');
   font-weight: 700;
   font-style: normal
 }
 
 @font-face {
-  font-family: 'butler';
-  src: url('../static/fonts/Butler_ExtraBold.otf');
+  font-family: 'Rahere_Roman';
+  src: url('../static/fonts/Rahere_Roman_ExtraBold.otf');
   font-weight: 800;
   font-style: normal
-}
+} */
 
 @font-face {
   font-family: 'fontello';
@@ -69834,7 +69834,7 @@ body.custom-background.disable_body_custom_background .widget .widgettitle {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
@@ -69855,7 +69855,7 @@ address {
 }
 
 h1 {
-  font-family: "Butler", serif;
+  font-family: "Rahere_Roman", serif;
   font-size: 4.286rem;
   font-weight: 400;
   font-style: normal;
@@ -69868,7 +69868,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Butler", serif;
+  font-family: "Rahere_Roman", serif;
   font-size: 3.929rem;
   font-weight: 400;
   font-style: normal;
@@ -69881,7 +69881,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Butler", serif;
+  font-family: "Rahere_Roman", serif;
   font-size: 3.214rem;
   font-weight: 400;
   font-style: normal;
@@ -69894,7 +69894,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Butler", serif;
+  font-family: "Rahere_Roman", serif;
   font-size: 2.143rem !important;
   font-weight: 400 !important;
   font-style: normal;
@@ -69907,7 +69907,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.143em;
   font-weight: 400;
   font-style: normal;
@@ -69920,7 +69920,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: .929rem;
   font-weight: 700;
   font-style: normal;
@@ -69943,7 +69943,7 @@ textarea.wp-editor-area,
 .select_container,
 select,
 .select_container select {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1em;
   font-weight: 400;
   font-style: normal;
@@ -69960,7 +69960,7 @@ input[type=submit],
 .gallery_preview_show .post_readmore,
 .more-link,
 .petermason_tabs .petermason_tabs_titles li a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: .786rem;
   font-weight: 600;
   font-style: normal;
@@ -69971,7 +69971,7 @@ input[type=submit],
 }
 
 .top_panel .slider_engine_revo .slide_title {
-  font-family: "Butler", serif
+  font-family: "Rahere_Roman", serif
 }
 
 blockquote,
@@ -69980,7 +69980,7 @@ ins,
 .logo_text,
 .post_price.price,
 .theme_scroll_down {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .wp-block-tag-cloud a,
@@ -69988,7 +69988,7 @@ ins,
 .widget_product_tag_cloud a,
 .widget_tag_cloud a,
 .post_meta {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -70020,16 +70020,16 @@ figure figcaption,
 .author_bio .author_link,
 .comments_list_wrap .comment_posted,
 .comments_list_wrap .comment_reply {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .search_wrap .search_results .post_meta_item,
 .search_wrap .search_results .post_counters_item {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .logo_text {
-  font-family: "Butler", serif;
+  font-family: "Rahere_Roman", serif;
   font-size: 1.8em;
   font-weight: 400;
   font-style: normal;
@@ -70040,7 +70040,7 @@ figure figcaption,
 }
 
 .logo_footer_text {
-  font-family: "Butler", serif
+  font-family: "Rahere_Roman", serif
 }
 
 .menu_main_nav_area {
@@ -70050,7 +70050,7 @@ figure figcaption,
 
 .menu_main_nav>li,
 .menu_main_nav>li>a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
@@ -70061,7 +70061,7 @@ figure figcaption,
 .menu_main_nav>li ul,
 .menu_main_nav>li ul>li,
 .menu_main_nav>li ul>li>a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -70073,24 +70073,24 @@ figure figcaption,
 
 .menu_mobile .menu_mobile_nav_area>ul>li,
 .menu_mobile .menu_mobile_nav_area>ul>li>a {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .menu_mobile .menu_mobile_nav_area>ul>li li,
 .menu_mobile .menu_mobile_nav_area>ul>li li>a {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .sc_layouts_row,
 .sc_layouts_row input[type=text] {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-style: normal;
   line-height: 1.55em
 }
 
 .sc_layouts_row .sc_button_wrap .sc_button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: .786rem;
   font-weight: 600;
   font-style: normal;
@@ -70101,7 +70101,7 @@ figure figcaption,
 
 .sc_layouts_menu_nav>li,
 .sc_layouts_menu_nav>li>a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -70113,7 +70113,7 @@ figure figcaption,
 .sc_layouts_menu_nav>li ul,
 .sc_layouts_menu_nav>li ul>li,
 .sc_layouts_menu_nav>li ul>li>a {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -70127,18 +70127,18 @@ figure figcaption,
 blockquote:before,
 .author_title,
 .trx_addons_dropcap {
-  font-family: "Butler", serif
+  font-family: "Rahere_Roman", serif
 }
 
 .custom_1 .eg-custom_skin_1-element-1 i.eg-icon-plus:before,
 .sc_layouts_item_details {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .sc_skills_pie.sc_skills_compact_off .sc_skills_item_title,
 .sc_dishes_compact .sc_services_item_title,
 .sc_services_iconed .sc_services_item_title {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .sc_promo_modern .sc_item_button .sc_button_simple,
@@ -70146,7 +70146,7 @@ blockquote:before,
 .sc_icons.sc_icons_modern .sc_icons_title,
 .content .sc_widget_contacts .widget_title,
 .sc_price_price {
-  font-family: "Butler", serif
+  font-family: "Rahere_Roman", serif
 }
 
 .toc_menu_item .toc_menu_description,
@@ -70168,7 +70168,7 @@ blockquote:before,
 .slider_style_modern .slider_controls_label span+span,
 .slider_pagination_wrap,
 .sc_slider_controller_info {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .trx_addons_audio_player .audio_author,
@@ -70191,26 +70191,26 @@ blockquote:before,
 .team_member_page .team_member_brief_info_text,
 .sc_testimonials_item_author_title,
 .sc_testimonials_item_author_subtitle {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .vc_tta.vc_tta-accordion .vc_tta-panel-title .vc_tta-title-text {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .vc_progress_bar.vc_progress_bar_narrow .vc_single_bar .vc_label .vc_label_units {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .vc_tta[class*=vc_tta-color-].vc_tta-style-modern .vc_tta-tabs-container .vc_tta-tab a .vc_tta-title-text {
-  font-family: "Butler", serif
+  font-family: "Rahere_Roman", serif
 }
 
 .woocommerce ul.products li.product h3,
 .woocommerce-page ul.products li.product h3,
 .woocommerce .checkout table.shop_table .product-name .variation,
 .woocommerce .shop_table.order_details td.product-name .variation {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 #btn-buy,
@@ -70252,7 +70252,7 @@ blockquote:before,
 .woocommerce .order_details li strong,
 .woocommerce-MyAccount-navigation,
 .woocommerce-MyAccount-content .woocommerce-Address-title a {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .woocommerce ul.products li.product .post_header .post_tags,
@@ -70261,7 +70261,7 @@ blockquote:before,
 .woocommerce div.product form.cart .reset_variations,
 .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta time,
 .woocommerce-page #reviews #comments ol.commentlist li .comment-text p.meta time {
-  font-family: "Raleway", sans-serif
+  font-family: "Manrope", sans-serif
 }
 
 .scheme_default h1,
@@ -114096,7 +114096,7 @@ rs-dotted.threexthreewhite {
   line-height: 60px;
   font-weight: 400;
   font-style: normal;
-  font-family: Raleway;
+  font-family: Manrope;
   text-decoration: none;
   text-align: center;
   background-color: #000;
@@ -116153,5 +116153,5 @@ body.custom-backgrounds {
       }
       
 .tagged_as {
-  font-family: "Raleway", sans-serif !important;
+  font-family: "Manrope", sans-serif !important;
 }
