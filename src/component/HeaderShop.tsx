@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback, useState } from "react";
-import { useScrollHandler } from "../customHook";
+import { useTranslation } from "react-i18next";
+import { lngs, useScrollHandler } from "../customHook";
 import logo1 from "../static/image/logo001.png";
 
 export interface IHeaderShop {
@@ -18,6 +19,7 @@ const Index = (props: IHeaderShop) => {
   const [hover, setHover] = useState("leave");
   const scroll = useScrollHandler();
 
+  const { t, i18n } = useTranslation();
   const handleOpen = () => {
     setOpen(!open);
   };
@@ -217,6 +219,9 @@ const Index = (props: IHeaderShop) => {
                             <div className="sc_layouts_item">
                               <nav
                                 id="sc_layouts_menu_101701878"
+                                style={{
+                                  display: "flex",
+                                }}
                                 className="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile menu_show"
                               >
                                 <ul
@@ -666,6 +671,37 @@ const Index = (props: IHeaderShop) => {
                                     </a>
                                   </li>
                                 </ul>
+                                <div
+                                  id="menu-item-3700"
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  className="multi_language"
+                                >
+                                  <a
+                                    onClick={() => {
+                                      i18n.changeLanguage("vn");
+                                    }}
+                                    style={{
+                                      padding: "0 2px 0 0",
+                                    }}
+                                  >
+                                    VN
+                                  </a>
+                                  |
+                                  <a
+                                    onClick={() => {
+                                      i18n.changeLanguage("en");
+                                    }}
+                                    style={{
+                                      padding: "0 0 0 2px",
+                                    }}
+                                  >
+                                    ENG
+                                  </a>
+                                </div>
                               </nav>
                               {/* /.sc_layouts_menu */}
                               <div

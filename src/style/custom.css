@@ -393,3 +393,11 @@ a {
     width: 240px;
   }
 }
+
+.multi_language > a:hover {
+  color: #be9667 !important;
+}
+
+.multi_language .active {
+  color: #be9667 !important;
+}

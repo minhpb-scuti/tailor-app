@@ -2282,7 +2282,7 @@ figure.wp-block-gallery {
 }
 .sc_layouts_menu .sc_layouts_menu_nav > li > a,
 .sc_layouts_menu .sc_layouts_menu_nav > li.menu-item-has-children > a {
-  padding: 0.4em 4.4em;
+  padding: 0.4em 4em;
 }
 .sc_layouts_menu .sc_layouts_menu_nav > li.menu-item-has-children > a:after {
   display: none;

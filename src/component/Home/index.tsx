@@ -23,9 +23,11 @@ import Social from "../Social";
 import Review from "../Review";
 import Story from "../Story";
 import Tailor from "../Tailor";
+import { useTranslation, Trans } from "react-i18next";
+
 const Home = () => {
   const location = useLocation();
-
+  const { t } = useTranslation();
   const [isPlayVideo, setIsPlayVideo] = useState<boolean>(false);
   const handleClickVideo = () => {
     setIsPlayVideo(true);
@@ -685,7 +687,12 @@ const Home = () => {
                                             className="video_hover_play video_hover inited sc_button_hover_style_dark"
                                             onClick={handleClickVideo}
                                           />
-                                          <div className="video_embed video_frame">
+                                          <div
+                                            className="video_embed video_frame"
+                                            style={{
+                                              height: "100%",
+                                            }}
+                                          >
                                             {isPlayVideo && (
                                               <iframe
                                                 src="https://player.vimeo.com/video/44548560?autoplay=1"
@@ -693,6 +700,9 @@ const Home = () => {
                                                 allowFullScreen
                                                 width={520}
                                                 height={292}
+                                                style={{
+                                                  height: "100%",
+                                                }}
                                               />
                                             )}
                                           </div>
