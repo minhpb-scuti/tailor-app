@@ -1986,7 +1986,7 @@
   /* Utilities */
   .hide_on_notebook,
   .hide_on_mobile {
-    display: none;
+    display: none !important;
   }
 
   /* Tags layouts */
@@ -3549,7 +3549,7 @@
   /* Utilities */
   .hide_on_notebook,
   .hide_on_mobile {
-    display: none;
+    display: none !important;
   }
 
   /* Tags layouts */
@@ -5434,7 +5434,7 @@
   /* Utilities */
   .hide_on_notebook,
   .hide_on_mobile {
-    display: none;
+    display: none !important;
   }
 
   /* Tags layouts */
@@ -7225,7 +7225,7 @@
 
 @media (max-width: 991px) {
   .hide_on_mobile {
-    display: none;
+    display: none !important;
   }
 
   .sc_layouts_menu_mobile_button {

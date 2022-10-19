@@ -37,6 +37,7 @@ const Home = () => {
   const contentWidth = getWidthContent(width);
 
   useEffect(() => {}, [width]);
+  const i18nextLng = localStorage.getItem("i18nextLng");
 
   return (
     <body className="home page-template-default page page-id-27 custom-background theme-petermason frontpage woocommerce-js body_tag scheme_default blog_mode_home body_style_wide is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-396 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
@@ -151,23 +152,21 @@ const Home = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_default sc_item_title_style_style_h1">
-                                Discover true Quality
+                                {i18nextLng?.includes("en")
+                                  ? "Discover true Quality"
+                                  : "Khám phá chất lượng thực sự"}
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                  HANDCRAFTED Suit
+                                  {i18nextLng?.includes("en")
+                                    ? "HANDCRAFTED Suit"
+                                    : "Bộ đồ THỦ CÔNG Suit"}
                                 </h6>
                               </div>
                               <div className="sc_item_descr sc_title_descr sc_align_default">
-                                We provide you with great suits that befit you
-                                and your lifestyle. Our suits are made from the
-                                highest quality fabrics and guaranteed to give
-                                you functionality, durability and comfort. Our
-                                skilled master tailors handle all of our cutting
-                                and sewing, ensuring precision in all production
-                                processes and paying attention to the details.
-                                Come to us and choose the best suit for your
-                                lifestyle.
+                                {i18nextLng?.includes("en")
+                                  ? "We provide you with great suits that befit you and your lifestyle. Our suits are made from the highest quality fabrics and guaranteed to give you functionality, durability and comfort. Our skilled master tailors handle all of our cutting and sewing, ensuring precision in all production processes and paying attention to the details. Come to us and choose the best suit for your lifestyle.."
+                                  : "Chúng tôi cung cấp cho bạn những bộ đồ tuyệt vời phù hợp với bạn và phong cách sống của bạn. Những bộ quần áo của chúng tôi được làm từ những loại vải chất lượng cao nhất và đảm bảo mang đến cho bạn chức năng, độ bền và sự thoải mái. Các thợ may lành nghề của chúng tôi xử lý tất cả các khâu cắt và may của chúng tôi, đảm bảo độ chính xác trong tất cả các quy trình sản xuất và chú ý đến các chi tiết. Hãy đến với chúng tôi và chọn những bộ đồ phù hợp nhất với phong cách sống của bạn."}
                               </div>
                             </div>
                             {/* /.sc_title */}
@@ -191,7 +190,9 @@ const Home = () => {
                               >
                                 <span className="sc_button_text">
                                   <span className="sc_button_title">
-                                    Learn about us
+                                    {i18nextLng?.includes("en")
+                                      ? "Learn about us"
+                                      : "Đọc thêm về chúng tôi"}
                                   </span>
                                 </span>
                                 {/* /.sc_button_text */}
@@ -281,7 +282,9 @@ const Home = () => {
                             >
                               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_2">
                                 <h6 className="sc_item_subtitle sc_services_subtitle sc_item_title_style_style_2">
-                                  Our services
+                                  <Trans i18nKey="our_service">
+                                    <span>{t("our_service")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                               <div className="sc_services_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
@@ -310,16 +313,20 @@ const Home = () => {
                                       <div className="sc_services_item_header">
                                         <h4 className="sc_services_item_title">
                                           <a href="/services/accessories/">
-                                            Custom Accessories
+                                            <Trans i18nKey="wedding_services">
+                                              <span>
+                                                {t("wedding_services")}
+                                              </span>
+                                            </Trans>
                                           </a>
                                         </h4>
                                         <div className="sc_services_item_subtitle" />
                                       </div>
                                       <div className="sc_services_item_content">
                                         <p>
-                                          We have a wide range of bow ties which
-                                          fit everyday fashion as well as
-                                          special occasions
+                                          <Trans i18nKey="custom_acc_desc">
+                                            <span>{t("custom_acc_desc")}</span>
+                                          </Trans>
                                         </p>
                                       </div>
                                       <div className="sc_services_item_button sc_item_button">
@@ -327,7 +334,9 @@ const Home = () => {
                                           href="/services/accessories/"
                                           className="sc_button sc_button_style_2 sc_button_size_normal sc_button_hover_slide_bottom"
                                         >
-                                          Discover
+                                          <Trans i18nKey="discover">
+                                            <span>{t("discover")}</span>
+                                          </Trans>
                                         </a>
                                       </div>
                                     </div>
@@ -359,16 +368,22 @@ const Home = () => {
                                       <div className="sc_services_item_header">
                                         <h4 className="sc_services_item_title">
                                           <a href="/services/custom-tailoring/">
-                                            Custom Tailoring
+                                            <Trans i18nKey="custom_tailoring">
+                                              <span>
+                                                {t("custom_tailoring")}
+                                              </span>
+                                            </Trans>
                                           </a>
                                         </h4>
                                         <div className="sc_services_item_subtitle" />
                                       </div>
                                       <div className="sc_services_item_content">
                                         <p>
-                                          You can choose all details you want,
-                                          from buttons to pockets and lapels, we
-                                          can do everything.
+                                          <Trans i18nKey="custom_tailor_desc">
+                                            <span>
+                                              {t("custom_tailor_desc")}
+                                            </span>
+                                          </Trans>
                                         </p>
                                       </div>
                                       <div className="sc_services_item_button sc_item_button">
@@ -376,7 +391,9 @@ const Home = () => {
                                           href="/services/custom-tailoring/"
                                           className="sc_button sc_button_style_2 sc_button_size_normal sc_button_hover_slide_bottom"
                                         >
-                                          Discover
+                                          <Trans i18nKey="discover">
+                                            <span>{t("discover")}</span>
+                                          </Trans>
                                         </a>
                                       </div>
                                     </div>
@@ -408,16 +425,20 @@ const Home = () => {
                                       <div className="sc_services_item_header">
                                         <h4 className="sc_services_item_title">
                                           <a href="/services/suit-resizing/">
-                                            Suit Resizing
+                                            <Trans i18nKey="suit_resizing">
+                                              <span>{t("suit_resizing")}</span>
+                                            </Trans>
                                           </a>
                                         </h4>
                                         <div className="sc_services_item_subtitle" />
                                       </div>
                                       <div className="sc_services_item_content">
                                         <p>
-                                          Each our suit is made to your exact
-                                          measurements and fit your specific
-                                          body type
+                                          <Trans i18nKey="suit_resizing_desc">
+                                            <span>
+                                              {t("suit_resizing_desc")}
+                                            </span>
+                                          </Trans>
                                         </p>
                                       </div>
                                       <div className="sc_services_item_button sc_item_button">
@@ -425,7 +446,9 @@ const Home = () => {
                                           href="/services/suit-resizing/"
                                           className="sc_button sc_button_style_2 sc_button_size_normal sc_button_hover_slide_bottom"
                                         >
-                                          Discover
+                                          <Trans i18nKey="discover">
+                                            <span>{t("discover")}</span>
+                                          </Trans>
                                         </a>
                                       </div>
                                     </div>
@@ -457,16 +480,22 @@ const Home = () => {
                                       <div className="sc_services_item_header">
                                         <h4 className="sc_services_item_title">
                                           <a href="/services/weddings/">
-                                            Wedding Services
+                                            <Trans i18nKey="wedding_services">
+                                              <span>
+                                                {t("wedding_services")}
+                                              </span>
+                                            </Trans>
                                           </a>
                                         </h4>
                                         <div className="sc_services_item_subtitle" />
                                       </div>
                                       <div className="sc_services_item_content">
                                         <p>
-                                          You and your groomsmen deserve the
-                                          sharpest suits. Let us help you create
-                                          suits for your day.
+                                          <Trans i18nKey="wedding_service_desc">
+                                            <span>
+                                              {t("wedding_service_desc")}
+                                            </span>
+                                          </Trans>
                                         </p>
                                       </div>
                                       <div className="sc_services_item_button sc_item_button">
@@ -474,7 +503,9 @@ const Home = () => {
                                           href="/services/weddings/"
                                           className="sc_button sc_button_style_2 sc_button_size_normal sc_button_hover_slide_bottom"
                                         >
-                                          Discover
+                                          <Trans i18nKey="discover">
+                                            <span>{t("discover")}</span>
+                                          </Trans>
                                         </a>
                                       </div>
                                     </div>
@@ -538,12 +569,19 @@ const Home = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_default sc_item_title_style_style_3">
-                                Your Design, We deliver
+                                <Trans i18nKey="your_design_we_deliver">
+                                  <span>{t("your_design_we_deliver")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_3">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_3">
-                                  Providing you with maximum level of comfort
-                                  &amp; confidence in every suit!
+                                  {/* Providing you with maximum level of comfort
+                                  &amp; confidence in every suit! */}
+                                  <Trans i18nKey="your_design_we_deliver_desc">
+                                    <span>
+                                      {t("your_design_we_deliver_desc")}
+                                    </span>
+                                  </Trans>
                                 </h6>
                               </div>
                             </div>
@@ -585,9 +623,11 @@ const Home = () => {
                                 className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                               >
                                 <span className="sc_button_text">
-                                  <span className="sc_button_title">
-                                    Book your appoinment
-                                  </span>
+                                  <Trans i18nKey="book_your_appointment">
+                                    <span className="sc_button_title">
+                                      {t("book_your_appointment")}
+                                    </span>
+                                  </Trans>
                                 </span>
                                 {/* /.sc_button_text */}
                               </a>
@@ -941,7 +981,9 @@ const Home = () => {
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                  online store
+                                  <Trans i18nKey="online_store">
+                                    <span>{t("online_store")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                             </div>

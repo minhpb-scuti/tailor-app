@@ -96,16 +96,3 @@ export const getLeftCarousel = (width: number): number => {
   return 0;
 };
 
-export interface ILngs {
-  vn: {
-    nativeName: string;
-  };
-  eng: {
-    nativeName: string;
-  };
-}
-
-export const lngs: ILngs = {
-  vn: { nativeName: "VN" },
-  eng: { nativeName: "Eng" },
-};

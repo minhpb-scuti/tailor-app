@@ -3585,6 +3585,7 @@ body.error404 .sc_layouts_hide_on_frontpage {
   position: relative;
   float: left;
   z-index: 20;
+  width: calc(100% / 6);
 }
 
 .sc_layouts_menu_nav > li + li {

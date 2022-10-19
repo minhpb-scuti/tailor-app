@@ -18,11 +18,14 @@ import Partner3 from "../static/image/partners_3.png";
 import Partner4 from "../static/image/partners_4.png";
 import Partner5 from "../static/image/partners_5.png";
 import { useWindowDimensions, getWidthContent } from "../customHook";
+import { Trans, useTranslation } from "react-i18next";
 
 const ShopBoxed = () => {
   const { pathname } = useLocation();
   const { width } = useWindowDimensions();
   const contentWidth = getWidthContent(width);
+  const { t } = useTranslation();
+
   return (
     <body className="page-template-default page page-id-810 custom-backgrounds theme-petermason woocommerce-js body_tag scheme_default blog_mode_page body_style_boxed is_single sidebar_hide expand_content remove_margins header_style_header-custom-621 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
       <div className="body_wrap">
@@ -145,7 +148,11 @@ const ShopBoxed = () => {
                                     >
                                       <span className="sc_button_text">
                                         <span className="sc_button_title">
-                                          Collections by tailor store
+                                          <Trans i18nKey="collection_by_store">
+                                            <span>
+                                              {t("collection_by_store")}
+                                            </span>
+                                          </Trans>
                                         </span>
                                       </span>
                                       {/* /.sc_button_text */}
@@ -196,7 +203,9 @@ const ShopBoxed = () => {
                                     >
                                       <span className="sc_button_text">
                                         <span className="sc_button_title">
-                                          Latest arrivals
+                                          <Trans i18nKey="lastest_arrivals">
+                                            <span>{t("lastest_arrivals")}</span>
+                                          </Trans>
                                         </span>
                                       </span>
                                       {/* /.sc_button_text */}
@@ -247,7 +256,9 @@ const ShopBoxed = () => {
                                     >
                                       <span className="sc_button_text">
                                         <span className="sc_button_title">
-                                          Top reasons to choose tailored
+                                          <Trans i18nKey="top_reasons">
+                                            <span>{t("top_reasons")}</span>
+                                          </Trans>
                                         </span>
                                       </span>
                                       {/* /.sc_button_text */}
@@ -349,11 +360,15 @@ const ShopBoxed = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_style_h1">
-                                Recent products
+                                <Trans i18nKey="recent_products">
+                                  <span>{t("recent_products")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                  online store
+                                  <Trans i18nKey="online_store">
+                                    <span>{t("online_store")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                             </div>
@@ -426,7 +441,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -487,7 +504,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -539,7 +558,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Luxury Fit 3pc Black Solid Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -600,7 +621,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Exclusive Fit 3pc Dark Blue Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -647,13 +670,17 @@ const ShopBoxed = () => {
                                   <div className="sc_action_item_mask" />
                                   <div className="sc_action_item_inner">
                                     <h3 className="sc_action_item_title">
-                                      <span>Save up to 60%</span>
+                                      <Trans i18nKey="save_60">
+                                        <span>{t("save_60")}</span>
+                                      </Trans>
                                     </h3>
                                     <a
                                       href="/shop/"
                                       className="sc_action_item_link"
                                     >
-                                      Learn more
+                                      <Trans i18nKey="learn_more">
+                                        <span>{t("learn_more")}</span>
+                                      </Trans>
                                     </a>
                                   </div>
                                   {/* /.sc_action_item_inner */}
@@ -691,13 +718,17 @@ const ShopBoxed = () => {
                                   <div className="sc_action_item_mask" />
                                   <div className="sc_action_item_inner">
                                     <h3 className="sc_action_item_title">
-                                      <span>Save up to 60%</span>
+                                      <Trans i18nKey="save_60">
+                                        <span>{t("save_60")}</span>
+                                      </Trans>
                                     </h3>
                                     <a
                                       href="/shop/"
                                       className="sc_action_item_link"
                                     >
-                                      Learn more
+                                      <Trans i18nKey="learn_more">
+                                        <span>{t("learn_more")}</span>
+                                      </Trans>
                                     </a>
                                   </div>
                                   {/* /.sc_action_item_inner */}
@@ -736,11 +767,15 @@ const ShopBoxed = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_style_h1">
-                                Top Sellers
+                                <Trans i18nKey="top_sellers">
+                                  <span>{t("top_sellers")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                  online store
+                                  <Trans i18nKey="online_store">
+                                    <span>{t("online_store")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                             </div>
@@ -814,7 +849,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Slim Fit 2pc Black Mini Checkered Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -875,7 +912,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Modern Fit 2pc Ultra Black Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -936,7 +975,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -997,7 +1038,9 @@ const ShopBoxed = () => {
                                         aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}

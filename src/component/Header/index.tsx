@@ -2,7 +2,7 @@
 import React, { useCallback, useState } from "react";
 import logo from "../../static/image/png/logo_01.png";
 import { useScrollHandler } from "../../customHook";
-
+import { Trans, useTranslation } from "react-i18next";
 export interface IHeader {
   children: React.ReactNode;
   pathname: string;
@@ -17,6 +17,10 @@ const Index = (props: IHeader) => {
   const [selectOpen, setSelectOpen] = useState<string>("");
   const [hover, setHover] = useState("leave");
   const scroll = useScrollHandler();
+
+  const i18nextLng = localStorage.getItem("i18nextLng");
+
+  const { t, i18n } = useTranslation();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -198,9 +202,11 @@ const Index = (props: IHeader) => {
                       className="sc_button sc_button_style_2 sc_button_size_normal sc_button_icon_left sc_button_hover_slide_bottom"
                     >
                       <span className="sc_button_text">
-                        <span className="sc_button_title">
-                          Make an appointment
-                        </span>
+                        <Trans i18nKey="header.make_an_appointment">
+                          <span className="sc_button_title">
+                            {t("header.make_an_appointment")}
+                          </span>
+                        </Trans>
                       </span>
                       {/* /.sc_button_text */}
                     </a>
@@ -233,8 +239,6 @@ const Index = (props: IHeader) => {
                               <nav
                                 id="sc_layouts_menu_101701878"
                                 className="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile menu_show"
-                                data-animation-in="fadeInUpSmall"
-                                data-animation-out="fadeOutDownSmall"
                               >
                                 <ul
                                   id="menu-main-menu"
@@ -257,7 +261,9 @@ const Index = (props: IHeader) => {
                                     }}
                                   >
                                     <a href="#" className="sf-with-ul">
-                                      <span>Home</span>
+                                      <Trans i18nKey="header.home">
+                                        <span>{t("header.home")}</span>
+                                      </Trans>
                                     </a>
                                     <ul
                                       className={`sub-menu animated fast ${
@@ -283,7 +289,11 @@ const Index = (props: IHeader) => {
                                         `}
                                       >
                                         <a href="/" aria-current="page">
-                                          <span>Homepage Fullwidth</span>
+                                          <Trans i18nKey="header.homepage_fullwidth">
+                                            <span>
+                                              {t("header.homepage_fullwidth")}
+                                            </span>
+                                          </Trans>
                                         </a>
                                       </li>
                                       <li
@@ -291,7 +301,11 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"
                                       >
                                         <a href="/shop-homepage/">
-                                          <span>Homepage Shop</span>
+                                          <Trans i18nKey="header.homepage_shop">
+                                            <span>
+                                              {t("header.homepage_boxed")}
+                                            </span>
+                                          </Trans>
                                         </a>
                                       </li>
                                       <li
@@ -299,7 +313,11 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"
                                       >
                                         <a href="/shop-boxed/">
-                                          <span>Homepage Boxed</span>
+                                          <Trans i18nKey="header.homepage_boxed">
+                                            <span>
+                                              {t("header.homepage_boxed")}
+                                            </span>
+                                          </Trans>
                                         </a>
                                       </li>
                                     </ul>
@@ -415,7 +433,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-42"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <span>Tools</span>
+                                          <Trans i18nKey="header.tools">
+                                            <span>{t("header.tools")}</span>
+                                          </Trans>
                                         </a>
                                         <ul
                                           className="sub-menu animated fast fadeOutDownSmall"
@@ -460,7 +480,11 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"
                                       >
                                         <a href="/appointment/">
-                                          <span>Appointment</span>
+                                          <Trans i18nKey="header.appointment">
+                                            <span>
+                                              {t("header.appointment")}
+                                            </span>
+                                          </Trans>
                                         </a>
                                       </li>
                                     </ul>
@@ -480,7 +504,9 @@ const Index = (props: IHeader) => {
                                     }}
                                   >
                                     <a href="#" className="sf-with-ul">
-                                      <span>About</span>
+                                      <Trans i18nKey="header.about">
+                                        <span>{t("header.about")}</span>
+                                      </Trans>
                                     </a>
                                     <ul
                                       className={`sub-menu animated fast ${
@@ -500,7 +526,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"
                                       >
                                         <a href="/about/">
-                                          <span>Style 1</span>
+                                          <Trans i18nKey="header.style1">
+                                            <span>{t("header.style1")}</span>
+                                          </Trans>
                                         </a>
                                       </li>
                                       <li
@@ -508,7 +536,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"
                                       >
                                         <a href="/about-us/">
-                                          <span>Style 2</span>
+                                          <Trans i18nKey="header.style2">
+                                            <span>{t("header.style2")}</span>
+                                          </Trans>
                                         </a>
                                       </li>
                                     </ul>
@@ -528,7 +558,9 @@ const Index = (props: IHeader) => {
                                     }}
                                   >
                                     <a href="/shop/">
-                                      <span>Suits</span>
+                                      <Trans i18nKey="header.suits">
+                                        <span>{t("header.suits")}</span>
+                                      </Trans>
                                     </a>
                                   </li>
                                   <li
@@ -546,7 +578,9 @@ const Index = (props: IHeader) => {
                                     }}
                                   >
                                     <a href="/blog" className="sf-with-ul">
-                                      <span>News</span>
+                                      <Trans i18nKey="header.news">
+                                        <span>{t("header.news")}</span>
+                                      </Trans>
                                     </a>
                                     <ul
                                       className={`sub-menu animated fast ${
@@ -603,7 +637,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-129"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <span>Chess</span>
+                                          <Trans i18nKey="header.chess">
+                                            <span>{t("header.classic")}</span>
+                                          </Trans>
                                         </a>
                                         <ul
                                           className="sub-menu animated fast fadeOutDownSmall"
@@ -640,7 +676,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-130"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <span>Portfolio</span>
+                                          <Trans i18nKey="header.chess">
+                                            <span>{t("header.classic")}</span>
+                                          </Trans>
                                         </a>
                                         <ul
                                           className="sub-menu animated fast fadeOutDownSmall"
@@ -679,11 +717,53 @@ const Index = (props: IHeader) => {
                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"
                                   >
                                     <a href="/contacts/">
-                                      <span>Contacts</span>
+                                      <Trans i18nKey="header.contacts">
+                                        <span>{t("header.contacts")}</span>
+                                      </Trans>
                                     </a>
                                   </li>
                                 </ul>
+                                <div
+                                  id="menu-item-3700"
+                                  style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                  }}
+                                  className="multi_language"
+                                >
+                                  <a
+                                    onClick={() => {
+                                      i18n.changeLanguage("vn");
+                                    }}
+                                    style={{
+                                      padding: "0 2px 0 0",
+                                      cursor: "pointer",
+                                    }}
+                                    className={
+                                      i18nextLng?.includes("vn") ? "active" : ""
+                                    }
+                                  >
+                                    VN
+                                  </a>
+                                  |
+                                  <a
+                                    onClick={() => {
+                                      i18n.changeLanguage("en");
+                                    }}
+                                    style={{
+                                      padding: "0 0 0 2px",
+                                      cursor: "pointer",
+                                    }}
+                                    className={
+                                      i18nextLng?.includes("en") ? "active" : ""
+                                    }
+                                  >
+                                    ENG
+                                  </a>
+                                </div>
                               </nav>
+
                               {/* /.sc_layouts_menu */}
                               <div
                                 className="sc_layouts_iconed_text sc_layouts_menu_mobile_button"
