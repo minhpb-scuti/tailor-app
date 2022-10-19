@@ -88,6 +88,8 @@ i18n
             "Providing you with maximum level of comfort & confidence in every suit!",
           peter_in_media: "peter in the media",
           book_your_appointment: 'Book your appointment',
+          press: 'Press',
+          articles: 'articles'
         },
       },
       vn: {
@@ -113,7 +115,7 @@ i18n
             gallery: "Phòng trưng bày",
             grid: "Lưới",
             masonry: "Nề",
-            make_an_appointment: "Đặt lịch hẹn",
+            make_an_appointment: "Đặt một lịch hẹn",
             items: "sản phẩm",
             money: "VND",
             search: "Tìm kiếm",
@@ -155,8 +157,10 @@ i18n
           your_design_we_deliver: "Thiết kế của bạn, Chúng tôi cung cấp",
           your_design_we_deliver_desc:
             "Mang đến cho bạn sự thoải mái và tự tin tối đa trong mọi bộ đồ!",
-          peter_in_media: "peter in the media",
+          peter_in_media: "peter trên các phương tiện truyền thông",
           book_your_appointment: 'Đặt lịch hẹn của bạn',
+          press: 'Báo chí',
+          articles: 'bài báo'
         },
       },
     },

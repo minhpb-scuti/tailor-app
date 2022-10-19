@@ -757,14 +757,14 @@ const Index = (props: IHeaderShop) => {
                                 >
                                   <a
                                     onClick={() => {
-                                      i18n.changeLanguage("vn");
+                                      i18n.changeLanguage("vi");
                                     }}
                                     style={{
                                       padding: "0 2px 0 0",
                                       cursor: "pointer",
                                     }}
                                     className={
-                                      i18nextLng?.includes("vn") ? "active" : ""
+                                      i18nextLng?.includes("vi") ? "active" : ""
                                     }
                                   >
                                     VN
@@ -1244,14 +1244,14 @@ const Index = (props: IHeaderShop) => {
             >
               <a
                 onClick={() => {
-                  i18n.changeLanguage("vn");
+                  i18n.changeLanguage("vi");
                 }}
                 style={{
                   padding: "0 2px 0 0",
                   cursor: "pointer",
                   color: "#fff",
                 }}
-                className={i18nextLng?.includes("vn") ? "active" : ""}
+                className={i18nextLng?.includes("vi") ? "active" : ""}
               >
                 VN
               </a>
@@ -1278,7 +1278,7 @@ const Index = (props: IHeaderShop) => {
                   type="text"
                   className="search_field"
                   placeholder={
-                    i18nextLng?.includes("vn") ? "tìm kiếm" : "search"
+                    i18nextLng?.includes("vi") ? "tìm kiếm" : "search"
                   }
                   name="s"
                 />

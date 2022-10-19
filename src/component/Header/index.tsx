@@ -337,7 +337,9 @@ const Index = (props: IHeader) => {
                                     }}
                                   >
                                     <a href="#" className="sf-with-ul">
-                                      <span>Features</span>
+                                      <Trans i18nKey="header.features">
+                                        <span>{t("header.features")}</span>
+                                      </Trans>
                                     </a>
                                     <ul
                                       className={`sub-menu animated fast ${
@@ -359,7 +361,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <span>Pages</span>
+                                          <Trans i18nKey="header.pages">
+                                            <span>{t("header.pages")}</span>
+                                          </Trans>
                                         </a>
                                         <ul
                                           className="sub-menu fadeOutDownSmall animated fast"
@@ -734,14 +738,14 @@ const Index = (props: IHeader) => {
                                 >
                                   <a
                                     onClick={() => {
-                                      i18n.changeLanguage("vn");
+                                      i18n.changeLanguage("vi");
                                     }}
                                     style={{
                                       padding: "0 2px 0 0",
                                       cursor: "pointer",
                                     }}
                                     className={
-                                      i18nextLng?.includes("vn") ? "active" : ""
+                                      i18nextLng?.includes("vi") ? "active" : ""
                                     }
                                   >
                                     VN
@@ -864,7 +868,9 @@ const Index = (props: IHeader) => {
                 }
               >
                 <a href="#">
-                  <span>Features</span>
+                  <Trans i18nKey="header.features">
+                    <span>{t("header.features")}</span>
+                  </Trans>
                   <span className="open_child_menu" />
                 </a>
                 <ul
@@ -878,7 +884,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180"
                   >
                     <a href="/">
-                      <span>Pages</span>
+                      <Trans i18nKey="header.pages">
+                        <span>{t("header.pages")}</span>
+                      </Trans>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">

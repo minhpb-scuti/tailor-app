@@ -776,11 +776,19 @@ const Home = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_default sc_item_title_style_style_h1">
-                                peter in the media
+                                <Trans i18nKey="peter_in_media">
+                                  <span>{t("peter_in_media")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                  press &amp; articles
+                                <Trans i18nKey="peter_in_media">
+                                  <span>{t("peter_in_media")}</span>
+                                </Trans>
+                                   &amp; 
+                                   <Trans i18nKey="articles">
+                                  <span>{t("peter_in_media")}</span>
+                                </Trans>
                                 </h6>
                               </div>
                               <div className="sc_item_descr sc_title_descr sc_align_default">
