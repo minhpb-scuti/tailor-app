@@ -782,21 +782,19 @@ const Home = () => {
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                <Trans i18nKey="peter_in_media">
-                                  <span>{t("peter_in_media")}</span>
-                                </Trans>
-                                   &amp; 
-                                   <Trans i18nKey="articles">
-                                  <span>{t("peter_in_media")}</span>
-                                </Trans>
+                                  <Trans i18nKey="peter_in_media">
+                                    <span>{t("peter_in_media")}</span>
+                                  </Trans>
+                                  &amp;
+                                  <Trans i18nKey="articles">
+                                    <span>{t("peter_in_media")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                               <div className="sc_item_descr sc_title_descr sc_align_default">
-                                We invite you to follow us on our social media
-                                channels for the latest news and event updates!
-                                Be kept up to date with the freshest ideas of
-                                Peter Mason and his talented team, no matter
-                                where you are in the world.
+                                <Trans i18nKey="media_desc">
+                                  <span>{t("media_desc")}</span>
+                                </Trans>
                               </div>
                             </div>
                             {/* /.sc_title */}
@@ -819,9 +817,11 @@ const Home = () => {
                                 className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                               >
                                 <span className="sc_button_text">
-                                  <span className="sc_button_title">
-                                    Watch our videos
-                                  </span>
+                                  <Trans i18nKey="watch_our_video">
+                                    <span className="sc_button_title">
+                                      {t("watch_our_video")}
+                                    </span>
+                                  </Trans>
                                 </span>
                                 {/* /.sc_button_text */}
                               </a>
@@ -985,7 +985,9 @@ const Home = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_style_h1">
-                                Ready to wear
+                                <Trans i18nKey="ready_to_wear">
+                                  <span>{t("ready_to_wear")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_h1">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
@@ -1065,7 +1067,9 @@ const Home = () => {
                                         aria-label="Select options for “Slim Fit 2pc Black Mini Checkered Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -1126,7 +1130,9 @@ const Home = () => {
                                         aria-label="Select options for “Modern Fit 2pc Ultra Black Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -1187,7 +1193,9 @@ const Home = () => {
                                         aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -1248,7 +1256,9 @@ const Home = () => {
                                         aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                                         rel="nofollow"
                                       >
-                                        Buy now
+                                        <Trans i18nKey="buy_now">
+                                          <span>{t("buy_now")}</span>
+                                        </Trans>
                                       </a>
                                     </div>
                                     {/* /.post_data */}
@@ -1308,12 +1318,15 @@ const Home = () => {
                               className="sc_title sc_title_default"
                             >
                               <h2 className="sc_item_title sc_title_title sc_align_default sc_item_title_style_style_3">
-                                The Latest Styles &amp; Trends
+                                <Trans i18nKey="lastest_styles_and_trends">
+                                  <span>{t("lastest_styles_and_trends")}</span>
+                                </Trans>
                               </h2>
                               <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_3">
                                 <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_3">
-                                  From shirts to formal wear we customize
-                                  everything imaginable!
+                                  <Trans i18nKey="collection_desc">
+                                    <span>{t("collection_desc")}</span>
+                                  </Trans>
                                 </h6>
                               </div>
                             </div>
@@ -1360,7 +1373,13 @@ const Home = () => {
                                       >
                                         <span className="sc_button_text">
                                           <span className="sc_button_title">
-                                            View Our Custom Collections
+                                            <Trans i18nKey="view_our_custom_collection">
+                                              <span>
+                                                {t(
+                                                  "view_our_custom_collection"
+                                                )}
+                                              </span>
+                                            </Trans>
                                           </span>
                                         </span>
                                         {/* /.sc_button_text */}
@@ -1502,12 +1521,16 @@ const Home = () => {
                                 id="widget_contacts_211082118_widget"
                                 className="widget widget_contacts"
                               >
-                                <h5 className="widget_title">Contact Info</h5>
+                                <h5 className="widget_title">
+                                  <Trans i18nKey="contact_info">
+                                    <span>{t("contact_info")}</span>
+                                  </Trans>
+                                </h5>
                                 <div className="contacts_description">
                                   <p>
-                                    Have a question? Our team always ready to
-                                    help. Feel free and come to us anytime, we
-                                    are glad to see you at our studio.
+                                    <Trans i18nKey="contact_info_desc">
+                                      <span>{t("contact_info_desc")}</span>
+                                    </Trans>
                                   </p>
                                 </div>
                                 <div className="contacts_info">
@@ -1517,9 +1540,15 @@ const Home = () => {
                                     </span>
                                     <div className="contacts_worktime">
                                       <p>
-                                        Monday - Friday: 10 am - 10pm
+                                        <Trans i18nKey="monday_friday">
+                                          <span>{t("monday_friday")}</span>
+                                        </Trans>
+                                        : 10 am - 10pm
                                         <br />
-                                        Sunday: 11 am - 9pm
+                                        <Trans i18nKey="sunday">
+                                          <span>{t("sunday")}</span>
+                                        </Trans>
+                                        : 11 am - 9pm
                                       </p>
                                     </div>
                                     <span className="contacts_phone">

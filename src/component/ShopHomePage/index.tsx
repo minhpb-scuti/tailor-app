@@ -1165,14 +1165,8 @@ const ShopHomePage = () => {
                                         </div>
                                       </div>
                                       <div className="slider_controls_wrap">
-                                        <a
-                                          className="slider_prev swiper-button-prev"
-                                          href="#"
-                                        />
-                                        <a
-                                          className="slider_next swiper-button-next"
-                                          href="#"
-                                        />
+                                        <a className="slider_prev swiper-button-prev" />
+                                        <a className="slider_next swiper-button-next" />
                                       </div>
                                     </div>
                                   </div>

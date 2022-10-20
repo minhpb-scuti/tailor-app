@@ -20,7 +20,7 @@ const AboutUs = () => {
     <div className="scheme_default body_wrap">
       <div className="page_wrap">
         <Header
-          children={<BreadCrumb text="About Us" />}
+          children={<BreadCrumb text="header.about" />}
           pathname={location.pathname}
         />
         <div className="page_content_wrap scheme_default">

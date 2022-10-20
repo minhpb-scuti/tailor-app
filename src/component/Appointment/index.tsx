@@ -10,7 +10,7 @@ const Appointment = () => {
   return (
     <div className="scheme_default">
       <Header
-        children={<BreadCrumb text="Appointment" />}
+        children={<BreadCrumb text="header.appointment" />}
         pathname={location.pathname}
       />
       <div className="page_content_wrap scheme_default">

@@ -4,13 +4,15 @@ import { useLocation } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import BreadCrumb from "../BreadCrumb";
+import { Trans, useTranslation } from "react-i18next";
 
 const Contract = () => {
   const location = useLocation();
+  const { t } = useTranslation();
   return (
-    <div className="scheme_default"> 
+    <div className="scheme_default">
       <Header
-        children={<BreadCrumb text="Contacts" />}
+        children={<BreadCrumb text="header.contacts" />}
         pathname={location.pathname}
       />
       <div className="page_content_wrap scheme_default">
@@ -69,12 +71,16 @@ const Contract = () => {
                             id="widget_contacts_501915966_widget"
                             className="widget widget_contacts"
                           >
-                            <h5 className="widget_title">Contact Info</h5>
+                            <h5 className="widget_title">
+                              <Trans i18nKey="contact_info">
+                                <span>{t("contact_info")}</span>
+                              </Trans>
+                            </h5>
                             <div className="contacts_description">
                               <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
+                                <Trans i18nKey="contact_info_desc">
+                                  <span>{t("contact_info_desc")}</span>
+                                </Trans>
                               </p>
                             </div>
                             <div className="contacts_info">
@@ -84,9 +90,15 @@ const Contract = () => {
                                 </span>
                                 <div className="contacts_worktime">
                                   <p>
-                                    Monday - Friday: 10 am - 10pm
+                                    <Trans i18nKey="monday_friday">
+                                      <span>{t("monday_friday")}</span>
+                                    </Trans>
+                                    : 10 am - 10pm
                                     <br />
-                                    Sunday: 11 am - 9pm
+                                    <Trans i18nKey="sunday">
+                                      <span>{t("sunday")}</span>
+                                    </Trans>
+                                    : 11 am - 9pm
                                   </p>
                                 </div>
                                 <span className="contacts_phone">
@@ -174,7 +186,9 @@ const Contract = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Find us on Facebook</span>
+                                        <Trans i18nKey="find_us_on_fb">
+                                          <span>{t("find_us_on_fb")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a
@@ -217,7 +231,9 @@ const Contract = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Follow Us on Twitter</span>
+                                        <Trans i18nKey="find_us_on_twitter">
+                                          <span>{t("find_us_on_twitter")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a
@@ -260,7 +276,9 @@ const Contract = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Follow Us on Instagram</span>
+                                        <Trans i18nKey="find_us_on_ins">
+                                          <span>{t("find_us_on_ins")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a
@@ -341,7 +359,9 @@ const Contract = () => {
                           className="sc_title sc_title_default vc_custom_1556716015243"
                         >
                           <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_default">
-                            Send message
+                            <Trans i18nKey="send_mess">
+                              <span>{t("send_mess")}</span>
+                            </Trans>
                           </h2>
                         </div>
                         {/* /.sc_title */}
@@ -405,7 +425,7 @@ const Contract = () => {
                                     className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                     aria-required="true"
                                     aria-invalid="false"
-                                    placeholder="Your name*"
+                                    placeholder={t("your_name")}
                                   />
                                 </span>
                               </div>
@@ -421,7 +441,7 @@ const Contract = () => {
                                     className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                     aria-required="true"
                                     aria-invalid="false"
-                                    placeholder="Your e-mail*"
+                                    placeholder={t("your_email")}
                                   />
                                 </span>
                               </div>
@@ -438,17 +458,27 @@ const Contract = () => {
                                   className="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                                   aria-required="true"
                                   aria-invalid="false"
-                                  placeholder="Your message*"
+                                  placeholder={t("your_mess")}
                                   defaultValue={""}
                                 />
                               </span>
                             </div>
                             <div className="sc_form_field sc_form_field_button sc_form_field_submit">
-                              <input
+                              {/* <input
                                 type="submit"
-                                defaultValue="Submit"
+                                defaultValue={t("submit")}
                                 className="wpcf7-form-control has-spinner wpcf7-submit"
-                              />
+                              /> */}
+                              <button
+                                type="submit"
+                                style={{
+                                  marginTop: "20px",
+                                }}
+                              >
+                                <Trans i18nKey="submit">
+                                  <span>{t("submit")}</span>
+                                </Trans>
+                              </button>
                               <span className="wpcf7-spinner" />
                             </div>
                             <div

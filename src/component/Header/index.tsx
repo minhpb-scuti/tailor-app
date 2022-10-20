@@ -19,6 +19,8 @@ const Index = (props: IHeader) => {
   const scroll = useScrollHandler();
 
   const i18nextLng = localStorage.getItem("i18nextLng");
+  console.log('i18nextLng', i18nextLng);
+  
 
   const { t, i18n } = useTranslation();
 
@@ -1182,6 +1184,43 @@ const Index = (props: IHeader) => {
                 </a>
               </li>
             </ul>
+            <div
+              id="menu-item-3700"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="multi_language"
+            >
+              <a
+                onClick={() => {
+                  i18n.changeLanguage("vi");
+                }}
+                style={{
+                  padding: "0 2px 0 0",
+                  cursor: "pointer",
+                  color: "#fff",
+                }}
+                className={i18nextLng?.includes("vi") ? "active" : ""}
+              >
+                VN
+              </a>
+              |
+              <a
+                onClick={() => {
+                  i18n.changeLanguage("en");
+                }}
+                style={{
+                  padding: "0 0 0 2px",
+                  cursor: "pointer",
+                  color: "#fff",
+                }}
+                className={i18nextLng?.includes("en") ? "active" : ""}
+              >
+                ENG
+              </a>
+            </div>
           </nav>
           <div className="search_wrap search_style_normal search_mobile inited">
             <div className="search_form_wrap">

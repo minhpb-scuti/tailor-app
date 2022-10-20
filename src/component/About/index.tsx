@@ -11,18 +11,20 @@ import Image5 from "../../static/image/image-5.webp";
 import { getWidthContent, useWindowDimensions } from "../../customHook";
 import Review from "../Review";
 import BreadCrumb from "../BreadCrumb";
+import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
   const location = useLocation();
   const { width } = useWindowDimensions();
   const contentWidth = getWidthContent(width);
+  const { t } = useTranslation();
 
   useEffect(() => {}, [width]);
 
   return (
     <div className="scheme_default">
       <Header
-        children={<BreadCrumb text="About" />}
+        children={<BreadCrumb text="header.about" />}
         pathname={location.pathname}
       />
       <div className="page_content_wrap scheme_default">
@@ -121,24 +123,20 @@ const About = () => {
                                   </h2>
                                   <div className="sc_item_subtitle_container sc_align_default sc_item_title_style_style_h1">
                                     <h6 className="sc_item_subtitle sc_title_subtitle sc_item_title_style_style_h1">
-                                      HANDCRAFTED Suit
+                                      <Trans i18nKey="handcrafted_suit">
+                                        <span>{t("handcrafted_suit")}</span>
+                                      </Trans>
                                     </h6>
                                   </div>
                                   <div className="sc_item_descr sc_title_descr sc_align_default">
-                                    We offer high-quality custom tailored suits
-                                    and shirts for men who see the value in
-                                    looking sharp and gallant. Our skilled
-                                    master tailors handle all of our cutting and
-                                    sewing, ensuring precision in all production
-                                    processes with attention to the details.
+                                    <Trans i18nKey="handcrafted1">
+                                      <span>{t("handcrafted1")}</span>
+                                    </Trans>
                                     <p />
                                     <p>
-                                      A suit is always, always a stylish choice
-                                      - but when it's crafted from high-quality
-                                      materials. Having a suit made from quality
-                                      fabrics defines how it wears and looks. We
-                                      guarantee that our suits will suitable to
-                                      your lifestyle and your everyday needs.
+                                      <Trans i18nKey="handcrafted2">
+                                        <span>{t("handcrafted2")}</span>
+                                      </Trans>
                                     </p>
                                   </div>
                                 </div>
@@ -156,9 +154,11 @@ const About = () => {
                                     className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                                   >
                                     <span className="sc_button_text">
-                                      <span className="sc_button_title">
-                                        MORE ABOUT US
-                                      </span>
+                                      <Trans i18nKey="learn_about_us">
+                                        <span className="sc_button_title">
+                                          {t("learn_about_us")}
+                                        </span>
+                                      </Trans>
                                     </span>
                                     {/* /.sc_button_text */}
                                   </a>
@@ -240,7 +240,9 @@ const About = () => {
                           className="sc_title sc_title_default"
                         >
                           <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_default">
-                            GALLERY
+                            <Trans i18nKey="gallery">
+                              <span>{t("gallery")}</span>
+                            </Trans>
                           </h2>
                         </div>
                         {/* /.sc_title */}
@@ -995,14 +997,16 @@ const About = () => {
                         </div>
                         <div className="sc_item_button sc_button_wrap sc_align_center">
                           <a
-                            href="/grid/"
+                            href="/"
                             id="sc_button_678914847"
                             className="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"
                           >
                             <span className="sc_button_text">
-                              <span className="sc_button_title">
-                                View all gallery
-                              </span>
+                              <Trans i18nKey="view_all_gallery">
+                                <span className="view_all_gallery">
+                                  {t("view_all_gallery")}
+                                </span>
+                              </Trans>
                             </span>
                             {/* /.sc_button_text */}
                           </a>
@@ -1085,7 +1089,9 @@ const About = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Find us on Facebook</span>
+                                        <Trans i18nKey="find_us_on_fb">
+                                          <span>{t("find_us_on_fb")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a
@@ -1128,7 +1134,9 @@ const About = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Follow Us on Twitter</span>
+                                        <Trans i18nKey="find_us_on_twitter">
+                                          <span>{t("find_us_on_twitter")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a
@@ -1171,7 +1179,9 @@ const About = () => {
                                     </div>
                                     <div className="sc_icons_item_description">
                                       <h4 className="sc_icons_title">
-                                        <span>Follow Us on Instagram</span>
+                                        <Trans i18nKey="find_us_on_ins">
+                                          <span>{t("find_us_on_ins")}</span>
+                                        </Trans>
                                       </h4>
                                     </div>
                                     <a

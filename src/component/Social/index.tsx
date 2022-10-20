@@ -1,6 +1,8 @@
 import React, { memo } from "react";
+import { Trans, useTranslation } from "react-i18next";
 
 const Index = () => {
+  const { t } = useTranslation();
   return (
     <div className="vc_row wpb_row vc_row-fluid">
       <div className="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1 vc_col-xs-12 sc_layouts_column_icons_position_left">
@@ -29,7 +31,9 @@ const Index = () => {
                         </div>
                         <div className="sc_icons_item_description">
                           <h4 className="sc_icons_title">
-                            <span>Find us on Facebook</span>
+                            <Trans i18nKey="find_us_on_fb">
+                              <span>{t("find_us_on_fb")}</span>
+                            </Trans>
                           </h4>
                         </div>
                       </div>
@@ -66,7 +70,9 @@ const Index = () => {
                         </div>
                         <div className="sc_icons_item_description">
                           <h4 className="sc_icons_title">
-                            <span>Follow Us on Twitter</span>
+                            <Trans i18nKey="find_us_on_twitter">
+                              <span>{t("find_us_on_twitter")}</span>
+                            </Trans>
                           </h4>
                         </div>
                       </div>
@@ -103,7 +109,9 @@ const Index = () => {
                         </div>
                         <div className="sc_icons_item_description">
                           <h4 className="sc_icons_title">
-                            <span>Follow Us on Instagram</span>
+                            <Trans i18nKey="find_us_on_ins">
+                              <span>{t("find_us_on_ins")}</span>
+                            </Trans>
                           </h4>
                         </div>
                       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-
+import { Trans, useTranslation } from "react-i18next";
 export interface IReview {
   width: number;
   contentWidth: number;
@@ -8,6 +8,7 @@ export interface IReview {
 
 const Review = (props: IReview) => {
   const { width, contentWidth } = props;
+  const { t } = useTranslation();
   return (
     <div
       data-vc-full-width="true"
@@ -54,7 +55,9 @@ const Review = (props: IReview) => {
               data-ratio="1170:215.367"
             >
               <h2 className="sc_item_title sc_testimonials_title sc_align_center sc_item_title_style_default">
-                Testimonials
+                <Trans i18nKey="testimonials">
+                  <span>{t("testimonials")}</span>
+                </Trans>
               </h2>
               <Carousel className="carousel-review">
                 <Carousel.Item>
@@ -62,11 +65,9 @@ const Review = (props: IReview) => {
                     <div className="sc_testimonials_item">
                       <div className="sc_testimonials_item_content">
                         <p>
-                          Trying my suit on for the first time was a really
-                          special moment. How it felt to wear and how it made me
-                          feel was amazing. Thank you so much for my wedding
-                          suit. Very enjoyable experience. On the big day the
-                          suits looked great and we had many positive comments.
+                          <Trans i18nKey="testimonial1">
+                            <span>{t("testimonial1")}</span>
+                          </Trans>
                         </p>
                       </div>
                       <div className="sc_testimonials_item_author">
@@ -85,12 +86,9 @@ const Review = (props: IReview) => {
                     <div className="sc_testimonials_item">
                       <div className="sc_testimonials_item_content">
                         <p>
-                          Hi, I just wanted to let you know that I received the
-                          suit this week and I love it. It’s been beautifully
-                          made and every detail is perfect. Please pass on my
-                          appreciation to the tailor and the team that made it.
-                          Thank you guys, you are the best. I will recommend
-                          you.
+                          <Trans i18nKey="testimonial2">
+                            <span>{t("testimonial2")}</span>
+                          </Trans>
                         </p>
                       </div>
                       <div className="sc_testimonials_item_author">
@@ -109,12 +107,9 @@ const Review = (props: IReview) => {
                     <div className="sc_testimonials_item">
                       <div className="sc_testimonials_item_content">
                         <p>
-                          This is by far the best suit I ’ve owned, and I’ve
-                          owned custom made suits before. The suit from Peter
-                          Mason fit like a glove. So did the shirt I ordered. I
-                          recommend booking an appointment to get measured
-                          properly and to choose your own fabric. You are the
-                          best!
+                          <Trans i18nKey="testimonial3">
+                            <span>{t("testimonial3")}</span>
+                          </Trans>
                         </p>
                       </div>
                       <div className="sc_testimonials_item_author">

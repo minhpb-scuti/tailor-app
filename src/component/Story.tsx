@@ -1,8 +1,10 @@
 import React, { useCallback, useState } from "react";
 import Bg10 from "../static/image/background-10.webp";
+import { Trans, useTranslation } from "react-i18next";
 
 const Story = () => {
   const [activeQuote, setActiveQuote] = useState<number>(1);
+  const { t } = useTranslation();
 
   const handleActiveQuote = useCallback((num: number) => {
     setActiveQuote(num);
@@ -18,7 +20,9 @@ const Story = () => {
             </div>
             <div id="sc_title_678103227" className="sc_title sc_title_default">
               <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_default">
-                our story
+                <Trans i18nKey="our_story">
+                  <span>{t("our_story")}</span>
+                </Trans>
               </h2>
             </div>
             {/* /.sc_title */}
@@ -56,13 +60,9 @@ const Story = () => {
                         <div className="wpb_text_column wpb_content_element">
                           <div className="wpb_wrapper">
                             <p style={{ textAlign: "center" }}>
-                              Since our beginning in 1900 our goal has always
-                              been to create men’s clothing that looks great,
-                              fits perfectly, made from the world’s best fabric
-                              mills and is good value for money. Peter Mason’s
-                              success is built on understanding the principles
-                              of classic tailoring, combining them with modern
-                              designs and technology.
+                              <Trans i18nKey="story1">
+                                <span>{t("story1")}</span>
+                              </Trans>
                             </p>
                           </div>
                         </div>
@@ -89,13 +89,9 @@ const Story = () => {
                         <div className="wpb_text_column wpb_content_element">
                           <div className="wpb_wrapper">
                             <p style={{ textAlign: "center" }}>
-                              Since our beginning in 1900 our goal has always
-                              been to create men’s clothing that looks great,
-                              fits perfectly, made from the world’s best fabric
-                              mills and is good value for money. Peter Mason’s
-                              success is built on understanding the principles
-                              of classic tailoring, combining them with modern
-                              designs and technology.
+                              <Trans i18nKey="story1">
+                                <span>{t("story1")}</span>
+                              </Trans>
                             </p>
                           </div>
                         </div>
@@ -122,13 +118,9 @@ const Story = () => {
                         <div className="wpb_text_column wpb_content_element">
                           <div className="wpb_wrapper">
                             <p style={{ textAlign: "center" }}>
-                              Since our beginning in 1900 our goal has always
-                              been to create men’s clothing that looks great,
-                              fits perfectly, made from the world’s best fabric
-                              mills and is good value for money. Peter Mason’s
-                              success is built on understanding the principles
-                              of classic tailoring, combining them with modern
-                              designs and technology.
+                              <Trans i18nKey="story1">
+                                <span>{t("story1")}</span>
+                              </Trans>
                             </p>
                           </div>
                         </div>
@@ -155,13 +147,9 @@ const Story = () => {
                         <div className="wpb_text_column wpb_content_element">
                           <div className="wpb_wrapper">
                             <p style={{ textAlign: "center" }}>
-                              Since our beginning in 1900 our goal has always
-                              been to create men’s clothing that looks great,
-                              fits perfectly, made from the world’s best fabric
-                              mills and is good value for money. Peter Mason’s
-                              success is built on understanding the principles
-                              of classic tailoring, combining them with modern
-                              designs and technology.
+                              <Trans i18nKey="story1">
+                                <span>{t("story1")}</span>
+                              </Trans>
                             </p>
                           </div>
                         </div>
@@ -188,13 +176,9 @@ const Story = () => {
                         <div className="wpb_text_column wpb_content_element">
                           <div className="wpb_wrapper">
                             <p style={{ textAlign: "center" }}>
-                              Since our beginning in 1900 our goal has always
-                              been to create men’s clothing that looks great,
-                              fits perfectly, made from the world’s best fabric
-                              mills and is good value for money. Peter Mason’s
-                              success is built on understanding the principles
-                              of classic tailoring, combining them with modern
-                              designs and technology.
+                              <Trans i18nKey="story1">
+                                <span>{t("story1")}</span>
+                              </Trans>
                             </p>
                           </div>
                         </div>

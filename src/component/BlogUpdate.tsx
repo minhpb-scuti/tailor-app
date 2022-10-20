@@ -1,8 +1,10 @@
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 import Image2 from "../static/image/image-2.jpg";
 import Image3 from "../static/image/image-3.jpg";
 
 const BlogUpdate = () => {
+  const { t } = useTranslation();
   return (
     <div className="vc_row wpb_row vc_row-fluid">
       <div className="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -22,7 +24,9 @@ const BlogUpdate = () => {
             </div>
             <div id="sc_title_1334397955" className="sc_title sc_title_default">
               <h2 className="sc_item_title sc_title_title sc_align_center sc_item_title_style_default">
-                Blog updates
+                <Trans i18nKey="blog_update">
+                  <span>{t("blog_update")}</span>
+                </Trans>
               </h2>
             </div>
             {/* /.sc_title */}
@@ -69,13 +73,18 @@ const BlogUpdate = () => {
                             href="/mens-suit-patterns-top-suit-patterns/"
                             rel="bookmark"
                           >
-                            Men’s Suit Patterns – Top Suit Patterns.
+                            <Trans i18nKey="top_suits">
+                              <span>{t("top_suits")}</span>
+                            </Trans>
                           </a>
                         </h4>
                         <div className="post_meta">
                           <span className="post_meta_item post_date">
                             <a href="/mens-suit-patterns-top-suit-patterns/">
-                              November 28, 2016
+                              <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "}
+                              28, 2016
                             </a>
                           </span>
                           <a
@@ -84,7 +93,9 @@ const BlogUpdate = () => {
                           >
                             <span className="post_counters_number">0</span>
                             <span className="post_counters_label">
-                              Comments
+                              <Trans i18nKey="comment">
+                                <span>{t("comment")}</span>
+                              </Trans>
                             </span>
                           </a>
                         </div>
@@ -105,7 +116,9 @@ const BlogUpdate = () => {
                             href="/mens-suit-patterns-top-suit-patterns/"
                             className="sc_button sc_button_default sc_button_size_normal"
                           >
-                            more info
+                            <Trans i18nKey="more_info">
+                              <span>{t("more_info")}</span>
+                            </Trans>
                           </a>
                         </div>
                       </div>
@@ -147,13 +160,18 @@ const BlogUpdate = () => {
                             href="/top-10-must-tries-on-the-new-ultimate-3d/"
                             rel="bookmark"
                           >
-                            Top 10 Must Tries on The New Ultimate 3D.
+                            <Trans i18nKey="top_10">
+                              <span>{t("top_10")}</span>
+                            </Trans>{" "}
                           </a>
                         </h4>
                         <div className="post_meta">
                           <span className="post_meta_item post_date">
                             <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                              November 28, 2016
+                              <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "}
+                              28, 2016
                             </a>
                           </span>
                           <a
@@ -162,7 +180,9 @@ const BlogUpdate = () => {
                           >
                             <span className="post_counters_number">0</span>
                             <span className="post_counters_label">
-                              Comments
+                              <Trans i18nKey="comment">
+                                <span>{t("comment")}</span>
+                              </Trans>{" "}
                             </span>
                           </a>
                         </div>
@@ -183,7 +203,9 @@ const BlogUpdate = () => {
                             href="/top-10-must-tries-on-the-new-ultimate-3d/"
                             className="sc_button sc_button_default sc_button_size_normal"
                           >
-                            more info
+                            <Trans i18nKey="more_info">
+                              <span>{t("more_info")}</span>
+                            </Trans>
                           </a>
                         </div>
                       </div>

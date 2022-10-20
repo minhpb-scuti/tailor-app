@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans, useTranslation } from "react-i18next";
 import Team1 from "../static/image/team-1.webp";
 import Team2 from "../static/image/team-2.webp";
 import Team3 from "../static/image/team-3.webp";
@@ -10,6 +11,7 @@ export interface ITailor {
 
 const Tailor = (props: ITailor) => {
   const { width, contentWidth } = props;
+  const { t } = useTranslation();
   return (
     <div
       className="vc_row wpb_row vc_row-fluid vc_custom_1480509951164 vc_row-has-fill"
@@ -45,7 +47,9 @@ const Tailor = (props: ITailor) => {
             >
               <div className="sc_item_subtitle_container sc_align_center sc_item_title_style_style_2">
                 <h6 className="sc_item_subtitle sc_team_subtitle sc_item_title_style_style_2">
-                  Our tailors
+                  <Trans i18nKey="our_tailors">
+                    <span>{t("our_tailors")}</span>
+                  </Trans>
                 </h6>
               </div>
               <div className="sc_team_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
@@ -74,7 +78,9 @@ const Tailor = (props: ITailor) => {
                     <div className="sc_team_item_info">
                       <div className="sc_team_item_header">
                         <div className="sc_team_item_subtitle">
-                          Master Tailor
+                          <Trans i18nKey="master_tailor">
+                            <span>{t("master_tailor")}</span>
+                          </Trans>
                         </div>
                         <h4 className="sc_team_item_title">
                           <a href="/team/peter-mason/">Peter Mason</a>
@@ -159,7 +165,11 @@ const Tailor = (props: ITailor) => {
                     </div>
                     <div className="sc_team_item_info">
                       <div className="sc_team_item_header">
-                        <div className="sc_team_item_subtitle">Tailor</div>
+                        <div className="sc_team_item_subtitle">
+                          <Trans i18nKey="tailor">
+                            <span>{t("tailor")}</span>
+                          </Trans>
+                        </div>
                         <h4 className="sc_team_item_title">
                           <a href="/team/polly-wire/">Polly Wire</a>
                         </h4>
@@ -243,7 +253,11 @@ const Tailor = (props: ITailor) => {
                     </div>
                     <div className="sc_team_item_info">
                       <div className="sc_team_item_header">
-                        <div className="sc_team_item_subtitle">Tailor</div>
+                        <div className="sc_team_item_subtitle">
+                        <Trans i18nKey="tailor">
+                            <span>{t("tailor")}</span>
+                          </Trans>
+                        </div>
                         <h4 className="sc_team_item_title">
                           <a href="/team/rebecca-ogle/">Rebecca Ogle</a>
                         </h4>
