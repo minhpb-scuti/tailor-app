@@ -5,17 +5,20 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Image3 from "../../static/image/image-3.jpg";
 import Avatar from "../../static/image/avatar.jpeg";
+import { Trans, useTranslation } from "react-i18next";
 
 const MadHatter = () => {
   const location = useLocation();
+  const { t } = useTranslation();
+
   return (
     <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
             text="Top 10 Must Tries on The New Ultimate 3D."
-            text1="All Posts"
-            text2="Details"
+            text1={t("all_posts")}
+            text2={t("details")}
             href1="/blog"
           />
         }
@@ -43,7 +46,7 @@ const MadHatter = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Details
                     </a>
                     ,
@@ -51,13 +54,15 @@ const MadHatter = () => {
                       Fresh Look
                     </a>
                     ,
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Gentleman
                     </a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                      November 28, 2016
+                       <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "} 28, 2016
                     </a>
                   </span>
                   <a
@@ -122,19 +127,19 @@ const MadHatter = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         designer
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         men
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         suit
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         tailor
                       </a>
                     </div>
@@ -206,7 +211,9 @@ const MadHatter = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                       <Trans i18nKey="about_tailor">
+                        <span>{t("about_tailor")}</span>
+                      </Trans> Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -218,7 +225,9 @@ const MadHatter = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                         <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
@@ -235,7 +244,9 @@ const MadHatter = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                       <Trans i18nKey="add_comment">
+                  <span>{t("add_comment")}</span>
+                </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -256,7 +267,7 @@ const MadHatter = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -271,7 +282,7 @@ const MadHatter = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -285,7 +296,7 @@ const MadHatter = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>

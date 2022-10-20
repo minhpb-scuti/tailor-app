@@ -401,3 +401,7 @@ a {
 .multi_language .active {
   color: #be9667 !important;
 }
+
+a {
+  cursor: pointer;
+}

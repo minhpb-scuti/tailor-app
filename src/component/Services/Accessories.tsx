@@ -5,9 +5,12 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Service1 from "../../static/image/service-1-custom.jpg";
 import Image4 from "../../static/image/image-4.jpg";
+import { useTranslation } from "react-i18next";
 
 const Accessories = () => {
   const location = useLocation();
+  const { t } = useTranslation();
+
   return (
     <div className="scheme_default">
       <Header
@@ -149,7 +152,7 @@ const Accessories = () => {
                                       name="name"
                                       id="name"
                                       aria-required="true"
-                                      placeholder="Your name *"
+                                      placeholder={t("your_name")}
                                     />
                                   </span>
                                 </label>
@@ -162,7 +165,7 @@ const Accessories = () => {
                                       name="email"
                                       id="email"
                                       aria-required="true"
-                                      placeholder="Your e-mail *"
+                                      placeholder={t("your_email")}
                                     />
                                   </span>
                                 </label>

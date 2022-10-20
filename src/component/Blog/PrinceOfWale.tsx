@@ -8,9 +8,11 @@ import Image13 from "../../static/image/image-13.webp";
 import Image7 from "../../static/image/image-2.jpg";
 import Image3 from "../../static/image/image-3.jpg";
 import Avatar from "../../static/image/avatar.jpeg";
+import { Trans, useTranslation } from "react-i18next";
 
 const PrinceOfWales = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="scheme_default">
@@ -18,8 +20,8 @@ const PrinceOfWales = () => {
         children={
           <BreadCrumb
             text="Prince of Wales."
-            text1="All Posts"
-            text2="detail"
+            text1={t("all_posts")}
+            text2={t("details")}
             href1="/blog"
           />
         }
@@ -45,21 +47,21 @@ const PrinceOfWales = () => {
                 >
                   <figure className="gallery-item">
                     <div className="gallery-icon landscape">
-                      <a href="#">
+                      <a >
                         <img src={Image3} alt="landscape-3" />
                       </a>
                     </div>
                   </figure>
                   <figure className="gallery-item">
                     <div className="gallery-icon landscape">
-                      <a href="#">
+                      <a >
                         <img src={Image7} alt="landscape-3" />
                       </a>
                     </div>
                   </figure>
                   <figure className="gallery-item">
                     <div className="gallery-icon landscape">
-                      <a href="#">
+                      <a >
                         <img src={Image13} alt="landscape-3" />
                       </a>
                     </div>
@@ -113,19 +115,19 @@ const PrinceOfWales = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         designer
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         men
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         suit
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         tailor
                       </a>
                     </div>
@@ -197,7 +199,9 @@ const PrinceOfWales = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                       <Trans i18nKey="about_tailor">
+                        <span>{t("about_tailor")}</span>
+                      </Trans> Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -209,7 +213,9 @@ const PrinceOfWales = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                         <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
@@ -226,7 +232,9 @@ const PrinceOfWales = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                       <Trans i18nKey="add_comment">
+                  <span>{t("add_comment")}</span>
+                </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -247,7 +255,7 @@ const PrinceOfWales = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -262,7 +270,7 @@ const PrinceOfWales = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -276,7 +284,7 @@ const PrinceOfWales = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>

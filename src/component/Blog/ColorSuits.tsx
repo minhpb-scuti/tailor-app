@@ -5,18 +5,20 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Image from "../../static/image/image-8.jpg";
 import Avatar from "../../static/image/avatar.jpeg";
+import { Trans, useTranslation } from "react-i18next";
 
 const ColorSuits = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="scheme_default">
       <Header
         children={
           <BreadCrumb
-            text="What Colour Shoes to Wear With Your Suit."
-            text1="All Posts"
-            text2="detail"
+            text={t("post8")}
+            text1={t("all_posts")}
+            text2={t("details")}
             href1="/blog"
           />
         }
@@ -44,7 +46,7 @@ const ColorSuits = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Details
                     </a>
                     ,
@@ -52,13 +54,15 @@ const ColorSuits = () => {
                       Fresh Look
                     </a>
                     ,
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Gentleman
                     </a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                      November 28, 2016
+                       <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "} 28, 2016
                     </a>
                   </span>
                   <a
@@ -123,19 +127,19 @@ const ColorSuits = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         designer
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         men
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         suit
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         tailor
                       </a>
                     </div>
@@ -207,7 +211,9 @@ const ColorSuits = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                       <Trans i18nKey="about_tailor">
+                        <span>{t("about_tailor")}</span>
+                      </Trans> Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -219,7 +225,9 @@ const ColorSuits = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                         <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
@@ -236,7 +244,9 @@ const ColorSuits = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                      <Trans i18nKey="add_comment">
+                        <span>{t("add_comment")}</span>
+                      </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -257,7 +267,7 @@ const ColorSuits = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -272,7 +282,7 @@ const ColorSuits = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -286,7 +296,7 @@ const ColorSuits = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>

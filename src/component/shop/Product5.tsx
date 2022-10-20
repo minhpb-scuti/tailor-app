@@ -10,9 +10,11 @@ import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
 import Product6 from "../../static/image/product-6.webp";
+import { useTranslation } from "react-i18next";
 
 const Product = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   const [active, setActive] = useState<string>("description");
 
   return (
@@ -24,7 +26,7 @@ const Product = () => {
             text="Luxury Fit 3pc Black Solid Suit"
             text1="shop"
             href1="/shop"
-            text2="Blazers"
+            text2={t("blazers")}
           />
         }
       />

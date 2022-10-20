@@ -5,11 +5,13 @@ import BreadCrumb from "../BreadCrumb";
 import Image from "../../static/image/image-9.jpg";
 import Avatar from "../../static/image/avatar.jpeg";
 import { useWindowDimensions, getWidthContent } from "../../customHook";
+import { Trans, useTranslation } from "react-i18next";
 
 const SummerTweed = () => {
   const location = useLocation();
   const { width } = useWindowDimensions();
   const contentWidth = getWidthContent(width);
+  const { t } = useTranslation();
 
   return (
     <div className="scheme_default">
@@ -17,8 +19,8 @@ const SummerTweed = () => {
         children={
           <BreadCrumb
             text="Summer Tweed."
-            text1="All Posts"
-            text2="Fashion"
+            text1={t("all_posts")}
+            text2={t("fashion")}
             href1="/blog"
           />
         }
@@ -46,7 +48,7 @@ const SummerTweed = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Details
                     </a>
                     ,
@@ -54,13 +56,15 @@ const SummerTweed = () => {
                       Fresh Look
                     </a>
                     ,
-                    <a href="#" rel="category tag">
+                    <a  rel="category tag">
                       Gentleman
                     </a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                      November 28, 2016
+                       <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "} 28, 2016
                     </a>
                   </span>
                   <a
@@ -137,19 +141,19 @@ const SummerTweed = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         designer
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         men
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         suit
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         tailor
                       </a>
                     </div>
@@ -221,7 +225,9 @@ const SummerTweed = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                       <Trans i18nKey="about_tailor">
+                        <span>{t("about_tailor")}</span>
+                      </Trans> Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -233,7 +239,9 @@ const SummerTweed = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                         <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
@@ -250,7 +258,9 @@ const SummerTweed = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                      <Trans i18nKey="add_comment">
+                        <span>{t("add_comment")}</span>
+                      </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -271,7 +281,7 @@ const SummerTweed = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -286,7 +296,7 @@ const SummerTweed = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -300,7 +310,7 @@ const SummerTweed = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>

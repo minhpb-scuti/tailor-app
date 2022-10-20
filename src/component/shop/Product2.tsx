@@ -9,10 +9,12 @@ import Product2 from "../../static/image/product-2.webp";
 import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
+import { useTranslation } from "react-i18next";
 
 const Shop = () => {
   const { pathname } = useLocation();
   const [active, setActive] = useState<string>("description");
+  const { t } = useTranslation();
 
   return (
     <body className="product-template-default single single-product postid-241 custom-background theme-petermason woocommerce woocommerce-page woocommerce-js body_tag scheme_default blog_mode_shop body_style_wide is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-custom-398 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
@@ -23,7 +25,7 @@ const Shop = () => {
             text="Modern Fit 2pc Ultra Black Suit"
             text1="shop"
             href1="/shop"
-            text2="Blazers"
+            text2={t("blazers")}
           />
         }
       />

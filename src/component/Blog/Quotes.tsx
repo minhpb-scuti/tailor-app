@@ -5,9 +5,11 @@ import Footer from "../Footer";
 import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Avatar from "../../static/image/avatar.jpeg";
+import { Trans, useTranslation } from "react-i18next";
 
 const Quotes = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="scheme_default">
@@ -15,8 +17,8 @@ const Quotes = () => {
         children={
           <BreadCrumb
             text="10 Essential Quotes About Men’s Style"
-            text1="All Posts"
-            text2="fashion"
+            text1={t("all_posts")}
+            text2={t("fashion")}
             href1="/blog"
           />
         }
@@ -41,7 +43,7 @@ const Quotes = () => {
                     doing would suffice to solve most of the world’s problems.
                   </p>
                   <p>
-                    <a href="#">Mahatma Gandhi</a>
+                    <a >Mahatma Gandhi</a>
                   </p>
                 </blockquote>
                 <div className="post_meta post_meta_single">
@@ -62,19 +64,19 @@ const Quotes = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         designer
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         men
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         suit
                       </a>
                       ,
-                      <a href="#" rel="tag">
+                      <a  rel="tag">
                         tailor
                       </a>
                     </div>
@@ -175,7 +177,9 @@ const Quotes = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                       <Trans i18nKey="add_comment">
+                  <span>{t("add_comment")}</span>
+                </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -196,7 +200,7 @@ const Quotes = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -211,7 +215,7 @@ const Quotes = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -225,7 +229,7 @@ const Quotes = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>

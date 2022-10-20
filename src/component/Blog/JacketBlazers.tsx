@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -5,9 +6,11 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Image from "../../static/image/image-10.webp";
 import Avatar from "../../static/image/avatar.jpeg";
+import { Trans, useTranslation } from "react-i18next";
 
 const JacketBlazers = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="scheme_default">
@@ -15,8 +18,8 @@ const JacketBlazers = () => {
         children={
           <BreadCrumb
             text="How to Properly Button Suit Jackets & Blazers."
-            text1="All Posts"
-            text2="detail"
+            text1={t("all_posts")}
+            text2={t("details")}
             href1="/blog"
           />
         }
@@ -44,21 +47,17 @@ const JacketBlazers = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a href="#" rel="category tag">
-                      Details
-                    </a>
-                    ,
+                    <a rel="category tag">Details</a>,
                     <a href="#/" rel="category tag">
                       Fresh Look
                     </a>
-                    ,
-                    <a href="#" rel="category tag">
-                      Gentleman
-                    </a>
+                    ,<a rel="category tag">Gentleman</a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                      November 28, 2016
+                       <Trans i18nKey="november">
+                                <span>{t("november")}</span>
+                              </Trans>{" "} 28, 2016
                     </a>
                   </span>
                   <a
@@ -123,21 +122,8 @@ const JacketBlazers = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a href="#" rel="tag">
-                        designer
-                      </a>
-                      ,
-                      <a href="#" rel="tag">
-                        men
-                      </a>
-                      ,
-                      <a href="#" rel="tag">
-                        suit
-                      </a>
-                      ,
-                      <a href="#" rel="tag">
-                        tailor
-                      </a>
+                      <a rel="tag">designer</a>,<a rel="tag">men</a>,
+                      <a rel="tag">suit</a>,<a rel="tag">tailor</a>
                     </div>
                   </div>
                   <span className="post_meta_item post_share">
@@ -207,7 +193,10 @@ const JacketBlazers = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                    <Trans i18nKey="about_tailor">
+                      <span>{t("about_tailor")}</span>
+                    </Trans>{" "}
+                    Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -219,7 +208,9 @@ const JacketBlazers = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                      <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
@@ -236,7 +227,9 @@ const JacketBlazers = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                      ADD COMMENTS
+                      <Trans i18nKey="add_comment">
+                        <span>{t("add_comment")}</span>
+                      </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -257,7 +250,7 @@ const JacketBlazers = () => {
                           <textarea
                             id="comment"
                             name="comment"
-                            placeholder="Your Comment *"
+                            placeholder={t("your_comment")}
                             aria-required="true"
                             defaultValue={""}
                           />
@@ -272,7 +265,7 @@ const JacketBlazers = () => {
                             id="author"
                             name="author"
                             type="text"
-                            placeholder="Your Name *"
+                            placeholder={t("your_name")}
                             aria-required="true"
                           />
                         </span>
@@ -286,7 +279,7 @@ const JacketBlazers = () => {
                             id="email"
                             name="email"
                             type="text"
-                            placeholder="Your E-mail *"
+                            placeholder={t("your_email")}
                             aria-required="true"
                           />
                         </span>
