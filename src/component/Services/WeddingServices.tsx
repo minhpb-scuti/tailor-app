@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import BreadCrumb from "../BreadCrumb";
 import Service3 from "../../static/image/service-3-custom.jpg";
 import Image4 from "../../static/image/image-4.jpg";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const WeddingServices = () => {
   const location = useLocation();
@@ -184,7 +184,9 @@ const WeddingServices = () => {
                             </label>
                             <div className="sc_form_field sc_form_field_button sc_form_field_submit">
                               <button className="sc_button sc_button_default sc_button_size_normal">
-                                Submit
+                                <Trans i18nKey="submit">
+                                  <span>{t("submit")}</span>
+                                </Trans>
                               </button>
                             </div>
                             <div className="trx_addons_message_box sc_form_result" />

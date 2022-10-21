@@ -16,7 +16,7 @@ const Quotes = () => {
       <Header
         children={
           <BreadCrumb
-            text="10 Essential Quotes About Men’s Style"
+            text="post5"
             text1={t("all_posts")}
             text2={t("fashion")}
             href1="/blog"
@@ -43,41 +43,65 @@ const Quotes = () => {
                     doing would suffice to solve most of the world’s problems.
                   </p>
                   <p>
-                    <a >Mahatma Gandhi</a>
+                    <a>Mahatma Gandhi</a>
                   </p>
                 </blockquote>
                 <div className="post_meta post_meta_single">
                   <div className="post_meta_item post_tags">
                     <div className="post_meta_item_categories">
-                      <span className="post_meta_label">Categories: </span>
+                      <span className="post_meta_label">
+                        <Trans i18nKey="categories">
+                          <span>{t("categories")}</span>
+                        </Trans>
+                        :
+                      </span>
                       <a href="/details/" rel="category tag">
-                        Details
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="/" rel="category tag">
-                        Fresh Look
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="#/" rel="category tag">
-                        Gentleman
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </div>
                     <div className="post_meta_item_tags">
-                      <span className="post_meta_label">Tags: </span>
-                      <a  rel="tag">
-                        designer
+                      <span className="post_meta_label">
+                        <Trans i18nKey="tags">
+                          <span>{t("tags")}</span>
+                        </Trans>
+                        :
+                      </span>
+                      <a rel="tag">
+                        <Trans i18nKey="designer">
+                          <span>{t("designer")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="tag">
-                        men
+                      <a rel="tag">
+                        <Trans i18nKey="men">
+                          <span>{t("men")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="tag">
-                        suit
+                      <a rel="tag">
+                        <Trans i18nKey="header.suits">
+                          <span>{t("header.suits")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="tag">
-                        tailor
+                      <a rel="tag">
+                        <Trans i18nKey="tailor">
+                          <span>{t("tailor")}</span>
+                        </Trans>
                       </a>
                     </div>
                   </div>
@@ -152,7 +176,11 @@ const Quotes = () => {
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
-                      <b>tailor</b>
+                      <b>
+                        <Trans i18nKey="tailor">
+                          <span>{t("tailor")}</span>
+                        </Trans>
+                      </b>
                       <br />
                       Lorem ipsum dolor sit amet, sale harum senserit ne mel. In
                       his putant aliquip phaedrum, has discere pertinax eu, ea
@@ -177,9 +205,9 @@ const Quotes = () => {
                       id="reply-title"
                       className="section_title comments_form_title"
                     >
-                       <Trans i18nKey="add_comment">
-                  <span>{t("add_comment")}</span>
-                </Trans>
+                      <Trans i18nKey="add_comment">
+                        <span>{t("add_comment")}</span>
+                      </Trans>
                       <small>
                         <a
                           rel="nofollow"
@@ -254,13 +282,16 @@ const Quotes = () => {
                       </label>
                     </p> */}
                       <p className="form-submit">
-                        <input
-                          name="submit"
+                        <button
                           type="submit"
-                          id="send_comment"
-                          className="submit"
-                          defaultValue="Submit"
-                        />
+                          style={{
+                            backgroundColor: "#be9667",
+                          }}
+                        >
+                          <Trans i18nKey="submit">
+                            <span>{t("submit")}</span>
+                          </Trans>
+                        </button>
                         <input
                           type="hidden"
                           name="comment_post_ID"

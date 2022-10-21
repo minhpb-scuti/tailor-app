@@ -16,10 +16,11 @@ import Image10 from "../../static/image/image-10.webp";
 import Image11 from "../../static/image/image-11.webp";
 import Image13 from "../../static/image/image-13.webp";
 import { Carousel } from "react-bootstrap";
+import { Trans, useTranslation } from "react-i18next";
 
 const Blog = () => {
   const location = useLocation();
-
+  const { t } = useTranslation();
   const [isPlayVideo, setIsPlayVideo] = useState<boolean>(false);
 
   const handleClickVideo = () => {
@@ -29,7 +30,7 @@ const Blog = () => {
   return (
     <div className="sidebar_right scheme_default ">
       <Header
-        children={<BreadCrumb text="All Posts" />}
+        children={<BreadCrumb text="all_posts" />}
         pathname={location.pathname}
       />
       <div className="page_content_wrap scheme_default">
@@ -65,30 +66,49 @@ const Blog = () => {
                       href="/3-steps-to-creating-the-perfect-summer-shirt/"
                       rel="bookmark"
                     >
-                      3 Steps to Creating The Perfect Summer Shirt!
+                      <Trans i18nKey="post1">
+                        <span>{t("post1")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Custom Tailoring
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Gentleman
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/3-steps-to-creating-the-perfect-summer-shirt/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/3-steps-to-creating-the-perfect-summer-shirt/#comments"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
-                      <span className="post_counters_number">3</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_number">0</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -111,7 +131,9 @@ const Blog = () => {
                       className="more-link"
                       href="/3-steps-to-creating-the-perfect-summer-shirt/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -147,30 +169,49 @@ const Blog = () => {
                       href="/15-suit-style-tips-every-man-must-know/"
                       rel="bookmark"
                     >
-                      15 Suit Style Tips Every Man Must Know.
+                      <Trans i18nKey="post2">
+                        <span>{t("post2")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Fashion
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Gentleman
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/15-suit-style-tips-every-man-must-know/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/15-suit-style-tips-every-man-must-know/#comments"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
-                      <span className="post_counters_number">2</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_number">0</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -193,7 +234,9 @@ const Blog = () => {
                       className="more-link"
                       href="/15-suit-style-tips-every-man-must-know/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -206,26 +249,49 @@ const Blog = () => {
                 <div className="post_header entry-header">
                   <h3 className="post_title entry-title">
                     <a href="/how-to-choose-a-tie-8-steps/" rel="bookmark">
-                      How to Choose a Tie: 8 Steps.
+                      <Trans i18nKey="post3">
+                        <span>{t("post3")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Custom Tailoring
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/how-to-choose-a-tie-8-steps/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/how-to-choose-a-tie-8-steps/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -248,7 +314,9 @@ const Blog = () => {
                       className="more-link"
                       href="/how-to-choose-a-tie-8-steps/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -284,30 +352,49 @@ const Blog = () => {
                       href="/custom-shirts-summer-2016-must-haves/"
                       rel="bookmark"
                     >
-                      Custom Shirts – Summer 2016 Must Haves.
+                      <Trans i18nKey="post4">
+                        <span>{t("post4")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Details
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Gentleman
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/custom-shirts-summer-2016-must-haves/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/custom-shirts-summer-2016-must-haves/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -330,7 +417,9 @@ const Blog = () => {
                       className="more-link"
                       href="/custom-shirts-summer-2016-must-haves/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -346,26 +435,49 @@ const Blog = () => {
                       href="/10-essential-quotes-about-mens-style/"
                       rel="bookmark"
                     >
-                      10 Essential Quotes About Men’s Style
+                      <Trans i18nKey="post5">
+                        <span>{t("post5")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Fashion
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/10-essential-quotes-about-mens-style/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/10-essential-quotes-about-mens-style/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -375,12 +487,12 @@ const Blog = () => {
                   <div className="post_content_inner">
                     <blockquote>
                       <p>
-                        The difference between what we do and what we are
-                        capable of doing would suffice to solve most of the
-                        world’s problems.
+                        <Trans i18nKey="quote1">
+                          <span>{t("quote1")}</span>
+                        </Trans>
                       </p>
                       <p>
-                        <a >Mahatma Gandhi</a>
+                        <a>Mahatma Gandhi</a>
                       </p>
                     </blockquote>
                   </div>
@@ -437,24 +549,49 @@ const Blog = () => {
                 <div className="post_header entry-header">
                   <h3 className="post_title entry-title">
                     <a href="/prince-of-wales/" rel="bookmark">
-                      Prince of Wales.
+                      <Trans i18nKey="post6">
+                        <span>{t("post6")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Details
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/prince-of-wales/">November 28, 2016</a>
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
+                      </a>
                     </span>
                     <a
-                      href="/prince-of-wales/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -464,7 +601,9 @@ const Blog = () => {
                   <div className="post_content_inner" />
                   <p>
                     <a className="more-link" href="/prince-of-wales/">
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -478,7 +617,9 @@ const Blog = () => {
                   <div className="post_audio">
                     <div className="post_audio_author">Lily Hunter</div>
                     <h5 className="post_audio_title">
-                      Insert audio title here
+                      <Trans i18nKey="insert_audio">
+                        <span>{t("insert_audio")}</span>
+                      </Trans>
                     </h5>
                     {/*[if lt IE 9
                         ]><!
@@ -575,7 +716,7 @@ const Blog = () => {
                               tabIndex={0}
                             />
                           </div>
-                          <a className="mejs-horizontal-volume-slider" >
+                          <a className="mejs-horizontal-volume-slider">
                             <span className="mejs-offscreen">
                               Use Up/Down Arrow keys to increase or decrease
                               volume.
@@ -599,24 +740,49 @@ const Blog = () => {
                 <div className="post_header entry-header">
                   <h3 className="post_title entry-title">
                     <a href="/the-white-mad-hatter/" rel="bookmark">
-                      The White Mad Hatter.
+                      <Trans i18nKey="post7">
+                        <span>{t("post7")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Fashion
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/the-white-mad-hatter/">November 28, 2016</a>
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
+                      </a>
                     </span>
                     <a
-                      href="/the-white-mad-hatter/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -626,7 +792,9 @@ const Blog = () => {
                   <div className="post_content_inner" />
                   <p>
                     <a className="more-link" href="/the-white-mad-hatter/">
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -662,30 +830,49 @@ const Blog = () => {
                       href="/what-colour-shoes-to-wear-with-your-suit/"
                       rel="bookmark"
                     >
-                      What Colour Shoes to Wear With Your Suit.
+                      <Trans i18nKey="post8">
+                        <span>{t("post8")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Details
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Gentleman
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/what-colour-shoes-to-wear-with-your-suit/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/what-colour-shoes-to-wear-with-your-suit/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -708,7 +895,12 @@ const Blog = () => {
                       className="more-link"
                       href="/what-colour-shoes-to-wear-with-your-suit/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>{" "}
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -751,24 +943,49 @@ const Blog = () => {
                 <div className="post_header entry-header">
                   <h3 className="post_title entry-title">
                     <a href="/summer-tweed/" rel="bookmark">
-                      Summer Tweed.
+                      <Trans i18nKey="post9">
+                        <span>{t("post9")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Fashion
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/summer-tweed/">November 28, 2016</a>
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
+                      </a>
                     </span>
                     <a
-                      href="/summer-tweed/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -788,7 +1005,9 @@ const Blog = () => {
                   </div>
                   <p>
                     <a className="more-link" href="/summer-tweed/">
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -824,30 +1043,49 @@ const Blog = () => {
                       href="/how-to-properly-button-suit-jackets-blazers/"
                       rel="bookmark"
                     >
-                      How to Properly Button Suit Jackets &amp; Blazers.
+                      <Trans i18nKey="post10">
+                        <span>{t("post10")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Fashion
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Gentleman
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/how-to-properly-button-suit-jackets-blazers/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/how-to-properly-button-suit-jackets-blazers/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -870,7 +1108,9 @@ const Blog = () => {
                       className="more-link"
                       href="/how-to-properly-button-suit-jackets-blazers/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -906,30 +1146,49 @@ const Blog = () => {
                       href="/recreating-cary-grants-north-by-northwest-suit/"
                       rel="bookmark"
                     >
-                      Recreating Cary Grant’s North by Northwest Suit.
+                      <Trans i18nKey="post11">
+                        <span>{t("post11")}</span>
+                      </Trans>
                     </a>
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a  rel="category tag">
-                        Custom Tailoring
+                      <a rel="category tag">
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
-                      <a  rel="category tag">
-                        Details
+                      <a href="#/" rel="category tag">
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="category tag">
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="post_meta_item post_date">
-                      <a href="/recreating-cary-grants-north-by-northwest-suit/">
-                        November 28, 2016
+                      <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
+                        <Trans i18nKey="november">
+                          <span>{t("november")}</span>
+                        </Trans>{" "}
+                        28, 2016
                       </a>
                     </span>
                     <a
-                      href="/recreating-cary-grants-north-by-northwest-suit/#respond"
+                      href="/top-10-must-tries-on-the-new-ultimate-3d/#respond"
                       className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                     >
                       <span className="post_counters_number">0</span>
-                      <span className="post_counters_label">Comments</span>
+                      <span className="post_counters_label">
+                        <Trans i18nKey="comment">
+                          <span>{t("comment")}</span>
+                        </Trans>
+                      </span>
                     </a>
                   </div>
                   {/* .post_meta */}
@@ -952,7 +1211,9 @@ const Blog = () => {
                       className="more-link"
                       href="/recreating-cary-grants-north-by-northwest-suit/"
                     >
-                      more info
+                      <Trans i18nKey="more_info">
+                        <span>{t("more_info")}</span>
+                      </Trans>
                     </a>
                   </p>
                 </div>
@@ -984,42 +1245,69 @@ const Blog = () => {
           <div className="sidebar right widget_area" role="complementary">
             <div className="sidebar_inner">
               <aside id="categories-2" className="widget widget_categories">
-                <h5 className="widget_title">Categories</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="categories">
+                    <span>{t("categories")}</span>
+                  </Trans>
+                </h5>
                 <ul>
                   <li className="cat-item cat-item-12">
-                    <a >Custom Tailoring</a>
+                    <a>
+                      <Trans i18nKey="custom_tailoring">
+                        <span>{t("custom_tailoring")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-9">
-                    <a >Details</a>
+                    <a>
+                      <Trans i18nKey="details">
+                        <span>{t("details")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-10">
-                    <a >Fashion</a>
+                    <a>
+                      <Trans i18nKey="fashion">
+                        <span>{t("fashion")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-11">
-                    <a href="#/">Fresh Look</a>
+                    <a href="#/">
+                      <Trans i18nKey="fresh_look">
+                        <span>{t("fresh_look")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-8">
-                    <a >Gentleman</a>
+                    <a>
+                      <Trans i18nKey="gentlenman">
+                        <span>{t("gentlenman")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-7">
-                    <a href="#/">Life Style</a>
+                    <a href="#/">
+                      <Trans i18nKey="life_style">
+                        <span>{t("life_style")}</span>
+                      </Trans>
+                    </a>
                   </li>
                 </ul>
               </aside>
               <aside id="search-2" className="widget widget_search">
-                <h5 className="widget_title">Search</h5>
-                <form
-                  role="search"
-                  method="get"
-                  className="search-form"
-                  action="/"
-                >
+                <h5 className="widget_title">
+                  <Trans i18nKey="header.search">
+                    <span>{t("header.search")}</span>
+                  </Trans>
+                </h5>
+                <form className="search-form">
                   <label>
                     <span className="screen-reader-text">Search for:</span>
                     <input
                       type="search"
                       className="search-field"
-                      placeholder="Search …"
+                      placeholder={t("header.search")}
                       name="s"
                     />
                   </label>
@@ -1034,19 +1322,27 @@ const Blog = () => {
                 id="recent-comments-2"
                 className="widget widget_recent_comments"
               >
-                <h5 className="widget_title">Comments</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="comment">
+                    <span>{t("comment")}</span>
+                  </Trans>
+                </h5>
                 <ul id="recentcomments">
                   <li className="recentcomments">
                     <span className="comment-author-link">Miki Williams</span>{" "}
                     on
                     <a href="/15-suit-style-tips-every-man-must-know/#comment-6">
-                      15 Suit Style Tips Every Man Must Know.
+                      <Trans i18nKey="post2">
+                        <span>{t("post2")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li className="recentcomments">
                     <span className="comment-author-link">Martin Moore</span> on
                     <a href="/15-suit-style-tips-every-man-must-know/#comment-5">
-                      15 Suit Style Tips Every Man Must Know.
+                      <Trans i18nKey="post2">
+                        <span>{t("post2")}</span>
+                      </Trans>
                     </a>
                   </li>
                 </ul>
@@ -1154,79 +1450,96 @@ const Blog = () => {
                 <ul>
                   <li>
                     <a href="/3-steps-to-creating-the-perfect-summer-shirt/">
-                      3 Steps to Creating The Perfect Summer Shirt!
+                      <Trans i18nKey="post1">
+                        <span>{t("post1")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li>
                     <a href="/15-suit-style-tips-every-man-must-know/">
-                      15 Suit Style Tips Every Man Must Know.
+                      <Trans i18nKey="post2">
+                        <span>{t("post2")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li>
                     <a href="/how-to-choose-a-tie-8-steps/">
-                      How to Choose a Tie: 8 Steps.
+                      <Trans i18nKey="post3">
+                        <span>{t("post3")}</span>
+                      </Trans>
                     </a>
                   </li>
                 </ul>
               </aside>
               <aside id="tag_cloud-2" className="widget widget_tag_cloud">
-                <h5 className="widget_title">Tags</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="tags">
+                    <span>{t("tags")}</span>
+                  </Trans>
+                </h5>
                 <div className="tagcloud">
                   <a
-                    
                     className="tag-cloud-link tag-link-18 tag-link-position-1 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "11.266666666667pt" }}
                     aria-label="business (6 items)"
                   >
-                    business
+                    <Trans i18nKey="business">
+                      <span>{t("business")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-15 tag-link-position-2 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="clothing (5 items)"
                   >
-                    clothing
+                    <Trans i18nKey="clothing">
+                      <span>{t("clothing")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-17 tag-link-position-3 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "20.133333333333pt" }}
                     aria-label="designer (10 items)"
                   >
-                    designer
+                    <Trans i18nKey="designer">
+                      <span>{t("designer")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-16 tag-link-position-4 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.933333333333pt" }}
                     aria-label="men (8 items)"
                   >
-                    men
+                    <Trans i18nKey="men">
+                      <span>{t("men")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-13 tag-link-position-5 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="suit (5 items)"
                   >
-                    suit
+                    <Trans i18nKey="header.suits">
+                      <span>{t("header.suits")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-14 tag-link-position-6 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "22pt" }}
                     aria-label="tailor (11 items)"
                   >
-                    tailor
+                    <Trans i18nKey="tailor">
+                      <span>{t("tailor")}</span>
+                    </Trans>
                   </a>
                   <a
-                    
                     className="tag-cloud-link tag-link-19 tag-link-position-7 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "18.266666666667pt" }}
                     aria-label="wedding (9 items)"
                   >
-                    wedding
+                    <Trans i18nKey="wedding">
+                      <span>{t("wedding")}</span>
+                    </Trans>
                   </a>
                 </div>
               </aside>

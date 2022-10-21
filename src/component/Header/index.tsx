@@ -605,7 +605,9 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <span>Classic</span>
+                                          <Trans i18nKey="classic">
+                                            <span>{t("classic")}</span>
+                                          </Trans>
                                         </a>
                                         <ul
                                           className="sub-menu animated fast fadeOutDownSmall"
@@ -1072,7 +1074,12 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
                   >
                     <a href="/">
-                      <span>Classic</span>
+                      <span>
+                        {" "}
+                        <Trans i18nKey="classic">
+                          <span>{t("classic")}</span>
+                        </Trans>
+                      </span>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">

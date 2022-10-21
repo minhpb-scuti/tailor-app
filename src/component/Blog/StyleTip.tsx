@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -46,15 +47,30 @@ const StyleTip = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a rel="category tag">Details</a>,
-                    <a href="#/" rel="category tag">
-                      Fresh Look
+                    <a rel="category tag">
+                      <Trans i18nKey="details">
+                        <span>{t("details")}</span>
+                      </Trans>
                     </a>
-                    ,<a rel="category tag">Gentleman</a>
+                    ,
+                    <a href="#/" rel="category tag">
+                      <Trans i18nKey="fresh_look">
+                        <span>{t("fresh_look")}</span>
+                      </Trans>
+                    </a>
+                    ,
+                    <a rel="category tag">
+                      <Trans i18nKey="gentlenman">
+                        <span>{t("gentlenman")}</span>
+                      </Trans>
+                    </a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                      November 28, 2016
+                      <Trans i18nKey="november">
+                        <span>{t("november")}</span>
+                      </Trans>{" "}
+                      28, 2016
                     </a>
                   </span>
                   <a
@@ -62,7 +78,11 @@ const StyleTip = () => {
                     className="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"
                   >
                     <span className="post_counters_number">0</span>
-                    <span className="post_counters_label">Comments</span>
+                    <span className="post_counters_label">
+                      <Trans i18nKey="comment">
+                        <span>{t("comment")}</span>
+                      </Trans>
+                    </span>
                   </a>
                 </div>
                 {/* .post_meta */}
@@ -104,23 +124,60 @@ const StyleTip = () => {
                 <div className="post_meta post_meta_single">
                   <div className="post_meta_item post_tags">
                     <div className="post_meta_item_categories">
-                      <span className="post_meta_label">Categories: </span>
+                      <span className="post_meta_label">
+                        <Trans i18nKey="categories">
+                          <span>{t("categories")}</span>
+                        </Trans>
+                        :
+                      </span>
                       <a href="/details/" rel="category tag">
-                        Details
+                        <Trans i18nKey="details">
+                          <span>{t("details")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="/" rel="category tag">
-                        Fresh Look
+                        <Trans i18nKey="fresh_look">
+                          <span>{t("fresh_look")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="#/" rel="category tag">
-                        Gentleman
+                        <Trans i18nKey="gentlenman">
+                          <span>{t("gentlenman")}</span>
+                        </Trans>
                       </a>
                     </div>
                     <div className="post_meta_item_tags">
-                      <span className="post_meta_label">Tags: </span>
-                      <a rel="tag">designer</a>,<a rel="tag">men</a>,
-                      <a rel="tag">suit</a>,<a rel="tag">tailor</a>
+                      <span className="post_meta_label">
+                        <Trans i18nKey="tags">
+                          <span>{t("tags")}</span>
+                        </Trans>
+                        :
+                      </span>
+                      <a rel="tag">
+                        <Trans i18nKey="designer">
+                          <span>{t("designer")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="tag">
+                        <Trans i18nKey="men">
+                          <span>{t("men")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="tag">
+                        <Trans i18nKey="header.suits">
+                          <span>{t("header.suits")}</span>
+                        </Trans>
+                      </a>
+                      ,
+                      <a rel="tag">
+                        <Trans i18nKey="tailor">
+                          <span>{t("tailor")}</span>
+                        </Trans>
+                      </a>
                     </div>
                   </div>
                   <span className="post_meta_item post_share">
@@ -197,7 +254,11 @@ const StyleTip = () => {
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
-                      <b>tailor</b>
+                             <b>
+                        <Trans i18nKey="tailor">
+                          <span>{t("tailor")}</span>
+                        </Trans>
+                      </b>
                       <br />
                       Lorem ipsum dolor sit amet, sale harum senserit ne mel. In
                       his putant aliquip phaedrum, has discere pertinax eu, ea
@@ -301,13 +362,16 @@ const StyleTip = () => {
                       </label>
                     </p> */}
                       <p className="form-submit">
-                        <input
-                          name="submit"
+                        <button
                           type="submit"
-                          id="send_comment"
-                          className="submit"
-                          defaultValue="Submit"
-                        />
+                          style={{
+                            backgroundColor: "#be9667",
+                          }}
+                        >
+                          <Trans i18nKey="submit">
+                            <span>{t("submit")}</span>
+                          </Trans>
+                        </button>
                         <input
                           type="hidden"
                           name="comment_post_ID"
