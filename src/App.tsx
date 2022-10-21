@@ -45,7 +45,13 @@ const NorthwestSuit = lazy(() => import("./component/Blog/NorthwestSuits"));
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loadding Page</div>}>
+      <Suspense
+        fallback={
+          <div className="flex_center">
+            <div className="loader"></div>
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contact />} />
