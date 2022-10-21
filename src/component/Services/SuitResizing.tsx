@@ -16,8 +16,8 @@ const SuitResizing = () => {
       <Header
         children={
           <BreadCrumb
-            text="Suit Resizing"
-            text1="All Services"
+            text="suit_resizing"
+            text1="all_service"
             href1="/services"
           />
         }
@@ -43,7 +43,11 @@ const SuitResizing = () => {
                     height={658}
                   />
                 </div>
-                <h2 className="services_page_title">Suit Resizing</h2>
+                <h2 className="services_page_title">
+                  <Trans i18nKey="suit_resizing">
+                    <span>{t("suit_resizing")}</span>
+                  </Trans>
+                </h2>
               </section>
               <section
                 className="services_page_content entry-content"
@@ -140,7 +144,9 @@ const SuitResizing = () => {
                           className="sc_form sc_form_default sc_align_default"
                         >
                           <h3 className="sc_item_title sc_form_title sc_align_center sc_item_title_style_default">
-                            Send message
+                            <Trans i18nKey="send_mess">
+                              <span>{t("send_mess")}</span>
+                            </Trans>
                           </h3>
                           <form className="sc_form_form inited">
                             <div className="sc_form_details trx_addons_columns_wrap">
@@ -177,7 +183,7 @@ const SuitResizing = () => {
                                   name="message"
                                   id="message"
                                   aria-required="true"
-                                  placeholder="Your message *"
+                                  placeholder={t("your_mess")}
                                   defaultValue={""}
                                 />
                               </span>

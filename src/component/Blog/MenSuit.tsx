@@ -17,7 +17,7 @@ const MenSuit = () => {
       <Header
         children={
           <BreadCrumb
-            text="Men’s Suit Patterns – Top Suit Patterns."
+            text="top_suits"
             text1={t("all_posts")}
             text2={t("details")}
             href1="/blog"
@@ -254,7 +254,7 @@ const MenSuit = () => {
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
-                             <b>
+                      <b>
                         <Trans i18nKey="tailor">
                           <span>{t("tailor")}</span>
                         </Trans>
@@ -362,13 +362,16 @@ const MenSuit = () => {
                       </label>
                     </p> */}
                       <p className="form-submit">
-                        <input
-                          name="submit"
+                        <button
                           type="submit"
-                          id="send_comment"
-                          className="submit"
-                          defaultValue="Submit"
-                        />
+                          style={{
+                            backgroundColor: "#be9667",
+                          }}
+                        >
+                          <Trans i18nKey="submit">
+                            <span>{t("submit")}</span>
+                          </Trans>
+                        </button>
                         <input
                           type="hidden"
                           name="comment_post_ID"

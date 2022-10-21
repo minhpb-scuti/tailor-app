@@ -17,7 +17,7 @@ const MadHatter = () => {
       <Header
         children={
           <BreadCrumb
-            text="Top 10 Must Tries on The New Ultimate 3D."
+            text="top_10"
             text1={t("all_posts")}
             text2={t("details")}
             href1="/blog"
@@ -254,7 +254,7 @@ const MadHatter = () => {
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
-                             <b>
+                      <b>
                         <Trans i18nKey="tailor">
                           <span>{t("tailor")}</span>
                         </Trans>

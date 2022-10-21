@@ -11,14 +11,16 @@ import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
 import Product6 from "../../static/image/product-6.webp";
+import { Trans, useTranslation } from "react-i18next";
 
 const Shop = () => {
   const { pathname } = useLocation();
   const [layout, setLayout] = useState<boolean>(false);
+  const { t } = useTranslation();
 
   return (
     <body className="archive post-type-archive post-type-archive-product custom-background theme-petermason woocommerce-shop woocommerce woocommerce-page woocommerce-js body_tag scheme_default blog_mode_shop body_style_wide is_stream blog_style_excerpt sidebar_show sidebar_left header_style_header-custom-398 header_position_default menu_style_top trx_addons_present wpb-js-composer js-comp-ver-6.9.0 vc_responsive added_to_cart_inited desktop_layout">
-      <HeaderShop pathname={pathname} children={<BreadCrumb text="Shop" />} />
+      <HeaderShop pathname={pathname} children={<BreadCrumb text="shop" />} />
       <div className="page_content_wrap scheme_default">
         <div className="content_wrap">
           <div className="content content_blog">
@@ -60,7 +62,9 @@ const Shop = () => {
                 </div>
                 {/* /.petermason_shop_mode_buttons */}
                 <p className="woocommerce-result-count">
-                  Showing all 6 results
+                  <Trans i18nKey="show_all">
+                    <span>{t("show_all")}</span>
+                  </Trans>
                 </p>
                 <form className="woocommerce-ordering" method="get">
                   <div className="select_container">
@@ -69,14 +73,30 @@ const Shop = () => {
                       className="orderby"
                       aria-label="Shop order"
                     >
-                      <option value="popularity">Sort by popularity</option>
-                      <option value="rating">Sort by average rating</option>
-                      <option value="date" selected>
-                        Sort by latest
+                      <option value="popularity">
+                        <Trans i18nKey="sort_by_popularity">
+                          <span>{t("sort_by_popularity")}</span>
+                        </Trans>
                       </option>
-                      <option value="price">Sort by price: low to high</option>
+                      <option value="rating">
+                        <Trans i18nKey="sort_by_rating">
+                          <span>{t("sort_by_rating")}</span>
+                        </Trans>
+                      </option>
+                      <option value="date" selected>
+                        <Trans i18nKey="sort_by_lastest">
+                          <span>{t("sort_by_lastest")}</span>
+                        </Trans>
+                      </option>
+                      <option value="price">
+                        <Trans i18nKey="sort_low_to_high">
+                          <span>{t("sort_low_to_high")}</span>
+                        </Trans>
+                      </option>
                       <option value="price-desc">
-                        Sort by price: high to low
+                        <Trans i18nKey="sort_high_to_low">
+                          <span>{t("sort_high_to_low")}</span>
+                        </Trans>
                       </option>
                     </select>
                   </div>

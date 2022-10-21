@@ -7,13 +7,16 @@ import Service1 from "../../static/image/service-1.jpg";
 import Service2 from "../../static/image/service-2.jpg";
 import Service3 from "../../static/image/service-3.jpg";
 import Service4 from "../../static/image/service-4.jpg";
+import { Trans, useTranslation } from "react-i18next";
 
 const Services = () => {
   const location = useLocation();
+  const { t } = useTranslation();
+
   return (
     <div className="scheme_default">
       <Header
-        children={<BreadCrumb text="All Services" />}
+        children={<BreadCrumb text="all_service" />}
         pathname={location.pathname}
       />
 
@@ -47,7 +50,9 @@ const Services = () => {
                       <div className="sc_services_item_header">
                         <h4 className="sc_services_item_title">
                           <a href="/services/custom-tailoring/">
-                            Custom Tailoring
+                            <Trans i18nKey="custom_tailoring">
+                              <span>{t("custom_tailoring")}</span>
+                            </Trans>
                           </a>
                         </h4>
                         <div className="sc_services_item_subtitle" />
@@ -94,7 +99,11 @@ const Services = () => {
                     <div className="sc_services_item_info">
                       <div className="sc_services_item_header">
                         <h4 className="sc_services_item_title">
-                          <a href="/services/weddings/">Wedding Services</a>
+                          <a href="/services/weddings/">
+                            <Trans i18nKey="wedding_services">
+                              <span>{t("wedding_services")}</span>
+                            </Trans>
+                          </a>
                         </h4>
                         <div className="sc_services_item_subtitle" />
                       </div>
@@ -140,7 +149,11 @@ const Services = () => {
                     <div className="sc_services_item_info">
                       <div className="sc_services_item_header">
                         <h4 className="sc_services_item_title">
-                          <a href="/services/suit-resizing/">Suit Resizing</a>
+                          <a href="/services/suit-resizing/">
+                            <Trans i18nKey="suit_resizing">
+                              <span>{t("suit_resizing")}</span>
+                            </Trans>
+                          </a>
                         </h4>
                         <div className="sc_services_item_subtitle" />
                       </div>
@@ -187,7 +200,9 @@ const Services = () => {
                       <div className="sc_services_item_header">
                         <h4 className="sc_services_item_title">
                           <a href="/services/accessories/">
-                            Custom Accessories
+                            <Trans i18nKey="custom_accessories">
+                              <span>{t("custom_accessories")}</span>
+                            </Trans>
                           </a>
                         </h4>
                         <div className="sc_services_item_subtitle" />

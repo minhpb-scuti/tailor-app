@@ -16,8 +16,8 @@ const Accessories = () => {
       <Header
         children={
           <BreadCrumb
-            text="Custom Tailoring"
-            text1="All Services"
+            text="custom_tailoring"
+            text1="all_service"
             href1="/services"
           />
         }
@@ -43,7 +43,11 @@ const Accessories = () => {
                     height={658}
                   />
                 </div>
-                <h2 className="services_page_title">Custom Tailoring</h2>
+                <h2 className="services_page_title">
+                  <Trans i18nKey="custom_tailoring">
+                    <span>{t("custom_tailoring")}</span>
+                  </Trans>
+                </h2>
               </section>
               <section
                 className="services_page_content entry-content"
@@ -140,7 +144,9 @@ const Accessories = () => {
                           className="sc_form sc_form_default sc_align_default"
                         >
                           <h3 className="sc_item_title sc_form_title sc_align_center sc_item_title_style_default">
-                            Send message
+                            <Trans i18nKey="send_mess">
+                              <span>{t("send_mess")}</span>
+                            </Trans>
                           </h3>
                           <form className="sc_form_form inited">
                             <div className="sc_form_details trx_addons_columns_wrap">
@@ -177,14 +183,14 @@ const Accessories = () => {
                                   name="message"
                                   id="message"
                                   aria-required="true"
-                                  placeholder="Your message *"
+                                  placeholder={t("your_mess")}
                                   defaultValue={""}
                                 />
                               </span>
                             </label>
                             <div className="sc_form_field sc_form_field_button sc_form_field_submit">
                               <button className="sc_button sc_button_default sc_button_size_normal">
-                              <Trans i18nKey="submit">
+                                <Trans i18nKey="submit">
                                   <span>{t("submit")}</span>
                                 </Trans>
                               </button>

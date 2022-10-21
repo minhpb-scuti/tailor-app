@@ -17,7 +17,7 @@ const NewUltimate3D = () => {
       <Header
         children={
           <BreadCrumb
-            text="Top 10 Must Tries on The New Ultimate 3D."
+            text="top_10"
             text1={t("all_posts")}
             text2={t("details")}
             href1="/blog"
@@ -247,11 +247,14 @@ const NewUltimate3D = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                    About Candy Wire
+                    <Trans i18nKey="about_tailor">
+                      <span>{t("about_tailor")}</span>
+                    </Trans>{" "}
+                    Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
-                             <b>
+                      <b>
                         <Trans i18nKey="tailor">
                           <span>{t("tailor")}</span>
                         </Trans>
@@ -263,7 +266,9 @@ const NewUltimate3D = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                      VIEW MORE POST
+                      <Trans i18nKey="view_more_post">
+                        <span>{t("view_more_post")}</span>
+                      </Trans>
                     </a>
                   </div>
                   {/* .author_bio */}
