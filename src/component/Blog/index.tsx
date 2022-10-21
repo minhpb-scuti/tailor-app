@@ -70,11 +70,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Custom Tailoring
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Gentleman
                       </a>
                     </span>
@@ -152,11 +152,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Fashion
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Gentleman
                       </a>
                     </span>
@@ -211,7 +211,7 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Custom Tailoring
                       </a>
                     </span>
@@ -289,11 +289,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Details
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Gentleman
                       </a>
                     </span>
@@ -351,7 +351,7 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Fashion
                       </a>
                     </span>
@@ -380,7 +380,7 @@ const Blog = () => {
                         world’s problems.
                       </p>
                       <p>
-                        <a href="#">Mahatma Gandhi</a>
+                        <a >Mahatma Gandhi</a>
                       </p>
                     </blockquote>
                   </div>
@@ -442,7 +442,7 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Details
                       </a>
                     </span>
@@ -575,7 +575,7 @@ const Blog = () => {
                               tabIndex={0}
                             />
                           </div>
-                          <a className="mejs-horizontal-volume-slider" href="#">
+                          <a className="mejs-horizontal-volume-slider" >
                             <span className="mejs-offscreen">
                               Use Up/Down Arrow keys to increase or decrease
                               volume.
@@ -604,7 +604,7 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Fashion
                       </a>
                     </span>
@@ -667,11 +667,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Details
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Gentleman
                       </a>
                     </span>
@@ -756,7 +756,7 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Fashion
                       </a>
                     </span>
@@ -829,11 +829,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Fashion
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Gentleman
                       </a>
                     </span>
@@ -911,11 +911,11 @@ const Blog = () => {
                   </h3>
                   <div className="post_meta">
                     <span className="post_meta_item post_categories">
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Custom Tailoring
                       </a>
                       ,
-                      <a href="#" rel="category tag">
+                      <a  rel="category tag">
                         Details
                       </a>
                     </span>
@@ -987,19 +987,19 @@ const Blog = () => {
                 <h5 className="widget_title">Categories</h5>
                 <ul>
                   <li className="cat-item cat-item-12">
-                    <a href="#">Custom Tailoring</a>
+                    <a >Custom Tailoring</a>
                   </li>
                   <li className="cat-item cat-item-9">
-                    <a href="#">Details</a>
+                    <a >Details</a>
                   </li>
                   <li className="cat-item cat-item-10">
-                    <a href="#">Fashion</a>
+                    <a >Fashion</a>
                   </li>
                   <li className="cat-item cat-item-11">
                     <a href="#/">Fresh Look</a>
                   </li>
                   <li className="cat-item cat-item-8">
-                    <a href="#">Gentleman</a>
+                    <a >Gentleman</a>
                   </li>
                   <li className="cat-item cat-item-7">
                     <a href="#/">Life Style</a>
@@ -1173,7 +1173,7 @@ const Blog = () => {
                 <h5 className="widget_title">Tags</h5>
                 <div className="tagcloud">
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-18 tag-link-position-1 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "11.266666666667pt" }}
                     aria-label="business (6 items)"
@@ -1181,7 +1181,7 @@ const Blog = () => {
                     business
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-15 tag-link-position-2 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="clothing (5 items)"
@@ -1189,7 +1189,7 @@ const Blog = () => {
                     clothing
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-17 tag-link-position-3 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "20.133333333333pt" }}
                     aria-label="designer (10 items)"
@@ -1197,7 +1197,7 @@ const Blog = () => {
                     designer
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-16 tag-link-position-4 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.933333333333pt" }}
                     aria-label="men (8 items)"
@@ -1205,7 +1205,7 @@ const Blog = () => {
                     men
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-13 tag-link-position-5 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "8pt" }}
                     aria-label="suit (5 items)"
@@ -1213,7 +1213,7 @@ const Blog = () => {
                     suit
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-14 tag-link-position-6 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "22pt" }}
                     aria-label="tailor (11 items)"
@@ -1221,7 +1221,7 @@ const Blog = () => {
                     tailor
                   </a>
                   <a
-                    href="#"
+                    
                     className="tag-cloud-link tag-link-19 tag-link-position-7 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "18.266666666667pt" }}
                     aria-label="wedding (9 items)"

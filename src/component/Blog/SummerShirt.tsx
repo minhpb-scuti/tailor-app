@@ -60,9 +60,7 @@ const SummerShirt = () => {
                 </span>
                 <span className="post_meta_item post_date">
                   <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
-                     <Trans i18nKey="november">
-                                <span>{t("november")}</span>
-                              </Trans>{" "} 28, 2016
+                    November 28, 2016
                   </a>
                 </span>
                 <a
