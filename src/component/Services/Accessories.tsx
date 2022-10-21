@@ -142,7 +142,7 @@ const Accessories = () => {
                           <h3 className="sc_item_title sc_form_title sc_align_center sc_item_title_style_default">
                             Send message
                           </h3>
-                          <form className="sc_form_form inited" >
+                          <form className="sc_form_form inited">
                             <div className="sc_form_details trx_addons_columns_wrap">
                               <div className="trx_addons_column-1_2">
                                 <label className="sc_form_field sc_form_field_name required">

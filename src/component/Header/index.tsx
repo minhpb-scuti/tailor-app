@@ -19,8 +19,7 @@ const Index = (props: IHeader) => {
   const scroll = useScrollHandler();
 
   const i18nextLng = localStorage.getItem("i18nextLng");
-  console.log('i18nextLng', i18nextLng);
-  
+  console.log("i18nextLng", i18nextLng);
 
   const { t, i18n } = useTranslation();
 

@@ -44,8 +44,8 @@ const NorthwestSuit = lazy(() => import("./component/Blog/NorthwestSuits"));
 
 const App = () => {
   return (
-    <Suspense fallback={<></>}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Suspense fallback={<div>Loadding Page</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contacts" element={<Contact />} />
@@ -133,8 +133,8 @@ const App = () => {
           <Route path="/team/polly-wire" element={<PollyWire />} />
           <Route path="/team/rebecca-ogle" element={<RebeccaOgle />} />
         </Routes>
-      </BrowserRouter>
-    </Suspense>
+      </Suspense>
+    </BrowserRouter>
   );
 };
 export default App;

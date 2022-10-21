@@ -48,17 +48,11 @@ const SummerTweed = () => {
               <div className="post_header entry-header">
                 <div className="post_meta">
                   <span className="post_meta_item post_categories">
-                    <a  rel="category tag">
-                      Details
-                    </a>
-                    ,
+                    <a rel="category tag">Details</a>,
                     <a href="#/" rel="category tag">
                       Fresh Look
                     </a>
-                    ,
-                    <a  rel="category tag">
-                      Gentleman
-                    </a>
+                    ,<a rel="category tag">Gentleman</a>
                   </span>
                   <span className="post_meta_item post_date">
                     <a href="/top-10-must-tries-on-the-new-ultimate-3d/">
@@ -139,21 +133,8 @@ const SummerTweed = () => {
                     </div>
                     <div className="post_meta_item_tags">
                       <span className="post_meta_label">Tags: </span>
-                      <a  rel="tag">
-                        designer
-                      </a>
-                      ,
-                      <a  rel="tag">
-                        men
-                      </a>
-                      ,
-                      <a  rel="tag">
-                        suit
-                      </a>
-                      ,
-                      <a  rel="tag">
-                        tailor
-                      </a>
+                      <a rel="tag">designer</a>,<a rel="tag">men</a>,
+                      <a rel="tag">suit</a>,<a rel="tag">tailor</a>
                     </div>
                   </div>
                   <span className="post_meta_item post_share">
@@ -223,9 +204,10 @@ const SummerTweed = () => {
                 </div>
                 <div className="author_description">
                   <h5 className="author_title" itemProp="name">
-                       <Trans i18nKey="about_tailor">
-                        <span>{t("about_tailor")}</span>
-                      </Trans> Candy Wire
+                    <Trans i18nKey="about_tailor">
+                      <span>{t("about_tailor")}</span>
+                    </Trans>{" "}
+                    Candy Wire
                   </h5>
                   <div className="author_bio" itemProp="description">
                     <p>
@@ -237,7 +219,7 @@ const SummerTweed = () => {
                       vidit solet congue, eos eu.
                     </p>
                     <a className="author_link" href="/blog" rel="author">
-                         <Trans i18nKey="view_more_post">
+                      <Trans i18nKey="view_more_post">
                         <span>{t("view_more_post")}</span>
                       </Trans>
                     </a>
