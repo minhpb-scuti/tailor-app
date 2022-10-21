@@ -7,15 +7,15 @@ const index = () => {
         <div className="footer_copyright_inner">
           <div className="content_wrap">
             <div className="copyright_text">
-              <a href="/#" rel="noreferrer" target="_blank">
+              <a  rel="noreferrer" target="_blank">
                 ThemeREX
               </a>{" "}
               © 2022 All Rights Reserved.
-              <a href="/#" rel="noreferrer" target="_blank">
+              <a  rel="noreferrer" target="_blank">
                 Terms of Use
               </a>
               and
-              <a href="/#">Privacy Policy</a>
+              <a >Privacy Policy</a>
             </div>
           </div>
         </div>

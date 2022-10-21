@@ -123,7 +123,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/slim-fit-2pc-black-mini-checkered-suit/">
-                              Slim Fit 2pc Black Mini Checkered Suit
+                              <Trans i18nKey="product1">
+                                <span>{t("product1")}</span>
+                              </Trans>
                             </a>
                           </h2>
                         </div>
@@ -171,7 +173,9 @@ const Shop = () => {
                           aria-label="Select options for “Slim Fit 2pc Black Mini Checkered Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -197,7 +201,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/modern-fit-2pc-ultra-black-suit/">
-                              Modern Fit 2pc Ultra Black Suit
+                              <Trans i18nKey="product2">
+                                <span>{t("product2")}</span>
+                              </Trans>
                             </a>
                           </h2>
                         </div>
@@ -245,7 +251,9 @@ const Shop = () => {
                           aria-label="Select options for “Modern Fit 2pc Ultra Black Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -271,7 +279,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/slim-fit-3pc-solid-blue-suit/">
-                              Slim Fit 3pc Solid Blue Suit
+                              <Trans i18nKey="product3">{t("product3")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -319,7 +327,9 @@ const Shop = () => {
                           aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -345,7 +355,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/traditional-fit-2pc-brown-suit/">
-                              Traditional Fit 2pc Brown Suit
+                              <Trans i18nKey="product4">{t("product4")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -393,7 +403,9 @@ const Shop = () => {
                           aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -420,7 +432,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/luxury-fit-3pc-black-solid-suit/">
-                              Luxury Fit 3pc Black Solid Suit
+                              <Trans i18nKey="product5">{t("product5")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -459,7 +471,9 @@ const Shop = () => {
                           aria-label="Select options for “Luxury Fit 3pc Black Solid Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -485,7 +499,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/exclusive-fit-3pc-dark-blue-suit/">
-                              Exclusive Fit 3pc Dark Blue Suit
+                                <Trans i18nKey="product6">
+                                  {t("product6")}
+                                </Trans>
                             </a>
                           </h2>
                         </div>
@@ -533,7 +549,9 @@ const Shop = () => {
                           aria-label="Select options for “Exclusive Fit 3pc Dark Blue Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -584,7 +602,9 @@ const Shop = () => {
                 </div>
                 {/* /.petermason_shop_mode_buttons */}
                 <p className="woocommerce-result-count">
-                  Showing all 6 results
+                  <Trans i18nKey="show_all">
+                    <span>{t("show_all")}</span>
+                  </Trans>
                 </p>
                 <form className="woocommerce-ordering" method="get">
                   <div className="select_container">
@@ -593,14 +613,30 @@ const Shop = () => {
                       className="orderby"
                       aria-label="Shop order"
                     >
-                      <option value="popularity">Sort by popularity</option>
-                      <option value="rating">Sort by average rating</option>
-                      <option value="date" selected>
-                        Sort by latest
+                      <option value="popularity">
+                        <Trans i18nKey="sort_by_popularity">
+                          <span>{t("sort_by_popularity")}</span>
+                        </Trans>
                       </option>
-                      <option value="price">Sort by price: low to high</option>
+                      <option value="rating">
+                        <Trans i18nKey="sort_by_rating">
+                          <span>{t("sort_by_rating")}</span>
+                        </Trans>
+                      </option>
+                      <option value="date" selected>
+                        <Trans i18nKey="sort_by_lastest">
+                          <span>{t("sort_by_lastest")}</span>
+                        </Trans>
+                      </option>
+                      <option value="price">
+                        <Trans i18nKey="sort_low_to_high">
+                          <span>{t("sort_low_to_high")}</span>
+                        </Trans>
+                      </option>
                       <option value="price-desc">
-                        Sort by price: high to low
+                        <Trans i18nKey="sort_high_to_low">
+                          <span>{t("sort_high_to_low")}</span>
+                        </Trans>
                       </option>
                     </select>
                   </div>
@@ -627,7 +663,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/slim-fit-2pc-black-mini-checkered-suit/">
-                              Slim Fit 2pc Black Mini Checkered Suit
+                              <Trans i18nKey="product1">
+                                <span>{t("product1")}</span>
+                              </Trans>
                             </a>
                           </h2>
                         </div>
@@ -660,7 +698,9 @@ const Shop = () => {
                           aria-label="Select options for “Slim Fit 2pc Black Mini Checkered Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -686,7 +726,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/modern-fit-2pc-ultra-black-suit/">
-                              Modern Fit 2pc Ultra Black Suit
+                              <Trans i18nKey="product2">
+                                <span>{t("product2")}</span>
+                              </Trans>
                             </a>
                           </h2>
                         </div>
@@ -719,7 +761,9 @@ const Shop = () => {
                           aria-label="Select options for “Modern Fit 2pc Ultra Black Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -745,7 +789,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/slim-fit-3pc-solid-blue-suit/">
-                              Slim Fit 3pc Solid Blue Suit
+                              <Trans i18nKey="product3">{t("product3")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -778,7 +822,9 @@ const Shop = () => {
                           aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -804,7 +850,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/traditional-fit-2pc-brown-suit/">
-                              Traditional Fit 2pc Brown Suit
+                              <Trans i18nKey="product4">{t("product4")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -837,7 +883,9 @@ const Shop = () => {
                           aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -864,7 +912,7 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/luxury-fit-3pc-black-solid-suit/">
-                              Luxury Fit 3pc Black Solid Suit
+                              <Trans i18nKey="product5">{t("product5")}</Trans>
                             </a>
                           </h2>
                         </div>
@@ -888,7 +936,9 @@ const Shop = () => {
                           aria-label="Select options for “Luxury Fit 3pc Black Solid Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -914,7 +964,9 @@ const Shop = () => {
                         <div className="post_header entry-header">
                           <h2 className="woocommerce-loop-product__title">
                             <a href="/product/exclusive-fit-3pc-dark-blue-suit/">
-                              Exclusive Fit 3pc Dark Blue Suit
+                                <Trans i18nKey="product6">
+                                  {t("product6")}
+                                </Trans>
                             </a>
                           </h2>
                         </div>
@@ -947,7 +999,9 @@ const Shop = () => {
                           aria-label="Select options for “Exclusive Fit 3pc Dark Blue Suit”"
                           rel="nofollow"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </a>
                       </div>
                       {/* /.post_data */}
@@ -969,10 +1023,16 @@ const Shop = () => {
                 id="woocommerce_widget_cart-2"
                 className="widget woocommerce widget_shopping_cart"
               >
-                <h5 className="widget_title">Shopping Cart</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="shopping_cart">
+                    <span>{t("shopping_cart")}</span>
+                  </Trans>
+                </h5>
                 <div className="widget_shopping_cart_content">
                   <p className="woocommerce-mini-cart__empty-message">
-                    No products in the cart.
+                    <Trans i18nKey="no_product">
+                      <span>{t("no_product")}</span>
+                    </Trans>
                   </p>
                 </div>
               </aside>
@@ -980,7 +1040,11 @@ const Shop = () => {
                 id="woocommerce_price_filter-2"
                 className="widget woocommerce widget_price_filter"
               >
-                <h5 className="widget_title">Filter by price</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="filter_by_price">
+                    <span>{t("filter_by_price")}</span>
+                  </Trans>
+                </h5>
                 <form method="get" action="/shop/">
                   <div className="price_slider_wrapper">
                     <div
@@ -1028,10 +1092,15 @@ const Shop = () => {
                         style={{ display: "none" }}
                       />
                       <button type="submit" className="button">
-                        Filter
+                        <Trans i18nKey="filter">
+                          <span>{t("filter")}</span>
+                        </Trans>
                       </button>
                       <div className="price_label" style={{}}>
-                        Price: <span className="from">$300</span> —
+                        <Trans i18nKey="price">
+                          <span>{t("price")}</span>
+                        </Trans>
+                        : <span className="from">$300</span> —
                         <span className="to">$610</span>
                       </div>
                       <input type="hidden" name="q" defaultValue="/shop/" />
@@ -1044,25 +1113,53 @@ const Shop = () => {
                 id="woocommerce_product_categories-2"
                 className="widget woocommerce widget_product_categories"
               >
-                <h5 className="widget_title">Categories</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="categories">
+                    <span>{t("categories")}</span>
+                  </Trans>
+                </h5>
                 <ul className="product-categories">
                   <li className="cat-item cat-item-29">
-                    <a href="#">Blazers</a>
+                    <a href="#">
+                      <Trans i18nKey="blazers">
+                        <span>{t("blazers")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-30">
-                    <a href="#/">Shirts</a>
+                    <a href="#/">
+                      <Trans i18nKey="shirts">
+                        <span>{t("shirts")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-28">
-                    <a href="#/">Suits</a>
+                    <a href="#/">
+                      <Trans i18nKey="header.suits">
+                        <span>{t("header.suits")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-33">
-                    <a href="#/">Ties</a>
+                    <a href="#/">
+                      <Trans i18nKey="ties">
+                        <span>{t("ties")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-32">
-                    <a href="#/">Trousers</a>
+                    <a href="#/">
+                      <Trans i18nKey="trousers">
+                        <span>{t("trousers")}</span>
+                      </Trans>
+                    </a>
                   </li>
                   <li className="cat-item cat-item-31">
-                    <a href="#/">Waistcoats</a>
+                    <a href="#/">
+                      <Trans i18nKey="waistcoats">
+                        <span>{t("waistcoats")}</span>
+                      </Trans>
+                    </a>
                   </li>
                 </ul>
               </aside>
@@ -1070,15 +1167,21 @@ const Shop = () => {
                 id="woocommerce_product_tag_cloud-2"
                 className="widget woocommerce widget_product_tag_cloud"
               >
-                <h5 className="widget_title">Tags</h5>
+                <h5 className="widget_title">
+                  <Trans i18nKey="tags">
+                    <span>{t("tags")}</span>
+                  </Trans>
+                </h5>
                 <div className="tagcloud">
                   <a
-                    href="/#"
+                    
                     className="tag-cloud-link tag-link-35 tag-link-position-1 sc_button_hover_slide_bottom sc_button_hover_style_alterbd"
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Accessories (3 products)"
                   >
-                    Accessories
+                    <Trans i18nKey="accessories">
+                      <span>{t("accessories")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="/#/"
@@ -1086,7 +1189,9 @@ const Shop = () => {
                     style={{ fontSize: "8pt" }}
                     aria-label="Classic (2 products)"
                   >
-                    Classic
+                    <Trans i18nKey="header.classic">
+                      <span>{t("header.classic")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="/#/"
@@ -1094,7 +1199,9 @@ const Shop = () => {
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Fit (3 products)"
                   >
-                    Fit
+                    <Trans i18nKey="fit">
+                      <span>{t("fit")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="#"
@@ -1102,7 +1209,9 @@ const Shop = () => {
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Jackets (3 products)"
                   >
-                    Jackets
+                    <Trans i18nKey="jackets">
+                      <span>{t("jackets")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="#"
@@ -1110,7 +1219,9 @@ const Shop = () => {
                     style={{ fontSize: "8pt" }}
                     aria-label="Scarves (2 products)"
                   >
-                    Scarves
+                    <Trans i18nKey="scarves">
+                      <span>{t("scarves")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="#"
@@ -1118,7 +1229,9 @@ const Shop = () => {
                     style={{ fontSize: "15.636363636364pt" }}
                     aria-label="Skinny fit (3 products)"
                   >
-                    Skinny fit
+                    <Trans i18nKey="skin_ny_fit">
+                      <span>{t("skin_ny_fit")}</span>
+                    </Trans>
                   </a>
                   <a
                     href="/#/"
@@ -1126,7 +1239,9 @@ const Shop = () => {
                     style={{ fontSize: "22pt" }}
                     aria-label="Wedding (4 products)"
                   >
-                    Wedding
+                    <Trans i18nKey="wedding">
+                      <span>{t("wedding")}</span>
+                    </Trans>
                   </a>
                 </div>
               </aside>

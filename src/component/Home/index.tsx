@@ -1031,8 +1031,9 @@ const Home = () => {
                                       <div className="post_header entry-header">
                                         <h2 className="woocommerce-loop-product__title">
                                           <a href="/product/slim-fit-2pc-black-mini-checkered-suit/">
-                                            Slim Fit 2pc Black Mini Checkered
-                                            Suit
+                                            <Trans i18nKey="product1">
+                                              <span>{t("product1")}</span>
+                                            </Trans>
                                           </a>
                                         </h2>
                                       </div>
@@ -1095,7 +1096,9 @@ const Home = () => {
                                       <div className="post_header entry-header">
                                         <h2 className="woocommerce-loop-product__title">
                                           <a href="/product/modern-fit-2pc-ultra-black-suit/">
-                                            Modern Fit 2pc Ultra Black Suit
+                                            <Trans i18nKey="product2">
+                                              <span>{t("product2")}</span>
+                                            </Trans>
                                           </a>
                                         </h2>
                                       </div>
@@ -1158,7 +1161,9 @@ const Home = () => {
                                       <div className="post_header entry-header">
                                         <h2 className="woocommerce-loop-product__title">
                                           <a href="/product/slim-fit-3pc-solid-blue-suit/">
-                                            Slim Fit 3pc Solid Blue Suit
+                                            <Trans i18nKey="product3">
+                                              {t("product3")}
+                                            </Trans>
                                           </a>
                                         </h2>
                                       </div>
@@ -1221,7 +1226,9 @@ const Home = () => {
                                       <div className="post_header entry-header">
                                         <h2 className="woocommerce-loop-product__title">
                                           <a href="/product/traditional-fit-2pc-brown-suit/">
-                                            Traditional Fit 2pc Brown Suit
+                                            <Trans i18nKey="product4">
+                                              {t("product4")}
+                                            </Trans>
                                           </a>
                                         </h2>
                                       </div>

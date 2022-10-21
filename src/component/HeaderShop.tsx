@@ -443,7 +443,7 @@ const Index = (props: IHeaderShop) => {
                                             id="menu-item-1159"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                                           >
-                                            <a href="/#">
+                                            <a >
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -490,7 +490,7 @@ const Index = (props: IHeaderShop) => {
                                             id="menu-item-1166"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                                           >
-                                            <a href="/#">
+                                            <a >
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -974,7 +974,7 @@ const Index = (props: IHeaderShop) => {
                         id="menu_mobile-item-1159"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                       >
-                        <a href="/#">
+                        <a >
                           <span>Privacy Policy</span>
                         </a>
                       </li>
@@ -1019,7 +1019,7 @@ const Index = (props: IHeaderShop) => {
                         id="menu_mobile-item-1166"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                       >
-                        <a href="/#">
+                        <a >
                           <span>Privacy Policy</span>
                         </a>
                       </li>

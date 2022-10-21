@@ -10,7 +10,7 @@ import Product3 from "../../static/image/product-3.webp";
 import Product4 from "../../static/image/product-4.webp";
 import Product5 from "../../static/image/product-5.webp";
 import Product6 from "../../static/image/product-6.webp";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Product = () => {
   const { pathname } = useLocation();
@@ -23,7 +23,7 @@ const Product = () => {
         pathname={pathname}
         children={
           <BreadCrumb
-            text="Luxury Fit 3pc Black Solid Suit"
+            text="product5"
             text1="shop"
             href1="/shop"
             text2={t("blazers")}
@@ -37,7 +37,7 @@ const Product = () => {
               <nav className="woocommerce-breadcrumb">
                 <a href="/">Home</a>&nbsp;/&nbsp;
                 <a href="#/">Suits</a>
-                &nbsp;/&nbsp;Luxury Fit 3pc Black Solid Suit
+                &nbsp;/&nbsp; <Trans i18nKey="product5">{t("product5")}</Trans>
               </nav>
               <div className="woocommerce-notices-wrapper" />
               <div
@@ -85,7 +85,7 @@ const Product = () => {
                 </div>
                 <div className="summary entry-summary">
                   <h1 className="product_title entry-title">
-                    Luxury Fit 3pc Black Solid Suit
+                    <Trans i18nKey="product5">{t("product5")}</Trans>
                   </h1>
                   <p className="price">
                     <span className="woocommerce-Price-amount amount">
@@ -169,7 +169,7 @@ const Product = () => {
                             className="screen-reader-text"
                             htmlFor="quantity_6345848b9eab8"
                           >
-                            Luxury Fit 3pc Black Solid Suit quantity
+                            <Trans i18nKey="product5">{t("product5")}</Trans>
                           </label>
                           <input
                             type="number"
@@ -191,7 +191,9 @@ const Product = () => {
                           type="submit"
                           className="single_add_to_cart_button button alt sc_button sc_button_style_2 sc_button_hover_slide_bottom disabled wc-variation-selection-needed"
                         >
-                          Buy now
+                          <Trans i18nKey="buy_now">
+                            <span>{t("buy_now")}</span>
+                          </Trans>
                         </button>
                         <input
                           type="hidden"
@@ -214,30 +216,50 @@ const Product = () => {
                   </form>
                   <div className="product_meta">
                     <span className="sku_wrapper">
-                      SKU: <span className="sku">N/A</span>
+                      <Trans i18nKey="sku">
+                        <span>{t("sku")}</span>
+                      </Trans>
+                      : <span className="sku">N/A</span>
                     </span>
                     <span className="posted_in">
-                      Categories:
+                      <Trans i18nKey="categories">
+                        <span>{t("categories")}</span>
+                      </Trans>
+                      :
                       <a href="#" rel="tag">
-                        Blazers
+                        <Trans i18nKey="blazers">
+                          <span>{t("blazers")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="#/" rel="tag">
-                        Suits
+                        <Trans i18nKey="header.suits">
+                          <span>{t("header.suits")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="tagged_as">
-                      Tags:
-                      <a href="/#" rel="tag">
-                        Accessories
+                      <Trans i18nKey="tags">
+                        <span>{t("tags")}</span>
+                      </Trans>
+                      :
+                      <a rel="tag">
+                        <Trans i18nKey="accessories">
+                          <span>{t("accessories")}</span>
+                        </Trans>
                       </a>
                       ,
                       <a href="/#/" rel="tag">
-                        Wedding
+                        <Trans i18nKey="wedding">
+                          <span>{t("wedding")}</span>
+                        </Trans>
                       </a>
                     </span>
                     <span className="product_id">
-                      Product ID: <span>241</span>
+                      <Trans i18nKey="product_id">
+                        <span>{t("product_id")}</span>
+                      </Trans>
+                      : <span>241</span>
                     </span>
                   </div>
                 </div>
@@ -266,7 +288,9 @@ const Product = () => {
                             href="#tab-description"
                             className="sc_button sc_button_style_2 sc_button_hover_slide_bottom"
                           >
-                            Description
+                            <Trans i18nKey="description">
+                              <span>{t("description")}</span>
+                            </Trans>
                           </a>
                         </li>
                         <li
@@ -282,7 +306,9 @@ const Product = () => {
                             href="#tab-additional_information"
                             className="sc_button sc_button_style_2 sc_button_hover_slide_bottom"
                           >
-                            Additional information
+                            <Trans i18nKey="additional_information">
+                              <span>{t("additional_information")}</span>
+                            </Trans>
                           </a>
                         </li>
                         <li
@@ -298,7 +324,10 @@ const Product = () => {
                             href="#tab-reviews"
                             className="sc_button sc_button_style_2 sc_button_hover_slide_bottom"
                           >
-                            Reviews (0)
+                            <Trans i18nKey="reviews">
+                              <span>{t("reviews")}</span>
+                            </Trans>
+                            (0)
                           </a>
                         </li>
                       </ul>
@@ -310,7 +339,11 @@ const Product = () => {
                           aria-labelledby="tab-title-description"
                           style={{ display: "block" }}
                         >
-                          <h2>Description</h2>
+                          <h2>
+                            <Trans i18nKey="description">
+                              <span>{t("description")}</span>
+                            </Trans>
+                          </h2>
                           <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
@@ -334,12 +367,18 @@ const Product = () => {
                           aria-labelledby="tab-title-additional_information"
                           style={{ display: "block" }}
                         >
-                          <h2>Additional information</h2>
+                          <h2>
+                            <Trans i18nKey="additional_information">
+                              <span>{t("additional_information")}</span>
+                            </Trans>
+                          </h2>
                           <table className="woocommerce-product-attributes shop_attributes">
                             <tbody>
                               <tr className="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_size">
                                 <th className="woocommerce-product-attributes-item__label">
-                                  size
+                                  <Trans i18nKey="size">
+                                    <span>{t("size")}</span>
+                                  </Trans>
                                 </th>
                                 <td className="woocommerce-product-attributes-item__value">
                                   <p>M, L</p>
@@ -361,10 +400,14 @@ const Product = () => {
                           <div id="reviews" className="woocommerce-Reviews">
                             <div id="comments">
                               <h2 className="woocommerce-Reviews-title">
-                                Reviews
+                                <Trans i18nKey="reviews">
+                                  <span>{t("reviews")}</span>
+                                </Trans>
                               </h2>
                               <p className="woocommerce-noreviews">
-                                There are no reviews yet.
+                                <Trans i18nKey="no_review">
+                                  <span>{t("no_review")}</span>
+                                </Trans>
                               </p>
                             </div>
                             <div id="review_form_wrapper">
@@ -374,8 +417,14 @@ const Product = () => {
                                     id="reply-title"
                                     className="comment-reply-title"
                                   >
-                                    Be the first to review “Slim Fit 2pc Black
-                                    Mini Checkered Suit”
+                                    <Trans i18nKey="be_the_first_review">
+                                      <span>{t("be_the_first_review")}</span>
+                                    </Trans>{" "}
+                                    “
+                                    <Trans i18nKey="product1">
+                                      <span>{t("product1")}</span>
+                                    </Trans>
+                                    ”
                                     <small>
                                       <a
                                         rel="nofollow"
@@ -388,22 +437,26 @@ const Product = () => {
                                     </small>
                                   </span>
                                   <form
-                                    action="/wp-comments-post.php"
-                                    method="post"
                                     id="commentform"
                                     className="comment-form"
-                                    noValidate
                                   >
                                     <p className="comment-notes">
                                       <span id="email-notes">
-                                        Your email address will not be
-                                        published.
+                                        <Trans i18nKey="email_address_not_published">
+                                          <span>
+                                            {t("email_address_not_published")}
+                                          </span>
+                                        </Trans>
                                       </span>
                                       <span
                                         className="required-field-message"
                                         aria-hidden="true"
                                       >
-                                        Required fields are marked
+                                        <Trans i18nKey="required_fields_are_marked">
+                                          <span>
+                                            {t("required_fields_are_marked")}
+                                          </span>
+                                        </Trans>
                                         <span
                                           className="required"
                                           aria-hidden="true"
@@ -414,7 +467,10 @@ const Product = () => {
                                     </p>
                                     <div className="comment-form-rating">
                                       <label htmlFor="rating">
-                                        Your rating&nbsp;
+                                        <Trans i18nKey="your_rating">
+                                          <span>{t("your_rating")}</span>
+                                        </Trans>
+                                        &nbsp;
                                         <span className="required">*</span>
                                       </label>
                                       <p className="stars">
@@ -456,7 +512,10 @@ const Product = () => {
                                     </div>
                                     <p className="comment-form-comment">
                                       <label htmlFor="comment">
-                                        Your review&nbsp;
+                                        <Trans i18nKey="your_review">
+                                          <span>{t("your_review")}</span>
+                                        </Trans>
+                                        &nbsp;
                                         <span className="required">*</span>
                                       </label>
                                       <textarea
@@ -470,7 +529,10 @@ const Product = () => {
                                     </p>
                                     <p className="comment-form-author">
                                       <label htmlFor="author">
-                                        Name&nbsp;
+                                        <Trans i18nKey="name">
+                                          <span>{t("name")}</span>
+                                        </Trans>
+                                        &nbsp;
                                         <span className="required">*</span>
                                       </label>
                                       <input
@@ -483,7 +545,10 @@ const Product = () => {
                                     </p>
                                     <p className="comment-form-email">
                                       <label htmlFor="email">
-                                        Email&nbsp;
+                                        <Trans i18nKey="email">
+                                          <span>{t("email")}</span>
+                                        </Trans>
+                                        &nbsp;
                                         <span className="required">*</span>
                                       </label>
                                       <input
@@ -503,9 +568,9 @@ const Product = () => {
                                         className="inited"
                                       />
                                       <label htmlFor="wpgdprc">
-                                        By using this form you agree with the
-                                        storage and handling of your data by
-                                        this website.
+                                        <Trans i18nKey="agree">
+                                          <span>{t("agree")}</span>
+                                        </Trans>
                                         <abbr
                                           className="wpgdprc-required"
                                           title="You need to accept this checkbox."
@@ -515,13 +580,16 @@ const Product = () => {
                                       </label>
                                     </p>
                                     <p className="form-submit">
-                                      <input
-                                        name="submit"
+                                      <button
                                         type="submit"
-                                        id="submit"
-                                        className="submit"
-                                        defaultValue="Submit"
-                                      />
+                                        style={{
+                                          backgroundColor: "#be9667",
+                                        }}
+                                      >
+                                        <Trans i18nKey="submit">
+                                          <span>{t("submit")}</span>
+                                        </Trans>
+                                      </button>
                                       <input
                                         type="hidden"
                                         name="comment_post_ID"
@@ -549,7 +617,9 @@ const Product = () => {
                   <div className="trx-stretch-width-original" />
                 </div>
                 <section className="related products">
-                  <h2>Related products</h2>
+                  <Trans i18nKey="related_products">
+                    <span>{t("related_products")}</span>
+                  </Trans>
                   <ul className="products columns-4">
                     <li className="product type-product post-233 status-publish instock product_cat-suits product_cat-ties product_cat-trousers product_cat-waistcoats product_tag-accessories product_tag-jackets product_tag-wedding has-post-thumbnail shipping-taxable purchasable product-type-variable">
                       <div className="post_item post_layout_thumbs">
@@ -570,7 +640,9 @@ const Product = () => {
                           <div className="post_header entry-header">
                             <h2 className="woocommerce-loop-product__title">
                               <a href="/product/slim-fit-3pc-solid-blue-suit/">
-                                Slim Fit 3pc Solid Blue Suit
+                                <Trans i18nKey="product3">
+                                  {t("product3")}
+                                </Trans>
                               </a>
                             </h2>
                           </div>
@@ -603,7 +675,9 @@ const Product = () => {
                             aria-label="Select options for “Slim Fit 3pc Solid Blue Suit”"
                             rel="nofollow"
                           >
-                            Buy now
+                            <Trans i18nKey="buy_now">
+                              <span>{t("buy_now")}</span>
+                            </Trans>
                           </a>
                         </div>
                         {/* /.post_data */}
@@ -629,7 +703,9 @@ const Product = () => {
                           <div className="post_header entry-header">
                             <h2 className="woocommerce-loop-product__title">
                               <a href="/product/traditional-fit-2pc-brown-suit/">
-                                Traditional Fit 2pc Brown Suit
+                                <Trans i18nKey="product4">
+                                  {t("product4")}
+                                </Trans>
                               </a>
                             </h2>
                           </div>
@@ -662,7 +738,9 @@ const Product = () => {
                             aria-label="Select options for “Traditional Fit 2pc Brown Suit”"
                             rel="nofollow"
                           >
-                            Buy now
+                            <Trans i18nKey="buy_now">
+                              <span>{t("buy_now")}</span>
+                            </Trans>
                           </a>
                         </div>
                         {/* /.post_data */}
@@ -688,7 +766,9 @@ const Product = () => {
                           <div className="post_header entry-header">
                             <h2 className="woocommerce-loop-product__title">
                               <a href="/product/exclusive-fit-3pc-dark-blue-suit/">
-                                Luxury Fit 3pc Black Solid Suit
+                                <Trans i18nKey="product5">
+                                  {t("product5")}
+                                </Trans>
                               </a>
                             </h2>
                           </div>
@@ -721,7 +801,9 @@ const Product = () => {
                             aria-label="Select options for “Luxury Fit 3pc Black Solid Suit”"
                             rel="nofollow"
                           >
-                            Buy now
+                            <Trans i18nKey="buy_now">
+                              <span>{t("buy_now")}</span>
+                            </Trans>
                           </a>
                         </div>
                         {/* /.post_data */}
@@ -747,7 +829,9 @@ const Product = () => {
                           <div className="post_header entry-header">
                             <h2 className="woocommerce-loop-product__title">
                               <a href="/product/modern-fit-2pc-ultra-black-suit/">
-                                Modern Fit 2pc Ultra Black Suit
+                                <Trans i18nKey="product2">
+                                  <span>{t("product2")}</span>
+                                </Trans>
                               </a>
                             </h2>
                           </div>
@@ -780,7 +864,9 @@ const Product = () => {
                             aria-label="Select options for “Modern Fit 2pc Ultra Black Suit”"
                             rel="nofollow"
                           >
-                            Buy now
+                            <Trans i18nKey="buy_now">
+                              <span>{t("buy_now")}</span>
+                            </Trans>
                           </a>
                         </div>
                         {/* /.post_data */}

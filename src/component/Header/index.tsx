@@ -427,7 +427,7 @@ const Index = (props: IHeader) => {
                                             id="menu-item-1159"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                                           >
-                                            <a href="/#">
+                                            <a>
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -474,7 +474,7 @@ const Index = (props: IHeader) => {
                                             id="menu-item-1166"
                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                                           >
-                                            <a href="/#">
+                                            <a>
                                               <span>Privacy Policy</span>
                                             </a>
                                           </li>
@@ -605,8 +605,8 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <Trans i18nKey="classic">
-                                            <span>{t("classic")}</span>
+                                          <Trans i18nKey="header.classic">
+                                            <span>{t("header.classic")}</span>
                                           </Trans>
                                         </a>
                                         <ul
@@ -645,7 +645,7 @@ const Index = (props: IHeader) => {
                                       >
                                         <a href="#" className="sf-with-ul">
                                           <Trans i18nKey="header.chess">
-                                            <span>{t("header.classic")}</span>
+                                            <span>{t("header.chess")}</span>
                                           </Trans>
                                         </a>
                                         <ul
@@ -683,8 +683,8 @@ const Index = (props: IHeader) => {
                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-130"
                                       >
                                         <a href="#" className="sf-with-ul">
-                                          <Trans i18nKey="header.chess">
-                                            <span>{t("header.classic")}</span>
+                                          <Trans i18nKey="header.portfolio">
+                                            <span>{t("header.portfolio")}</span>
                                           </Trans>
                                         </a>
                                         <ul
@@ -948,7 +948,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1159"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                       >
-                        <a href="/#">
+                        <a>
                           <span>Privacy Policy</span>
                         </a>
                       </li>
@@ -991,7 +991,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1166"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                       >
-                        <a href="/#">
+                        <a>
                           <span>Privacy Policy</span>
                         </a>
                       </li>
