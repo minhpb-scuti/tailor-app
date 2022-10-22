@@ -827,7 +827,9 @@ const Index = (props: IHeader) => {
                 }
               >
                 <a href="#">
-                  <span>Home</span>
+                  <Trans i18nKey="header.home">
+                    <span>{t("header.home")}</span>
+                  </Trans>
                   <span className="open_child_menu" />
                 </a>
                 <ul
@@ -841,7 +843,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-27 current_page_item menu-item-38"
                   >
                     <a href="/" aria-current="page">
-                      <span>Homepage Fullwidth</span>
+                      <Trans i18nKey="header.homepage_fullwidth">
+                        <span>{t("header.homepage_fullwidth")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li
@@ -849,7 +853,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"
                   >
                     <a href="/shop-homepage/">
-                      <span>Homepage Shop</span>
+                      <Trans i18nKey="header.homepage_shop">
+                        <span>{t("header.homepage_boxed")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li
@@ -857,7 +863,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"
                   >
                     <a href="/shop-boxed/">
-                      <span>Homepage Boxed</span>
+                      <Trans i18nKey="header.homepage_boxed">
+                        <span>{t("header.homepage_boxed")}</span>
+                      </Trans>
                     </a>
                   </li>
                 </ul>
@@ -948,7 +956,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1159"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"
                       >
-                        <a>
+                        <a >
                           <span>Privacy Policy</span>
                         </a>
                       </li>
@@ -959,7 +967,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-42"
                   >
                     <a href="/">
-                      <span>Tools</span>
+                      <Trans i18nKey="header.tools">
+                        <span>{t("header.tools")}</span>
+                      </Trans>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">
@@ -991,7 +1001,7 @@ const Index = (props: IHeader) => {
                         id="menu_mobile-item-1166"
                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1166"
                       >
-                        <a>
+                        <a >
                           <span>Privacy Policy</span>
                         </a>
                       </li>
@@ -1002,7 +1012,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"
                   >
                     <a href="/appointment/">
-                      <span>Appointment</span>
+                      <Trans i18nKey="header.appointment">
+                        <span>{t("header.appointment")}</span>
+                      </Trans>
                     </a>
                   </li>
                 </ul>
@@ -1016,7 +1028,9 @@ const Index = (props: IHeader) => {
                 }
               >
                 <a href="#">
-                  <span>About</span>
+                  <Trans i18nKey="header.about">
+                    <span>{t("header.about")}</span>
+                  </Trans>
                   <span className="open_child_menu" />
                 </a>
                 <ul
@@ -1030,7 +1044,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"
                   >
                     <a href="/about/">
-                      <span>Style 1</span>
+                      <Trans i18nKey="header.style1">
+                        <span>{t("header.style1")}</span>
+                      </Trans>
                     </a>
                   </li>
                   <li
@@ -1038,7 +1054,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"
                   >
                     <a href="/about-us/">
-                      <span>Style 2</span>
+                      <Trans i18nKey="header.style2">
+                        <span>{t("header.style2")}</span>
+                      </Trans>
                     </a>
                   </li>
                 </ul>
@@ -1048,7 +1066,9 @@ const Index = (props: IHeader) => {
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"
               >
                 <a href="/shop/">
-                  <span>Suits</span>
+                  <Trans i18nKey="header.suits">
+                    <span>{t("header.suits")}</span>
+                  </Trans>
                 </a>
               </li>
               <li
@@ -1059,8 +1079,10 @@ const Index = (props: IHeader) => {
                   handleSelectOpen(selectOpen !== "news" ? "news" : "")
                 }
               >
-                <a href="/blog">
-                  <span>News</span>
+                <a href="#">
+                  <Trans i18nKey="header.news">
+                    <span>{t("header.news")}</span>
+                  </Trans>
                   <span className="open_child_menu" />
                 </a>
                 <ul
@@ -1074,12 +1096,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128"
                   >
                     <a href="/">
-                      <span>
-                        {" "}
-                        <Trans i18nKey="classic">
-                          <span>{t("classic")}</span>
-                        </Trans>
-                      </span>
+                      <Trans i18nKey="classic">
+                        <span>{t("classic")}</span>
+                      </Trans>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">
@@ -1104,7 +1123,9 @@ const Index = (props: IHeader) => {
                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-830"
                       >
                         <a href="/classic-3-columns/">
-                          <span>3 columns</span>
+                          <Trans i18nKey="header.classic">
+                            <span>{t("header.classic")}</span>
+                          </Trans>
                         </a>
                       </li>
                     </ul>
@@ -1114,7 +1135,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-129"
                   >
                     <a href="/">
-                      <span>Chess</span>
+                      <Trans i18nKey="header.chess">
+                        <span>{t("header.classic")}</span>
+                      </Trans>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">
@@ -1149,7 +1172,9 @@ const Index = (props: IHeader) => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-130"
                   >
                     <a href="/">
-                      <span>Portfolio</span>
+                      <Trans i18nKey="header.portfolio">
+                        <span>{t("header.portfolio")}</span>
+                      </Trans>
                       <span className="open_child_menu" />
                     </a>
                     <ul className="sub-menu">
@@ -1186,7 +1211,9 @@ const Index = (props: IHeader) => {
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"
               >
                 <a href="/contacts/">
-                  <span>Contacts</span>
+                  <Trans i18nKey="header.contacts">
+                    <span>{t("header.contacts")}</span>
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -1234,7 +1261,9 @@ const Index = (props: IHeader) => {
                 <input
                   type="text"
                   className="search_field"
-                  placeholder="Search"
+                  placeholder={
+                    i18nextLng?.includes("vi") ? "tìm kiếm" : "search"
+                  }
                   name="s"
                 />
                 <button
