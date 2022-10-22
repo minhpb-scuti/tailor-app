@@ -616,9 +616,11 @@ const Shop = () => {
                   <div className="trx-stretch-width-original" />
                 </div>
                 <section className="related products">
-                  <Trans i18nKey="related_products">
-                    <span>{t("related_products")}</span>
-                  </Trans>
+                  <h2>
+                    <Trans i18nKey="related_products">
+                      <span>{t("related_products")}</span>
+                    </Trans>
+                  </h2>
                   <ul className="products columns-4">
                     <li className="product type-product post-225 status-publish first instock product_cat-blazers product_cat-ties product_cat-trousers product_cat-waistcoats product_tag-accessories product_tag-scarves product_tag-wedding has-post-thumbnail sale shipping-taxable purchasable product-type-variable">
                       <div className="post_item post_layout_thumbs">
